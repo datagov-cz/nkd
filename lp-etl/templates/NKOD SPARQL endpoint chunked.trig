@@ -1,0 +1,50 @@
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-sparqlEndpointChunked/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "NKOD SPARQL endpoint chunked";
+    <http://www.w3.org/2002/07/owl#sameAs> <https://dev.nkod.opendata.cz/etl/resources/components/1612443613371-086390c1-8bfe-4290-970d-a15084ea29d9>;
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/e-sparqlEndpointChunked/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044/configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#chunkSize> 100;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#chunkSizeControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#defaultGraphControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#encodeRdf> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#encodeRdfControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#endpoint> "http://localhost:8890/sparql";
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#endpointControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#handleInvalidData>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#handleInvalidDataControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#headerAcceptControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#literalsControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#passwordControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#skipOnErrorControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#useAuthentication>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#useTolerantRepository>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#useTolerantRepositoryControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunked#userNameControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}

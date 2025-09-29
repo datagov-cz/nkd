@@ -1,0 +1,926 @@
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001> a <http://linkedpipes.com/ontology/Pipeline>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "07.2 RPP => NSIP (DGA)";
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/events/created> "2023-09-04T15:40:52.539880624"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2025-04-03T14:02:14.196732416"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://etl.linkedpipes.com/ontology/tag> "DGA", "3";
+    <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/profile/default> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/profile/default>
+    a <http://linkedpipes.com/ontology/ExecutionProfile>;
+    <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/SingleRepository>;
+    <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontologyrepository/NativeStore>;
+    <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
+    <http://purl.org/dc/terms/description> """Vytvořit datové sady
+ze subjektů/objektů v RPP""";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade/configuration>;
+    <http://linkedpipes.com/ontology/x> "325"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "80"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Vymyslet si téma";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec/configuration>;
+    <http://linkedpipes.com/ontology/x> "353"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "395"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Vymyslet distribuce";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3/configuration>;
+    <http://linkedpipes.com/ontology/x> "623"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "95"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Union";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2/configuration>;
+    <http://linkedpipes.com/ontology/x> "912"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "196"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Zastřešit katalogem";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765/configuration>;
+    <http://linkedpipes.com/ontology/x> "631"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "175"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/65e2-8285>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Text holder";
+    <http://purl.org/dc/terms/description> "DIA jako poskytovatel";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/65e2-8285/configuration>;
+    <http://linkedpipes.com/ontology/x> "822"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-135"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/6fd2-9d80>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
+    <http://purl.org/dc/terms/description> "Údaje";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/6fd2-9d80/configuration>;
+    <http://linkedpipes.com/ontology/x> "-193"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "194"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to SCP NKOD";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c/configuration>;
+    <http://linkedpipes.com/ontology/x> "1411"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "125"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693826283744-0012> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/7b9e-993d>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/7b9e-993d/configuration>;
+    <http://linkedpipes.com/ontology/x> "819"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-74"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Vymyslet si územní pokrytí";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b/configuration>;
+    <http://linkedpipes.com/ontology/x> "319"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "588"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
+    <http://purl.org/dc/terms/description> """Vytvořit datové sady
+z agend v RPP""";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce/configuration>;
+    <http://linkedpipes.com/ontology/x> "329"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-17"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct to file list";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823/configuration>;
+    <http://linkedpipes.com/ontology/x> "1112"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "124"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstructToFileList/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b025-b571>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Text holder";
+    <http://purl.org/dc/terms/description> "Metadata NSIP";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b025-b571/configuration>;
+    <http://linkedpipes.com/ontology/x> "1203"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "41"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "JSON-LD to RDF Titanium";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd/configuration>;
+    <http://linkedpipes.com/ontology/x> "-30"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "142"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-jsonLdToRdfTitanium/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/c49d-a908>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
+    <http://purl.org/dc/terms/description> "Agendy";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/c49d-a908/configuration>;
+    <http://linkedpipes.com/ontology/x> "-190"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "123"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
+    <http://purl.org/dc/terms/description> """Generate graph separation
+queries""";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e/configuration>;
+    <http://linkedpipes.com/ontology/x> "1090"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "245"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Vymyslet si kontaktní bod";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23/configuration>;
+    <http://linkedpipes.com/ontology/x> "315"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "321"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update";
+    <http://purl.org/dc/terms/description> "Vymyslet si periodicitu aktualizace";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe/configuration>;
+    <http://linkedpipes.com/ontology/x> "261"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "496"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdate/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/0206-8652>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/65e2-8285>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/7b9e-993d>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/1afb-89df>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/2a24-9b3a>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/2b3a-aa90>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b025-b571>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/47b0-ae98>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/5a61-a7f0>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/6730-b2b0>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/6b40-8a6a>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823>;
+    <http://linkedpipes.com/ontology/targetBinding> "Tasks" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/70c0-98a9>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/7b02-8201>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/9031-877c>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/9c94-bf4a>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/c49d-a908>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/b123-bb3a>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/bb5f-a3ae>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/cae2-8a63>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/d575-9a42>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/7b9e-993d>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/d5c7-b994>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/ee4d-8bf2>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/6fd2-9d80>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/connection/f8f9-9e2d>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/0a60-aade/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX l-sgov-sbírka-111-2009-pojem: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/> 
+PREFIX a-sgov-104-pojem: <https://slovník.gov.cz/agendový/104/pojem/>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+
+CONSTRUCT { 
+  ?datováSada a dcat:Dataset ;
+    dcterms:title ?názevDatovéSady ;
+    dcterms:description ?popisDatovéSady ;
+    dcterms:publisher <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> ;
+    #dcterms:publisher ?OhlasujeAgendu ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg/2022/868/oj> ;
+    dcat:keyword ?MaNazevAgendy, ?OnSÚNázev;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+    dcat:inSeries ?datováSérieAgendy .
+	
+  ?datováSérieAgendy dcat:seriesMember ?datováSada .
+}
+WHERE {
+  ?Agenda a l-sgov-sbírka-111-2009-pojem:agenda ;
+    l-sgov-sbírka-111-2009-pojem:má-název-agendy ?MaNazevAgendy ;
+    l-sgov-sbírka-111-2009-pojem:má-kód-agendy ?MaKodAgendy ;
+    ^l-sgov-sbírka-111-2009-pojem:ohlašuje-agendu ?OhlasujeAgendu .
+
+  OPTIONAL { ?Agenda a-sgov-104-pojem:má-datum-zániku-agendy ?MaDatumZanikuAgendy .}
+  OPTIONAL { ?Agenda a-sgov-104-pojem:má-platnost-agendy-do ?MaPlatnostAgendyDo . } 
+
+  ?OnSU a-sgov-104-pojem:sdružuje-údaje-vedené-nebo-vytvářené-v-rámci-agendy ?Agenda ;
+        a-sgov-104-pojem:má-kód-objektu-nebo-subjektu-údajů ?kódOnSÚ ;
+        a-sgov-104-pojem:má-název-objektu-nebo-subjektu-údajů ?OnSÚNázev ;
+        a-sgov-104-pojem:má-popis-objektu-nebo-subjektu-údajů ?OnSÚPopis .
+
+  {
+    SELECT ?OnSU (GROUP_CONCAT(?radek; separator=\"\\n\") AS ?udaje)
+    WHERE {
+      {
+        SELECT ?OnSU ?kodUdaje ?nazevUdaje
+        WHERE {
+          ?OnSU a-sgov-104-pojem:má-údaj ?udaj .
+          ?udaj a-sgov-104-pojem:má-kód-údaje ?kodUdaje ;
+                a-sgov-104-pojem:má-název-údaje ?nazevUdaje .
+        }
+        ORDER BY ?kodUdaje
+      }
+      BIND(CONCAT(?kodUdaje, \": \", ?nazevUdaje) AS ?radek)
+    }
+    GROUP BY ?OnSU
+  }
+
+  FILTER (LANG(?MaNazevAgendy) = \"cs\")
+  FILTER (!BOUND(?MaDatumZanikuAgendy) || ?MaDatumZanikuAgendy > NOW())
+  FILTER (!BOUND(?MaPlatnostAgendyDo) || ?MaPlatnostAgendyDo > NOW())
+
+  BIND(STRLANG(CONCAT(?kódOnSÚ, \": \", ?OnSÚNázev), \"cs\") AS ?názevDatovéSady)
+  BIND(STRLANG(CONCAT(\"Datová sada obsahuje informace o subjektu/objektu práva a jeho vlastnostech, který je veden v agendě \", ?MaKodAgendy, \": \", ?MaNazevAgendy, \".\\n Základní popis: \", ?OnSÚPopis, \"\\nEvidované vlastnosti/údaje:\\n\", ?udaje), \"cs\") AS ?popisDatovéSady)
+  BIND(IRI(CONCAT(\"https://data.gov.cz/zdroj/datové-sady/inventární-seznam/agendy/\", ?MaKodAgendy )) AS ?datováSérieAgendy)
+  BIND(IRI(CONCAT(STR(?datováSérieAgendy), \"/subjekty-a-objekty-údajů/\", ?kódOnSÚ )) AS ?datováSada)
+
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/1e6b-b6ec/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+INSERT { 
+  ?datováSada dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/2a3b-9bd3/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
+
+INSERT { 
+  ?datováSada dcat:distribution ?distribuce .
+  ?distribuce a dcat:Distribution ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg/2022/868/oj> ;
+    dcat:accessURL <https://data.gov.cz/dga-žádost-o-přístup/> ;
+    dcterms:rights <https://data.gov.cz/dga-žádost-o-přístup/> ;
+    dcterms:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+    pu:specifikace ?podmínky .
+
+?podmínky a pu:Specifikace ;
+          pu:autorské-dílo <https://data.gov.cz/podmínky-užití/neobsahuje-autorská-díla/> ;
+          pu:databáze-jako-autorské-dílo <https://data.gov.cz/podmínky-užití/není-autorskoprávně-chráněnou-databází/> ;
+          pu:databáze-chráněná-zvláštními-právy <https://data.gov.cz/podmínky-užití/není-chráněna-zvláštním-právem-pořizovatele-databáze/> ;
+          pu:osobní-údaje <https://data.gov.cz/podmínky-užití/není-specifikováno-zda-obsahuje-osobní-údaje/> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+  FILTER NOT EXISTS {?datováSada a dcat:DatasetSeries}
+  BIND(IRI(CONCAT(STR(?datováSada), \"/distribuce/1\")) AS ?distribuce)
+  BIND(IRI(CONCAT(STR(?datováSada), \"/distribuce/1/podmínky-užití\")) AS ?podmínky)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/4756-93e2/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-singleGraphUnion#Configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/5307-8765/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+
+PREFIX nkod: <https://data.gov.cz/zdroj/katalog/NKOD>
+PREFIX nsip: <https://data.gov.cz/zdroj/katalog/NSIP>
+
+INSERT {
+  nsip: dcat:dataset ?datováSada .
+    
+  nkod: dcat:dataset ?datováSada ;
+    	dcat:record ?záznam .
+  
+  ?záznam a dcat:CatalogRecord ;
+    foaf:primaryTopic ?datováSada ;
+    dcterms:language <http://publications.europa.eu/resource/authority/language/CES> ;
+    dcterms:conformsTo <https://semiceu.github.io/DCAT-AP/releases/3.0.0> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+  BIND(IRI(CONCAT(STR(?datováSada), \"/záznam\")) AS ?záznam)
+}
+""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/65e2-8285/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/65e2-8285/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> a foaf:Agent ;
+    foaf:name \"Digitální a informační agentura\"@cs .""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "dia.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/6fd2-9d80/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/6fd2-9d80/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "udaje.jsonld";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "https://rpp-opendata.egon.gov.cz/odrpp/datovasada/udaje.jsonld";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/73bf-b01c/configuration>
+    a <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> true;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/data/upload/dga";
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/7b9e-993d/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType> "";
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/9cad-b39b/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+INSERT { 
+  ?datováSada dcterms:spatial <https://linked.cuzk.cz/resource/ruian/stat/1> , 
+      <http://publications.europa.eu/resource/authority/country/CZE> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/a567-bbce/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+PREFIX l-sgov-sbírka-111-2009-pojem: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/> 
+PREFIX a-sgov-104-pojem: <https://slovník.gov.cz/agendový/104/pojem/>
+
+CONSTRUCT { 
+  ?datováSada a dcat:Dataset, dcat:DatasetSeries ;
+    dcterms:title ?názevDatovéSady ;
+    dcterms:description ?popisDatovéSady ;
+    dcterms:publisher <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> ;
+    #dcterms:publisher ?OhlasujeAgendu ;
+    dcatap:applicableLegislation <http://data.europa.eu/eli/reg/2022/868/oj> ;
+    dcat:keyword ?MaNazevAgendy ;
+    dcterms:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> .
+
+}
+WHERE {
+  ?Agenda a l-sgov-sbírka-111-2009-pojem:agenda ;
+    l-sgov-sbírka-111-2009-pojem:má-název-agendy ?MaNazevAgendy ;
+    l-sgov-sbírka-111-2009-pojem:má-kód-agendy ?MaKodAgendy ;
+    ^l-sgov-sbírka-111-2009-pojem:ohlašuje-agendu ?OhlasujeAgendu .
+
+  OPTIONAL { ?Agenda a-sgov-104-pojem:má-datum-zániku-agendy ?MaDatumZanikuAgendy .}
+  OPTIONAL { ?Agenda a-sgov-104-pojem:má-platnost-agendy-do ?MaPlatnostAgendyDo . } 
+
+  {
+    SELECT ?Agenda (GROUP_CONCAT(?radek; separator=\"\\n\") AS ?OnSUy)
+    WHERE {
+      {
+        SELECT ?Agenda ?kódOnSÚ ?OnSÚNázev
+        WHERE {
+          [] a-sgov-104-pojem:sdružuje-údaje-vedené-nebo-vytvářené-v-rámci-agendy ?Agenda ;
+                a-sgov-104-pojem:má-kód-objektu-nebo-subjektu-údajů ?kódOnSÚ ;
+                a-sgov-104-pojem:má-název-objektu-nebo-subjektu-údajů ?OnSÚNázev .
+        }
+        ORDER BY ?kódOnSÚ
+      }
+      BIND(CONCAT(?kódOnSÚ, \": \", ?OnSÚNázev) AS ?radek)
+    }
+    GROUP BY ?Agenda
+  }
+
+  FILTER (LANG(?MaNazevAgendy) = \"cs\")
+  FILTER (!BOUND(?MaDatumZanikuAgendy) || ?MaDatumZanikuAgendy > NOW())
+  FILTER (!BOUND(?MaPlatnostAgendyDo) || ?MaPlatnostAgendyDo > NOW())
+
+  BIND(STRLANG(CONCAT(?MaKodAgendy, \": \", ?MaNazevAgendy), \"cs\") AS ?názevDatovéSady)
+  BIND(STRLANG(CONCAT(\"Datová sada obsahuje informace o subjektech a objektech práva a jejich vlastnostech v rámci agendy \", ?MaKodAgendy, \": \", ?MaNazevAgendy, \", která je reprezentována jako položka inventárního seznamu ČR.\\nSubjekty a objekty práva jsou následující:\\n\", ?OnSUy), \"cs\") AS ?popisDatovéSady)
+  BIND(IRI(CONCAT(\"https://data.gov.cz/zdroj/datové-sady/inventární-seznam/agendy/\", ?MaKodAgendy )) AS ?datováSada)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/af5a-b823/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#deduplication>
+      true;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#deduplicationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#prefixTurtle>
+      """@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix language: <http://publications.europa.eu/resource/authority/language/> .
+@prefix filetype: <http://publications.europa.eu/resource/authority/file-type/> .
+@prefix theme: <http://publications.europa.eu/resource/authority/data-theme/> .
+@prefix country: <http://publications.europa.eu/resource/authority/country/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix pu: <https://data.gov.cz/slovník/podmínky-užití/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ovm: <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/> .
+@prefix typdz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix application: <http://www.iana.org/assignments/media-types/application/> .
+@prefix text: <http://www.iana.org/assignments/media-types/text/> .
+@prefix eurovoc: <http://eurovoc.europa.eu/> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#prefixTurtleControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b025-b571/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b025-b571/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix dcat:    <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:  <http://schema.org/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcatap:     <http://data.europa.eu/r5r/> .
+
+<https://data.gov.cz/zdroj/datová-sada/NSIP> {
+	<https://data.gov.cz/zdroj/katalog/NSIP> a dcat:Catalog ;
+	dcterms:title \"Národní jednotný informační bod\"@cs, \"Czech National Single Information Point (NSIP)\"@en ;
+	dcterms:description \"Národní jednotný informační bod\"@cs, \"Czech National Single Information Point (NSIP)\"@en ;
+	dcterms:publisher <https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> ;
+	foaf:homepage <https://data.gov.cz> ;
+	dcterms:language <http://publications.europa.eu/resource/authority/language/CES> ;
+    dcterms:license <https://data.gov.cz/podmínky-užití/volný-přístup/> ;
+	dcterms:issued \"2023-09-16\"^^xsd:date ;
+	dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ;
+    dcterms:spatial <http://publications.europa.eu/resource/authority/country/CZE>, <https://linked.cuzk.cz/resource/ruian/stat/1> .
+
+<https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/17651921> a schema:Organization, foaf:Agent, <http://data.europa.eu/m8g/PublicOrganisation> ;
+   foaf:name \"Digitální a informační agentura\"@cs, \"Digital and Information agency\"@en .
+
+<http://publications.europa.eu/resource/authority/data-theme> a skos:ConceptScheme;
+	dcterms:title \"EU dataset theme\"@en .
+<https://data.gov.cz/zdroj/katalog/NKOD> dcterms:hasPart <https://data.gov.cz/zdroj/katalog/NSIP> .
+}""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "nsip.trig";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/b4ed-b8cd/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-jsonLdToRdfTitanium/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/c49d-a908/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/c49d-a908/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "agendy.jsonld";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "https://rpp-opendata.egon.gov.cz/odrpp/datovasada/agendy.jsonld";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/cbdc-9f9e/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX srtfl: <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+CONSTRUCT 
+{
+<https://localhost/nkod-task> a srtfl:Task ;
+    srtfl:fileName \"dga.trig\" ;
+    srtfl:fileFormat \"application/trig\" ;
+    srtfl:hasTaskQuery ?tqIRI .
+
+?tqIRI a srtfl:TaskQuery ;
+    srtfl:outputGraph ?dataset ;
+    srtfl:query ?query .
+} 
+
+WHERE 
+{ 
+?dataset a dcat:Dataset .
+
+BIND(UUID() as ?tqIRI)
+  #Dataset is generated as a constant becasue using VALUES has way longer execution time
+BIND(CONCAT(\"\"\"
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+
+PREFIX tz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/>
+PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
+PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
+
+CONSTRUCT {
+?catalog dcat:dataset <\"\"\",STR(?dataset),\"\"\"> ;
+         dcat:record ?record.
+
+<\"\"\",STR(?dataset),\"\"\"> a dcat:Dataset, ?typ ;
+    dcterms:title ?title ;
+    dcterms:description ?description ;
+	dcat:theme ?theme ;
+	dcterms:accrualPeriodicity ?accrualPeriodicity ;
+	dcat:keyword ?keyword ;
+    dcterms:spatial ?spatial ;
+    dcterms:temporal ?temporal ;
+	dcterms:accessRights ?accessRights ;
+	dcatap:applicableLegislation ?applicableLegislation ;
+	dcat:contactPoint ?cp ;
+	foaf:page ?page ;
+    dcterms:conformsTo ?conformsTo ;
+    dcat:spatialResolutionInMeters ?spatialResolution ;
+    dcat:temporalResolution ?temporalResolution ;
+    dcterms:hasPart ?lowerDataset ;
+    dcat:inSeries ?topDataset ;
+    dcat:seriesMember ?lowerDataset ;
+    dcterms:publisher ?publisher ;
+	dcterms:identifier ?identifier ;
+	dcat:distribution ?distribution ;
+    dcterms:creator ?původce .
+
+?cp a ?cptype; 
+    vcard:fn ?cpfn ;
+    vcard:hasEmail ?cpemail .
+
+?publisher a foaf:Agent; 
+	foaf:name ?name .
+
+?temporal a dcterms:PeriodOfTime; 
+    dcat:startDate ?startDate ;
+    dcat:endDate ?endDate .
+
+?theme skos:inScheme ?scheme .
+
+?distribution a dcat:Distribution ;
+    dcat:downloadURL ?ddURL ;
+    dcat:accessURL ?daURL ;
+    dcterms:format ?dformat ;
+	dcat:mediaType ?dmimeType ;
+	dcterms:conformsTo ?dconformsTo ;
+    dcat:compressFormat ?dcompressFormat ;
+    dcat:packageFormat ?dpackageFormat ;
+    dcterms:title ?dtitle ;
+	dcterms:license ?tou ;
+	dcatap:applicableLegislation ?dapplicableLegislation ;
+	#pro ukázku toho, co za špatný media typ bylo zaregistrováno
+    nkod:mediaType ?LmimeType .
+
+?distribution pu:specifikace ?tou .
+
+?tou a pu:Specifikace ;
+    pu:autorské-dílo ?touGeneral ;
+	pu:databáze-jako-autorské-dílo ?touDatabase ;
+    pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
+	pu:osobní-údaje ?touPersonalData ;
+	pu:autor ?touGeneralAuthor ;
+	pu:autor-databáze ?touDatabaselAuthor .
+
+?distribution dcat:accessService ?dataService . 
+  
+?dataService a dcat:DataService ;
+    dcterms:title ?sTitle ;
+    dcterms:conformsTo ?sConformsTo ;
+    dcat:endpointURL ?sEndpointURL ;
+    dcat:endpointDescription ?sEndpointDescription ;
+    dcat:servesDataset <\"\"\",STR(?dataset),\"\"\"> .
+
+?record a dcat:CatalogRecord;
+    foaf:primaryTopic <\"\"\",STR(?dataset),\"\"\"> ;
+    dcterms:language ?rlanguage ;
+    dcterms:conformsTo ?rconformsTo ;
+    dcterms:source ?rsource .
+}
+WHERE {
+  {
+	<\"\"\",STR(?dataset),\"\"\"> a dcat:Dataset, ?typ ;
+        dcterms:title ?title ;
+        dcterms:description ?description .
+  } UNION { 
+    <\"\"\",STR(?dataset),\"\"\"> dcat:distribution ?distribution .
+
+    ?distribution a dcat:Distribution ;
+        dcat:accessURL ?daURL .
+
+    OPTIONAL { 
+        ?distribution pu:specifikace ?tou .
+        ?tou a pu:Specifikace ;
+            pu:autorské-dílo ?touGeneral ;
+            pu:databáze-jako-autorské-dílo ?touDatabase ;
+            pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
+            pu:osobní-údaje ?touPersonalData .
+
+        OPTIONAL { ?tou pu:autor ?touGeneralAuthor . }
+        OPTIONAL { ?tou pu:autor-databáze ?touDatabaselAuthor . }
+    }
+
+    OPTIONAL { ?distribution dcat:downloadURL ?ddURL . }
+    OPTIONAL { ?distribution dcterms:description ?ddescription . }
+    OPTIONAL { ?distribution dcterms:format ?dformat . }
+    OPTIONAL { ?distribution dcat:mediaType ?dmimeType . }
+    OPTIONAL { ?distribution nkod:mediaType ?LmimeType . }
+    OPTIONAL { ?distribution dcterms:conformsTo ?dconformsTo . }
+	OPTIONAL { ?distribution dcatap:applicableLegislation ?dapplicableLegislation . }
+    OPTIONAL { ?distribution dcat:compressFormat ?dcompressFormat . }
+    OPTIONAL { ?distribution dcat:packageFormat ?dpackageFormat . }
+    OPTIONAL { ?distribution dcterms:title ?dtitle . }
+    OPTIONAL { 
+        ?distribution dcat:accessService ?dataService . 
+        ?dataService a dcat:DataService ;
+                    dcterms:title ?sTitle ;
+                    dcat:endpointURL ?sEndpointURL .
+        OPTIONAL { ?dataService dcat:endpointDescription ?sEndpointDescription .}
+        OPTIONAL { ?dataService dcterms:conformsTo ?sConformsTo .}
+    }
+  } UNION { ?catalog dcat:dataset <\"\"\",STR(?dataset),\"\"\"> . 
+  } UNION {
+    ?catalog dcat:dataset <\"\"\",STR(?dataset),\"\"\"> ;
+            dcat:record ?record .
+
+    ?record a dcat:CatalogRecord;
+                foaf:primaryTopic <\"\"\",STR(?dataset),\"\"\"> .
+    OPTIONAL { ?record dcterms:language ?rlanguage . }
+    OPTIONAL { ?record dcterms:conformsTo ?rconformsTo . }
+    OPTIONAL { ?record dcterms:source ?rsource . }
+  } UNION {
+<\"\"\",STR(?dataset),\"\"\"> dcat:seriesMember ?lowerDataset .
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:accrualPeriodicity ?accrualPeriodicity .   } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:keyword ?keyword . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:spatial ?spatial . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> foaf:page ?page . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:creator ?původce .
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:conformsTo ?conformsTo . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:spatialResolutionInMeters ?spatialResolution . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:temporalResolution ?temporalResolution . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:inSeries ?topDataset . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:identifier ?identifier . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:accessRights ?accessRights . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcatap:applicableLegislation ?applicableLegislation . 
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:theme ?theme .
+	OPTIONAL { ?theme skos:inScheme ?scheme . }
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:temporal ?temporal . 
+    OPTIONAL { ?temporal dcat:startDate ?startDate . }
+    OPTIONAL { ?temporal dcat:endDate ?endDate . }
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:contactPoint ?cp . 
+?cp a ?cptype.
+    OPTIONAL { ?cp vcard:fn ?cpfn . }
+    OPTIONAL { ?cp vcard:hasEmail ?cpemail . }
+  } UNION { 
+    <\"\"\",STR(?dataset),\"\"\"> dcterms:publisher ?publisher . 
+	
+    ?publisher a foaf:Agent; 
+        foaf:name ?name .
+    }
+}
+\"\"\") as ?query)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/dc31-8f23/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+INSERT { 
+  ?datováSada dcat:contactPoint ?kontaktníBod .
+  ?kontaktníBod a vcard:Organization ;
+         vcard:fn \"Digitální a informační agentura\"@cs ;
+         vcard:hasEmail <mailto:otevrenadata@dia.gov.cz> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+  BIND(IRI(CONCAT(STR(?datováSada), \"/kontaktní-bod\")) AS ?kontaktníBod)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1693834852539-0001/component/ff85-abbe/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+INSERT { 
+  ?datováSada dcterms:accrualPeriodicity <http://publications.europa.eu/resource/authority/frequency/UNKNOWN> .
+} 
+WHERE { 
+  ?datováSada a dcat:Dataset .
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdate#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}

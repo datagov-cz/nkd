@@ -1,0 +1,50 @@
+
+<https://oha02.dia.gov.cz/etl/resources/components/1694777749044-0005> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694777749044-0005> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Souhrnné hlášení";
+    <http://purl.org/dc/terms/description> "";
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1694777749044-0005/configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/components/1694777749044-0005/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694777749044-0005/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+CONSTRUCT { [] a <http://localhost/temp/Message>; 
+ <http://localhost/temp/text> ?finaltext ;
+ <http://plugins.linkedpipes.com/ontology/t-mustache#fileName> \"configuration.json\" .
+} 
+WHERE {  
+  {
+    SELECT (COUNT(DISTINCT ?publisher) as ?Poskytovatelů) (SUM(?PočetDatovýchSad) as ?DatovýchSad) (SUM(?PočetDistribucí) as ?Distribucí) 
+    WHERE {
+  { 
+  SELECT ?publisher (count(distinct ?dataset) as ?PočetDatovýchSad) (count(distinct ?distribution) as ?PočetDistribucí)
+	WHERE { 
+
+  ?dataset a dcat:Dataset;
+           dcterms:publisher ?publisher ;
+          ^dcat:dataset <https://data.gov.cz/zdroj/katalog/NKOD> .
+          
+  OPTIONAL {?dataset dcat:distribution ?distribution . }
+  #?publisher foaf:name ?Poskytovatel.
+  
+  }
+  GROUP BY ?publisher
+  ORDER BY DESC(?PočetDatovýchSad) 
+  }
+    #BIND(CONCAT(STR(?Poskytovatel), \" má \", STR(?PočetDatovýchSad), \" datových sad. \\n\") as ?line)
+  }
+  }
+  
+  BIND(CONCAT(\"Testovací verze NKOD@UPAAS k \", STR(NOW()), \" obsahuje \", STR(?DatovýchSad), \" datových sad a \", STR(?Distribucí), \" distribucí od \", STR(?Poskytovatelů), \" poskytovatelů.\") as ?finaltext)
+ 
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}

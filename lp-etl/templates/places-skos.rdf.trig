@@ -1,0 +1,23 @@
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693826283747-0021> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693826283747-0021> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "places-skos.rdf";
+    <http://www.w3.org/2002/07/owl#sameAs> <https://etl.nakit.opendata.cz/resources/components/1537442667861-3ed3978d-c811-4179-8372-892234808e2c>;
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1693826283747-0021/configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693826283747-0021/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693826283747-0021/1> a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "places-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "http://localhost/eu-mdr/places-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}

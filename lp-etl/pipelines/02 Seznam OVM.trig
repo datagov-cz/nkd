@@ -1,0 +1,2502 @@
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657> a <http://linkedpipes.com/ontology/Pipeline>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "02 Seznam OVM";
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:24:16.657"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2023-09-04T13:11:56.196801129"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://etl.linkedpipes.com/ontology/tag> "NKOD", "DEPENDENCY", "1";
+    <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657/profile/default> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657/profile/default> a
+      <http://linkedpipes.com/ontology/ExecutionProfile>;
+    <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/PerInputRepository>;
+    <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/NativeStore>;
+    <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665710> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "TextHolder";
+    <http://purl.org/dc/terms/description> "Stav datové schránky";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665710/configuration>;
+    <http://linkedpipes.com/ontology/x> "620"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "280"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "XSLT";
+    <http://purl.org/dc/terms/description> "Detail OVM";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712/configuration>;
+    <http://linkedpipes.com/ontology/x> "660"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "120"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-xslt/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665713> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665713/configuration>;
+    <http://linkedpipes.com/ontology/x> "1320"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "20"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693825319096-0001> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "RDF to file";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715/configuration>;
+    <http://linkedpipes.com/ontology/x> "1140"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "20"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-rdfToFile/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
+    <http://purl.org/dc/terms/description> "Cache";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717/configuration>;
+    <http://linkedpipes.com/ontology/x> "140"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "20"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "XSLT transformer";
+    <http://purl.org/dc/terms/description> "Config download detail";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719/configuration>;
+    <http://linkedpipes.com/ontology/x> "140"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "140"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-xslt/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get list";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721/configuration>;
+    <http://linkedpipes.com/ontology/x> "220"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "300"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFiles/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723> a
+      <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723/configuration>;
+    <http://linkedpipes.com/ontology/x> "140"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "220"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573> a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "XSLT";
+    <http://purl.org/dc/terms/description> "Seznam OVM";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573/configuration>;
+    <http://linkedpipes.com/ontology/x> "640"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "20"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-xslt/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566574> a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "TextHolder";
+    <http://purl.org/dc/terms/description> "Typ emailu";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566574/configuration>;
+    <http://linkedpipes.com/ontology/x> "740"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "380"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576> a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576/configuration>;
+    <http://linkedpipes.com/ontology/x> "880"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "20"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566578> a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "TextHolder";
+    <http://purl.org/dc/terms/description> "Typ WWW";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566578/configuration>;
+    <http://linkedpipes.com/ontology/x> "900"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "380"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665711> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665714> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665713>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665716> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665718> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665720> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665722> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721>;
+    <http://linkedpipes.com/ontology/targetBinding> "Configuration" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665724> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665725> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665726> a
+      <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566575> a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566574>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566577> a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566578>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566579> a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665710>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665710/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665710/1>
+    a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> . 
+
+@prefix číselník:   <https://data.gov.cz/zdroj/stav-datové-schránky/Číselník> .
+
+číselník: a skos:ConceptScheme ;
+  rdfs:label \"Schéma konceptů pro stavy datových schránek datasetu OVM\"@cs ,
+    \"Concept scheme for states of data mailboxes in OVM dataset\"@en ;
+  skos:hasTopConcept <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/1>, <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/2>, <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/3>, <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/4>, <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/5>, <https://data.gov.cz/zdroj/ovm/stav-datové-schránky/6> ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/1> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"1\" ;
+  skos:prefLabel \"DS je přístupná, lze do ní dodávat zprávy, na Portále lze vyhledat\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/2> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"2\" ;
+  skos:prefLabel \"DS je dočasně znepřístupněna na vlastní žádost, může být později opět zpřístupněna\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/3> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"3\" ;
+  skos:prefLabel \"DS je dosud neaktivní, dosud se do ní nikdo nepřihlásil; byly-li přístupové údaje doručeny, je aktivována po 15 dnech od doručení, v opačném případě nebude aktivována nikdy\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/4> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"4\" ;
+  skos:prefLabel \"DS je trvale znepřístupněna, čeká 3 roky na smazání; možno opět zpřístupnit.\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/5> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"5\" ;
+  skos:prefLabel \"DS je smazána (přesto existuje v ISDS, ale nelze s ní nijak pracovat)\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/stav-datové-schránky/6> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"6\" ;
+  skos:prefLabel \"DS je dočasně znepřístupněna zásahem zvenku, důvodem ze zákona, může být později opět zpřístupněna\"@cs ;
+  skos:topConceptOf číselník: ;
+  .""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "stav-ds.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665712/1>
+    a <http://plugins.linkedpipes.com/ontology/t-xslt#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extension> "ttl";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extensionControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#template> """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xmlns:f=\"http://data.gov.cz/resource/legislation/xslt-functions\" 
+xpath-default-namespace=\"http://seznam.gov.cz/ovm/datafile/seznamovm/v1\">
+	<xsl:output method=\"text\" version=\"1.0\" encoding=\"UTF-8\" indent=\"no\"/>
+	<xsl:variable name=\"bePrefix\">https://data.gov.cz/zdroj/ovm/</xsl:variable>
+	<xsl:variable name=\"typSubjektuPrefix\">https://data.gov.cz/zdroj/ovm/typ-subjektu/</xsl:variable>
+	<xsl:variable name=\"stavSubjektuPrefix\">https://data.gov.cz/zdroj/ovm/stav-subjektu/</xsl:variable>
+	<xsl:variable name=\"pravniFormaPrefix\">https://data.gov.cz/zdroj/ovm/právní-forma/</xsl:variable>
+	<xsl:variable name=\"typDSPrefix\">https://data.gov.cz/zdroj/typ-datové-schránky/</xsl:variable>
+	<xsl:variable name=\"stavDSPrefix\">https://data.gov.cz/zdroj/stav-datové-schránky/</xsl:variable>
+	<xsl:variable name=\"typEmailuPrefix\">https://data.gov.cz/zdroj/typ-emailu/</xsl:variable>
+	<xsl:variable name=\"typWWWPrefix\">https://data.gov.cz/zdroj/typ-www/</xsl:variable>
+	<xsl:variable name=\"ruianPrefix\">https://linked.cuzk.cz/resource/ruian/adresni-mista/</xsl:variable>
+	<xsl:variable name=\"personPrefix\">https://data.gov.cz/zdroj/osoba/</xsl:variable>
+	<xsl:variable name=\"ruianLinkPrefix\">https://data.gov.cz/slovník/ruian/linky/</xsl:variable>
+	<xsl:variable name=\"newline\"><xsl:text> </xsl:text></xsl:variable>
+
+<xsl:function name=\"f:getPersonURI\" as=\"xs:string\">
+	<xsl:param name=\"person\" as=\"node()\"/>
+			<xsl:value-of select=\"concat($personPrefix,encode-for-uri(
+				lower-case(
+					concat(
+						if ($person/TitulyPred) then 
+							concat(normalize-space($person/TitulyPred), '-') 
+							else '', 
+						concat(
+							normalize-space($person/Jmeno),
+							'-', 
+							normalize-space($person/Prijmeni)
+						),
+						if ($person/TitulyZa) then 
+							concat('-', normalize-space($person/TitulyZa)) 
+						else ''
+						)
+					)
+				))
+			\"/>
+</xsl:function>
+
+<xsl:function name=\"f:getOvereniDateTime\" as=\"xs:string\">
+	<xsl:param name=\"dt\" as=\"node()\"/>
+	<xsl:value-of select=\"replace($dt,'([0-9]{4})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})([0-9]{2})Z','$1-$2-$3T$4:$5:$6Z')\"/>
+</xsl:function>
+
+<xsl:function name=\"f:getTime\" as=\"xs:string\">
+	<xsl:param name=\"time\" as=\"node()\"/>
+	<xsl:variable name=\"hours\" select=\"replace($time,'([0-9]+):([0-9]+)','$1')\"/>
+	<xsl:variable name=\"minutes\" select=\"replace($time,'([0-9]+):([0-9]+)','$2')\"/>
+	<xsl:value-of select=\"concat(
+		if (string-length($hours)=1) then concat('0',$hours) else $hours,
+		':',
+		if (string-length($minutes)=1) then concat('0',$minutes) else $minutes,
+		':00'
+		)
+	\"/>
+</xsl:function>
+
+<xsl:function name=\"f:getDayURIfromNum\" as=\"xs:string\">
+	<xsl:param name=\"num\" as=\"xs:string\"/>
+	<xsl:if test=\"$num='1'\">http://purl.org/goodrelations/v1#Monday</xsl:if>
+	<xsl:if test=\"$num='2'\">http://purl.org/goodrelations/v1#Tuesday</xsl:if>
+	<xsl:if test=\"$num='3'\">http://purl.org/goodrelations/v1#Wednesday</xsl:if>
+	<xsl:if test=\"$num='4'\">http://purl.org/goodrelations/v1#Thursday</xsl:if>
+	<xsl:if test=\"$num='5'\">http://purl.org/goodrelations/v1#Friday</xsl:if>
+	<xsl:if test=\"$num='6'\">http://purl.org/goodrelations/v1#Saturday</xsl:if>
+	<xsl:if test=\"$num='7'\">http://purl.org/goodrelations/v1#Sunday</xsl:if>
+</xsl:function>
+
+<xsl:function name=\"f:getDayURIfromNumSchema\" as=\"xs:string\">
+	<xsl:param name=\"num\" as=\"xs:string\"/>
+	<xsl:if test=\"$num='1'\">http://schema.org/Monday</xsl:if>
+	<xsl:if test=\"$num='2'\">http://schema.org/Tuesday</xsl:if>
+	<xsl:if test=\"$num='3'\">http://schema.org/Wednesday</xsl:if>
+	<xsl:if test=\"$num='4'\">http://schema.org/Thursday</xsl:if>
+	<xsl:if test=\"$num='5'\">http://schema.org/Friday</xsl:if>
+	<xsl:if test=\"$num='6'\">http://schema.org/Saturday</xsl:if>
+	<xsl:if test=\"$num='7'\">http://schema.org/Sunday</xsl:if>
+</xsl:function>
+
+<xsl:function name=\"f:getRegion\" as=\"xs:string\">
+	<xsl:param name=\"region\" as=\"xs:string\"/>
+	<xsl:choose>
+		<xsl:when test=\"matches($region,'Hlavní město Praha')\">https://linked.cuzk.cz/resource/vusc/19</xsl:when>
+		<xsl:when test=\"matches($region,'Středočeský')\">https://linked.cuzk.cz/resource/vusc/27</xsl:when>
+		<xsl:when test=\"matches($region,'Jihočeský')\">https://linked.cuzk.cz/resource/vusc/35</xsl:when>
+		<xsl:when test=\"matches($region,'Plzeňský')\">https://linked.cuzk.cz/resource/vusc/43</xsl:when>
+		<xsl:when test=\"matches($region,'Karlovarský')\">https://linked.cuzk.cz/resource/vusc/51</xsl:when>
+		<xsl:when test=\"matches($region,'Ústecký')\">https://linked.cuzk.cz/resource/vusc/60</xsl:when>
+		<xsl:when test=\"matches($region,'Liberecký')\">https://linked.cuzk.cz/resource/vusc/78</xsl:when>
+		<xsl:when test=\"matches($region,'Královéhradecký')\">https://linked.cuzk.cz/resource/vusc/86</xsl:when>
+		<xsl:when test=\"matches($region,'Pardubický')\">https://linked.cuzk.cz/resource/vusc/94</xsl:when>
+		<xsl:when test=\"matches($region,'Vysočina')\">https://linked.cuzk.cz/resource/vusc/108</xsl:when>
+		<xsl:when test=\"matches($region,'Jihomoravský')\">https://linked.cuzk.cz/resource/vusc/116</xsl:when>
+		<xsl:when test=\"matches($region,'Olomoucký')\">https://linked.cuzk.cz/resource/vusc/124</xsl:when>
+		<xsl:when test=\"matches($region,'Moravskoslezský')\">https://linked.cuzk.cz/resource/vusc/132</xsl:when>
+		<xsl:when test=\"matches($region,'Zlínský')\">https://linked.cuzk.cz/resource/vusc/141</xsl:when>
+		<xsl:otherwise>https://data.gov.cz/zdroj/ovm/Error</xsl:otherwise>
+	</xsl:choose>	
+
+</xsl:function>
+
+<xsl:template match=\"/\">@prefix adms:  &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix void: &lt;http://rdfs.org/ns/void#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix gr: &lt;http://purl.org/goodrelations/v1#&gt; .
+@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix s: &lt;http://schema.org/&gt; .
+@prefix cpov: &lt;http://data.europa.eu/m8g/&gt; .
+@prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
+@prefix rov: &lt;http://www.w3.org/ns/regorg#&gt; .
+
+@prefix ruianlink: &lt;https://data.gov.cz/slovník/ruian/linky/&gt; .
+@prefix ovm: &lt;https://data.gov.cz/slovník/ovm/&gt; .
+@prefix ds: &lt;https://data.gov.cz/slovník/datové-schránky/&gt; .
+
+<xsl:apply-templates />
+</xsl:template>
+
+	<xsl:template match=\"DetailSubjektu\">
+		<xsl:variable name=\"currentBEURI\" select=\"concat($bePrefix,Zkratka)\"/>
+		<xsl:variable name=\"currentLDBEURI\" select=\"concat('https://data.gov.cz/zdroj/ekonomický-subjekt/',ICO)\"/>
+		<xsl:variable name=\"currentBEURIAdr\" select=\"concat($currentBEURI, '/adresa/detailOVM')\"/>
+		<xsl:variable name=\"currentLDBEIDURI\" select=\"concat($currentLDBEURI, '/identifikátor/detailOVM')\"/>
+		<xsl:variable name=\"currentBEDS\" select=\"concat('https://data.gov.cz/zdroj/datové-schránky/', IdDS)\"/>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">gr:BusinessEntity</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">s:Organization</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">rov:RegisteredOrganization</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">cpov:PublicOrganisation</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">ovm:OVM</xsl:with-param>
+		</xsl:call-template>
+		
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">gr:legalName</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">rov:legalName</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:name</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Zkratka\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">rdfs:seeAlso</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"DetailSubjektu\"/>
+		</xsl:call-template>
+		
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:typSubjektuText</xsl:with-param>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"data\" select=\"TypSubjektu\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:stavSubjektu</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavSubjektuPrefix,StavSubjektu)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:právníForma</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($pravniFormaPrefix,PravniForma/@type)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:primárníOvm</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"if (PrimarniOvm = 'Ano') then 'true' else 'false'\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"type\">xsd:boolean</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:ověřeníSubjektem</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"if (OvereniDatSubjektem/StavOvereni = 'Ano') then 'true' else 'false'\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"type\">xsd:boolean</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:datumOvěření</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"f:getOvereniDateTime(OvereniDatSubjektem/DatumOvereni)\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"type\">xsd:dateTime</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:if test=\"ICO\">
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:business-entity</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentLDBEURI\"/>
+			</xsl:call-template>
+	
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentLDBEIDURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"predicate\">rov:registration</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentLDBEIDURI\"/>
+			</xsl:call-template>
+			
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"ICO\"/>
+				<xsl:with-param name=\"type\">&lt;https://data.gov.cz/zdroj/ekonomické-subjekty/datový-typ/ičo&gt;</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"ICO\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+				<xsl:with-param name=\"object\">https://data.gov.cz/zdroj/ekonomické-subjekty/číselník/IČO</xsl:with-param>
+			</xsl:call-template>
+		
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">gr:BusinessEntity</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">s:Organization</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">rov:RegisteredOrganization</xsl:with-param>
+			</xsl:call-template>
+		
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">cpov:PublicOrganisation</xsl:with-param>
+			</xsl:call-template>			
+		</xsl:if>
+
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">s:address</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEURIAdr\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">locn:address</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEURIAdr\"/>
+		</xsl:call-template>		
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">org:registeredSite</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEURIAdr\"/>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:datováSchránka</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEDS\"/>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"type\">s:PostalAddress</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"type\">locn:Address</xsl:with-param>
+		</xsl:call-template>		
+		<xsl:if test=\"AdresaUradu/UliceNazev\">
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">locn:thoroughfare</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"AdresaUradu/UliceNazev\"/>
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:streetAddress</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"concat(if (AdresaUradu/UliceNazev) then concat(AdresaUradu/UliceNazev,' ') else '', if (AdresaUradu/CisloOrientacni) then concat(AdresaUradu/CisloDomovni, '/',AdresaUradu/CisloOrientacni) else AdresaUradu/CisloDomovni)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:locatorDesignator</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"if (AdresaUradu/CisloOrientacni) then concat(AdresaUradu/CisloDomovni, '/',AdresaUradu/CisloOrientacni) else AdresaUradu/CisloDomovni\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:addressRegion</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/KrajNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:adminUnitL2</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/KrajNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:addressLocality</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/ObecNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:postName</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/ObecNazev\"/>
+		</xsl:call-template>		
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:postalCode</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/PSC\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:postCode</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/PSC\"/>
+		</xsl:call-template>		
+		<xsl:if test=\"AdresaUradu/AdresniBod\">
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"predicate\">ruianlink:adresní-misto</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"concat($ruianPrefix,AdresaUradu/AdresniBod)\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">locn:addressId</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"AdresaUradu/AdresniBod\"/>
+			</xsl:call-template>			
+		</xsl:if>
+		<xsl:if test=\"AdresaUradu/KrajNazev\">
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"predicate\">ovm:kraj</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"f:getRegion(AdresaUradu/KrajNazev)\"/>
+			</xsl:call-template>
+		</xsl:if>
+		
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"type\">ovm:DatováSchránka</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdDS\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdDS\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"predicate\">ovm:stavDatovéSchránky</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavDSPrefix, StavDS)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"predicate\">ovm:typDatovéSchránky</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typDSPrefix, TypDS)\"/>
+		</xsl:call-template>
+		
+		<xsl:for-each select=\"Email/Polozka\">
+			<xsl:variable name=\"currentEmailUri\" select=\"concat($currentBEURI, '/email/detailOvm/', count(preceding-sibling::*)+1)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">s:contactPoint</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentEmailUri\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"type\">s:ContactPoint</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:email</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Email\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:description</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Poznamka\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"predicate\">ovm:typEmailu</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"concat($typEmailuPrefix, Typ)\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"predicate\">ovm:oficiálníEmail</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"if (Typ/@text='oficální') then 'true' else 'false'\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"type\">xsd:boolean</xsl:with-param>
+			</xsl:call-template>
+		</xsl:for-each>
+
+		<xsl:for-each select=\"DalsiDatoveSchranky/Polozka\">
+			<xsl:variable name=\"currentDSUri\" select=\"concat('https://data.gov.cz/zdroj/datové-schránky/', ID)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:dalšíDatováSchránka</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentDSUri\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentDSUri\"/>
+				<xsl:with-param name=\"type\">ovm:DatováSchránka</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentDSUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"ID\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentDSUri\"/>
+				<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			</xsl:call-template>
+		</xsl:for-each>
+
+		<xsl:for-each select=\"AIS/Polozka\">
+			<xsl:variable name=\"currentAISUri\" select=\"concat('https://data.gov.cz/zdroj/ovm/ais/', Zkratka)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:ais</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentAISUri\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentAISUri\"/>
+				<xsl:with-param name=\"type\">ovm:AIS</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentAISUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Zkratka\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentAISUri\"/>
+				<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			</xsl:call-template>
+		</xsl:for-each>
+
+		<xsl:for-each select=\"StatutarniZastupceSeznam/StatutarniZastupce\">
+			<xsl:variable name=\"currentURI\" select=\"f:getPersonURI(.)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:statutárníZástupce</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">s:employee</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">foaf:Person</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">s:Person</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">foaf:givenName</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Jmeno\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:givenName</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Jmeno\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">foaf:familyName</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Prijmeni\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:familyName</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Prijmeni\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">foaf:title</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"TitulyPred\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:honorificPrefix</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"TitulyPred\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">foaf:title</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"TitulyZa\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:honorificSuffix</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"TitulyZa\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">ovm:funkce</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Funkce\"/>
+			</xsl:call-template>			
+		</xsl:for-each>
+			
+		<xsl:for-each select=\"BankovniSpojeni/Polozka\">
+			<xsl:variable name=\"currentURI\" select=\"concat($currentBEURI, '/bankovní-spojení/',count(preceding-sibling::*)+1)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:bankovníSpojení</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">ovm:BankovníSpojení</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">ovm:čísloÚčtu</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"CisloUctu\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">dcterms:title</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"CisloUctu\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:description</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Poznamka\"/>
+			</xsl:call-template>
+		</xsl:for-each>
+
+		<xsl:for-each select=\"WWW/Polozka\">
+			<xsl:variable name=\"currentURI\" select=\"concat($currentBEURI, '/www/',count(preceding-sibling::*)+1)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:www</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">ovm:WWW</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:url</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Url\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"predicate\">ovm:typWWW</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"concat($typWWWPrefix,Typ)\"/>
+			</xsl:call-template>
+		</xsl:for-each>
+
+		<xsl:for-each select=\"Uradovny/Polozka\">
+			<xsl:variable name=\"currentURI\" select=\"concat($currentBEURI, '/uradovna/',count(preceding-sibling::*)+1)\"/>
+			<xsl:variable name=\"currentURIAdr\" select=\"concat($currentURI,'/address')\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">s:hasPOS</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">gr:hasPOS</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">s:Place</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"type\">gr:Location</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:name</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+				<xsl:with-param name=\"predicate\">s:address</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentURIAdr\"/>
+			</xsl:call-template>
+
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+				<xsl:with-param name=\"type\">s:PostalAddress</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:streetAddress</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"concat(if (Adresa/UliceNazev) then concat(Adresa/UliceNazev,' ') else '', if (Adresa/CisloOrientacni) then concat(Adresa/CisloDomovni, '/',Adresa/CisloOrientacni) else Adresa/CisloDomovni)\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:addressRegion</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Adresa/KrajNazev\"/>
+			</xsl:call-template>
+			<xsl:if test=\"Adresa/KrajNazev\">
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+					<xsl:with-param name=\"predicate\">ovm:kraj</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"f:getRegion(Adresa/KrajNazev)\"/>
+				</xsl:call-template>
+			</xsl:if>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:addressLocality</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Adresa/ObecNazev\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:postalCode</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Adresa/PSC\"/>
+			</xsl:call-template>
+			<xsl:if test=\"Adresa/AdresniBod\">
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIAdr\"/>
+					<xsl:with-param name=\"predicate\">ruianlink:adresni-misto</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"concat($ruianPrefix,Adresa/AdresniBod)\"/>
+				</xsl:call-template>
+			</xsl:if>
+			<xsl:for-each select=\"UredniHodiny/Polozka\">
+				<xsl:variable name=\"currentURIHours\" select=\"concat($currentURI,'/otevírací-doba/', count(preceding-sibling::*)+1)\"/>
+
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+					<xsl:with-param name=\"predicate\">gr:openingHoursSpecification</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"$currentURIHours\"/>
+				</xsl:call-template>
+	
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+					<xsl:with-param name=\"predicate\">s:hoursAvailable</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"$currentURIHours\"/>
+				</xsl:call-template>
+
+				<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"type\">s:OpeningHoursSpecification</xsl:with-param>
+				</xsl:call-template>
+			
+				<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"type\">gr:OpeningHoursSpecification</xsl:with-param>
+				</xsl:call-template>
+				
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"predicate\">gr:hasOpeningHoursDayOfWeek</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"f:getDayURIfromNum(Den)\"/>
+				</xsl:call-template>
+
+				<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"predicate\">s:dayOfWeek</xsl:with-param>
+					<xsl:with-param name=\"object\" select=\"f:getDayURIfromNumSchema(Den)\"/>
+				</xsl:call-template>
+
+				<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+					<xsl:with-param name=\"predicate\">s:opens</xsl:with-param>
+					<xsl:with-param name=\"data\" select=\"f:getTime(Od)\"/>
+					<xsl:with-param name=\"type\">xsd:time</xsl:with-param>
+				</xsl:call-template>
+				
+				<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+					<xsl:with-param name=\"predicate\">gr:opens</xsl:with-param>
+					<xsl:with-param name=\"data\" select=\"f:getTime(Od)\"/>
+					<xsl:with-param name=\"type\">xsd:time</xsl:with-param>
+				</xsl:call-template>
+
+				<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+					<xsl:with-param name=\"predicate\">s:closes</xsl:with-param>
+					<xsl:with-param name=\"data\" select=\"f:getTime(Do)\"/>
+					<xsl:with-param name=\"type\">xsd:time</xsl:with-param>
+				</xsl:call-template>
+				
+				<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+					<xsl:with-param name=\"subject\" select=\"$currentURIHours\"/>
+					<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+					<xsl:with-param name=\"predicate\">gr:closes</xsl:with-param>
+					<xsl:with-param name=\"data\" select=\"f:getTime(Do)\"/>
+					<xsl:with-param name=\"type\">xsd:time</xsl:with-param>
+				</xsl:call-template>
+				
+			</xsl:for-each>
+
+		</xsl:for-each>
+
+		<xsl:apply-templates/>
+
+	</xsl:template>
+	
+	<xsl:template match=\"StavDS\">
+		<xsl:variable name=\"currentURI\" select=\"concat($stavDSPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:StavDatovéSchránky</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+<!--		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+-->		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavDSPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"Typ[ancestor::WWW]\">
+		<xsl:variable name=\"currentURI\" select=\"concat($typWWWPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:TypWWW</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"@text\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>			
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typWWWPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"TypDS\">
+		<xsl:variable name=\"currentURI\" select=\"concat($typDSPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:TypDatovéSchránky</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typDSPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"StavSubjektu\">
+		<xsl:variable name=\"currentURI\" select=\"concat($stavSubjektuPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:StavSubjektu</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavSubjektuPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"PravniForma\">
+		<xsl:variable name=\"currentURI\" select=\"concat($pravniFormaPrefix, ./@type)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:PrávníForma</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"./@type\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($pravniFormaPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+<!--#################################################################### SUPPORT TEMPLATES ###################################################################################-->
+	
+	<xsl:template name=\"OUTPUT_IDENTIFIER\">
+		<xsl:param name=\"conceptURI\"/>
+		<xsl:param name=\"conceptURI_NUI\"/>
+		<xsl:param name=\"notation\"/>
+		<xsl:param name=\"agencyName\"/>
+		<xsl:param name=\"agencyURI\"/>
+		<xsl:param name=\"schemeName\"/>
+		<xsl:param name=\"schemeURI\"/>
+		<!--<xsl:variable name=\"identifierURI\" select=\"concat($conceptURI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>-->
+		<xsl:variable name=\"identifierURI_NUI\" select=\"concat($conceptURI_NUI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>
+		<!--
+		<xsl:call-template name=\"OUTPUT_SAME_AS_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI\" />
+			<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\" />
+		</xsl:call-template>
+-->
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$conceptURI\"/>
+			<xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"$notation\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">adms:schemeAgency</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"$agencyName\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">dcterms:creator</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$agencyURI\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">dcterms:type</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$schemeURI\"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_OBJECT_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:if test=\"$object\">
+			<xsl:text>&lt;</xsl:text>
+			<xsl:value-of select=\"$subject\"/>
+			<xsl:text>&gt; </xsl:text>
+			<xsl:value-of select=\"$predicate\"/>
+			<xsl:text> &lt;</xsl:text>
+			<xsl:value-of select=\"$object\"/>
+			<xsl:text>&gt; .
+</xsl:text>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_OBJECT_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:if test=\"$object\">
+			<xsl:value-of select=\"$subject\"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select=\"$predicate\"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select=\"$object\"/>
+			<xsl:text> .
+</xsl:text>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_TYPE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text>&gt; a </xsl:text>
+		<xsl:value-of select=\"$type\"/>
+		<xsl:text> .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_TYPE_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text> a </xsl:text>
+		<xsl:value-of select=\"$type\"/>
+		<xsl:text> .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_SAME_AS_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text>&gt; owl:sameAs </xsl:text>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$object\"/>
+		<xsl:text>&gt; .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_DATA_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:param name=\"lang\"/>
+		<xsl:param name=\"triplequote\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:text>&lt;</xsl:text>
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text>&gt; </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text> \"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text> \"</xsl:text>
+				</xsl:if>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text>\"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text>\"</xsl:text>
+				</xsl:if>
+				<xsl:choose>
+					<xsl:when test=\"$lang\">
+						<xsl:text>@</xsl:text>
+						<xsl:value-of select=\"$lang\"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test=\"$type\">
+							<xsl:text>^^</xsl:text>
+							<xsl:value-of select=\"$type\"/>
+						</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_DATA_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:param name=\"lang\"/>
+		<xsl:param name=\"triplequote\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text> \"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text> \"</xsl:text>
+				</xsl:if>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text>\"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text>\"</xsl:text>
+				</xsl:if>
+				<xsl:choose>
+					<xsl:when test=\"$lang\">
+						<xsl:text>@</xsl:text>
+						<xsl:value-of select=\"$lang\"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test=\"$type\">
+							<xsl:text>^^</xsl:text>
+							<xsl:value-of select=\"$type\"/>
+						</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_BOOL_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>	
+	
+	<xsl:template match=\"text()|@*\"/>
+
+</xsl:stylesheet>""";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#templateControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665713/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665713/1>
+    a <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> false;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/data/cache/ovm/rdf";
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665715/1>
+    a <http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileName> "seznam-ovm.trig";
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileType> "application/trig";
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#fileTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUri> <https://data.gov.cz/zdroj/datová-sada/seznam-ovm>;
+    <http://plugins.linkedpipes.com/ontology/t-rdfToFile#graphUriControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665717/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "seznam-ovm.xml";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "http://localhost/ovm/seznam-ovm.xml";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665719/1>
+    a <http://plugins.linkedpipes.com/ontology/t-xslt#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extension> "ttl";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extensionControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#template> """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xpath-default-namespace=\"http://www.czechpoint.cz/spravadat/p/ovm/datafile/seznamovm/v1\">
+	<xsl:output method=\"text\" version=\"1.0\" encoding=\"UTF-8\"/>
+	
+	<xsl:template match=\"SeznamOvmIndex\">
+@prefix httpList: &lt;http://plugins.linkedpipes.com/ontology/e-httpGetFiles#&gt; .
+		<xsl:apply-templates/>
+	</xsl:template>
+	
+	<xsl:template match=\"Subjekt\">
+		<xsl:apply-templates/>
+	</xsl:template>
+
+	<xsl:template match=\"DetailSubjektu\">
+		<xsl:variable name=\"zkratka\" select=\"../Zkratka\"/>
+&lt;http://localhost/resource/configuration&gt; a httpList:Configuration ;
+    httpList:reference &lt;http://localhost/resource/ref/<xsl:value-of select=\"$zkratka\"/>&gt; .
+&lt;http://localhost/resource/ref/<xsl:value-of select=\"$zkratka\"/>&gt; a httpList:Reference ;
+    httpList:fileUri \"<xsl:value-of select=\".\"/>\" ;
+    httpList:fileName \"<xsl:value-of select=\"$zkratka\"/>.xml\" .
+	</xsl:template>
+	
+	<xsl:template match=\"*|@*\"/>
+</xsl:stylesheet>""";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#templateControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665721/1>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#detailLog> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#detailLogControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threads> 15;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657163100665665723/1>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail> false .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566573/1> a
+      <http://plugins.linkedpipes.com/ontology/t-xslt#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extension> "ttl";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#extensionControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#template> """<?xml version=\"1.0\" encoding=\"UTF-8\"?>
+<xsl:stylesheet version=\"2.0\" xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:fn=\"http://www.w3.org/2005/xpath-functions\" xmlns:f=\"https://data.gov.cz/zdroj/xslt-functions\" 
+xpath-default-namespace=\"http://www.czechpoint.cz/spravadat/p/ovm/datafile/seznamovm/v1\">
+	<xsl:output method=\"text\" version=\"1.0\" encoding=\"UTF-8\" indent=\"no\"/>
+	<xsl:variable name=\"bePrefix\">https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/</xsl:variable>
+	<xsl:variable name=\"typSubjektuPrefix\">https://data.gov.cz/zdroj/ovm/typ-subjektu/</xsl:variable>
+	<xsl:variable name=\"stavSubjektuPrefix\">https://data.gov.cz/zdroj/ovm/stav-subjektu/</xsl:variable>
+	<xsl:variable name=\"pravniFormaPrefix\">https://data.gov.cz/zdroj/ovm/právní-forma/</xsl:variable>
+	<xsl:variable name=\"typDSPrefix\">https://data.gov.cz/zdroj/typ-datové-schránky/</xsl:variable>
+	<xsl:variable name=\"stavDSPrefix\">https://data.gov.cz/zdroj/stav-datové-schránky/</xsl:variable>
+	<xsl:variable name=\"typEmailuPrefix\">https://data.gov.cz/zdroj/typ-emailu/</xsl:variable>
+	<xsl:variable name=\"ruianPrefix\">https://linked.cuzk.cz/resource/ruian/adresni-mista/</xsl:variable>
+	<xsl:variable name=\"newline\"><xsl:text> </xsl:text></xsl:variable>
+
+<xsl:function name=\"f:getRegion\" as=\"xs:string\">
+	<xsl:param name=\"region\" as=\"xs:string\"/>
+	<xsl:choose>
+		<xsl:when test=\"matches($region,'Hlavní město Praha')\">https://linked.cuzk.cz/resource/vusc/19</xsl:when>
+		<xsl:when test=\"matches($region,'Středočeský')\">https://linked.cuzk.cz/resource/vusc/27</xsl:when>
+		<xsl:when test=\"matches($region,'Jihočeský')\">https://linked.cuzk.cz/resource/vusc/35</xsl:when>
+		<xsl:when test=\"matches($region,'Plzeňský')\">https://linked.cuzk.cz/resource/vusc/43</xsl:when>
+		<xsl:when test=\"matches($region,'Karlovarský')\">https://linked.cuzk.cz/resource/vusc/51</xsl:when>
+		<xsl:when test=\"matches($region,'Ústecký')\">https://linked.cuzk.cz/resource/vusc/60</xsl:when>
+		<xsl:when test=\"matches($region,'Liberecký')\">https://linked.cuzk.cz/resource/vusc/78</xsl:when>
+		<xsl:when test=\"matches($region,'Královéhradecký')\">https://linked.cuzk.cz/resource/vusc/86</xsl:when>
+		<xsl:when test=\"matches($region,'Pardubický')\">https://linked.cuzk.cz/resource/vusc/94</xsl:when>
+		<xsl:when test=\"matches($region,'Vysočina')\">https://linked.cuzk.cz/resource/vusc/108</xsl:when>
+		<xsl:when test=\"matches($region,'Jihomoravský')\">https://linked.cuzk.cz/resource/vusc/116</xsl:when>
+		<xsl:when test=\"matches($region,'Olomoucký')\">https://linked.cuzk.cz/resource/vusc/124</xsl:when>
+		<xsl:when test=\"matches($region,'Moravskoslezský')\">https://linked.cuzk.cz/resource/vusc/132</xsl:when>
+		<xsl:when test=\"matches($region,'Zlínský')\">https://linked.cuzk.cz/resource/vusc/141</xsl:when>
+		<xsl:otherwise>https://data.gov.cz/zdroj/ovm/Error</xsl:otherwise>
+	</xsl:choose>	
+
+</xsl:function>
+
+<xsl:template match=\"/\">@prefix adms:  &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs:  &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix void: &lt;http://rdfs.org/ns/void#&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix gr: &lt;http://purl.org/goodrelations/v1#&gt; .
+@prefix adms: &lt;http://www.w3.org/ns/adms#&gt; .
+@prefix s: &lt;http://schema.org/&gt; .
+@prefix cpov: &lt;http://data.europa.eu/m8g/&gt; .
+@prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
+@prefix rov: &lt;http://www.w3.org/ns/regorg#&gt; .
+
+@prefix ruianlink: &lt;https://data.gov.cz/slovník/ruian/linky/&gt; .
+@prefix ovm: &lt;https://data.gov.cz/slovník/ovm/&gt; .
+@prefix ds: &lt;https://data.gov.cz/slovník/datové-schránky/&gt; .
+
+<xsl:apply-templates />
+</xsl:template>
+
+<xsl:template match=\"SeznamOvmIndex\">
+	<xsl:apply-templates/>
+</xsl:template>
+
+	<xsl:template match=\"Subjekt\">
+		<xsl:variable name=\"currentBEURI\" select=\"concat($bePrefix,IdentifikatorOvm)\"/>
+		<xsl:variable name=\"currentLDBEURI\" select=\"concat('https://data.gov.cz/zdroj/ekonomický-subjekt/',ICO)\"/>
+		<xsl:variable name=\"currentBEURIAdr\" select=\"concat($currentBEURI, '/adresa/seznamOVM')\"/>
+		<xsl:variable name=\"currentLDBEIDURI\" select=\"concat($currentBEURI, '/identifikátor/zkratka')\"/>
+		<xsl:variable name=\"currentLDOVMIDURI\" select=\"concat($currentBEURI, '/identifikátor/ovm')\"/>
+		<xsl:variable name=\"currentBEDS\" select=\"concat('https://data.gov.cz/zdroj/datové-schránky/', IdDS)\"/>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">s:Organization</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">gr:BusinessEntity</xsl:with-param>
+		</xsl:call-template>
+		
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">cpov:PublicOrganisation</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"type\">ovm:OVM</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:name</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">gr:legalName</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Nazev\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"Zkratka\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">rdfs:seeAlso</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"DetailSubjektu\"/>
+		</xsl:call-template>
+		
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:typSubjektu</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typSubjektuPrefix,TypSubjektu/@id)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:stavSubjektu</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavSubjektuPrefix,StavSubjektu)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:právníForma</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($pravniFormaPrefix,PravniForma/@type)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:primárníOvm</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"if (PrimarniOvm = 'Ano') then 'true' else 'false'\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"type\">xsd:boolean</xsl:with-param>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">s:address</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEURIAdr\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">locn:address</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEURIAdr\"/>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">ovm:datováSchránka</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentBEDS\"/>
+		</xsl:call-template>
+
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+			<xsl:with-param name=\"predicate\">rov:registration</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$currentLDOVMIDURI\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentLDOVMIDURI\"/>
+			<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentLDOVMIDURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdentifikatorOvm\"/>
+			<xsl:with-param name=\"type\">&lt;https://data.gov.cz/zdroj/ovm/identifikátory/DatovýTyp&gt;</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentLDOVMIDURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdentifikatorOvm\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentLDOVMIDURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\">https://data.gov.cz/zdroj/ovm/identifikátory/OVM</xsl:with-param>
+		</xsl:call-template>
+
+
+		<xsl:if test=\"ICO\">
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">gr:BusinessEntity</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">rov:RegisteredOrganization</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"type\">s:Organization</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentLDBEIDURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEURI\"/>
+				<xsl:with-param name=\"predicate\">rov:registration</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentLDBEIDURI\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"ICO\"/>
+                <xsl:with-param name=\"type\">&lt;https://data.gov.cz/zdroj/ičo/DatovýTyp&gt;</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"ICO\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentLDBEIDURI\"/>
+				<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+				<xsl:with-param name=\"object\">https://data.gov.cz/zdroj/ičo/Číselník</xsl:with-param>
+			</xsl:call-template>
+		</xsl:if>
+		
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"type\">s:PostalAddress</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"type\">locn:Address</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:streetAddress</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"concat(if (AdresaUradu/UliceNazev) then concat(AdresaUradu/UliceNazev,' ') else '', if (AdresaUradu/CisloOrientacni) then concat(AdresaUradu/CisloDomovni, '/',AdresaUradu/CisloOrientacni) else AdresaUradu/CisloDomovni)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:postCode</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/PSC\"/>
+		</xsl:call-template>
+		<xsl:if test=\"AdresaUradu/UliceNazev\">
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">locn:thoroughfare</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"AdresaUradu/UliceNazev\"/>
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:locatorDesignator</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"if (AdresaUradu/CisloOrientacni) then concat(AdresaUradu/CisloDomovni, '/',AdresaUradu/CisloOrientacni) else AdresaUradu/CisloDomovni\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:addressRegion</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/KrajNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:adminUnitL2</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/KrajNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:addressLocality</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/ObecNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">locn:postName</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/ObecNazev\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">s:postalCode</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"AdresaUradu/PSC\"/>
+		</xsl:call-template>
+		<xsl:if test=\"AdresaUradu/AdresniBod\">
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"predicate\">ruianlink:adresní-místo</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"concat($ruianPrefix,AdresaUradu/AdresniBod)\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">locn:addressId</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"AdresaUradu/AdresniBod\"/>
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test=\"AdresaUradu/KrajNazev\">
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURIAdr\"/>
+				<xsl:with-param name=\"predicate\">ovm:kraj</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"f:getRegion(AdresaUradu/KrajNazev)\"/>
+			</xsl:call-template>
+		</xsl:if>		
+		
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"type\">ds:DatováSchránka</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdDS\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"IdDS\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"predicate\">ovm:stavDatovéSchránky</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavDSPrefix, StavDS)\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentBEDS\"/>
+			<xsl:with-param name=\"predicate\">ovm:typDatovéSchránky</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typDSPrefix, TypDS)\"/>
+		</xsl:call-template>
+		
+		<xsl:for-each select=\"Email/Polozka\">
+			<xsl:variable name=\"currentEmailUri\" select=\"concat($currentBEURI, '/email/fromOvmList/', count(preceding-sibling::*)+1)\"/>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentBEURI\"/>
+				<xsl:with-param name=\"predicate\">s:contactPoint</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"$currentEmailUri\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"type\">s:ContactPoint</xsl:with-param>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:email</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Email\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"predicate\">s:description</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"Poznamka\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"predicate\">ovm:typEmailu</xsl:with-param>
+				<xsl:with-param name=\"object\" select=\"concat($typEmailuPrefix, Typ)\"/>
+			</xsl:call-template>
+			<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+				<xsl:with-param name=\"subject\" select=\"$currentEmailUri\"/>
+				<xsl:with-param name=\"predicate\">ovm:officialEmail</xsl:with-param>
+				<xsl:with-param name=\"data\" select=\"if (Typ/@text='oficální') then 'true' else 'false'\"/>
+				<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+				<xsl:with-param name=\"type\">xsd:boolean</xsl:with-param>
+			</xsl:call-template>
+			
+		</xsl:for-each>
+		
+		<xsl:apply-templates/>
+	</xsl:template>
+	
+	<xsl:template match=\"StavDS\">
+		<xsl:variable name=\"currentURI\" select=\"concat($stavDSPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:StavDatovéSchránky</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavDSPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"TypDS\">
+		<xsl:variable name=\"currentURI\" select=\"concat($typDSPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:TypDatovéSchránky</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typDSPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"StavSubjektu\">
+		<xsl:variable name=\"currentURI\" select=\"concat($stavSubjektuPrefix, .)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:StavSubjektu</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($stavSubjektuPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"TypSubjektu\">
+		<xsl:variable name=\"currentURI\" select=\"concat($typSubjektuPrefix, ./@id)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:TypSubjektu</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"./@id\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($typSubjektuPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+	<xsl:template match=\"PravniForma\">
+		<xsl:variable name=\"currentURI\" select=\"concat($pravniFormaPrefix, ./@type)\"/>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">skos:Concept</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"type\">ovm:PrávníForma</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"./@type\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"triplequote\" select=\"false()\"/>
+			<xsl:with-param name=\"predicate\">skos:prefLabel</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\".\"/>
+			<xsl:with-param name=\"lang\">cs</xsl:with-param>			
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$currentURI\"/>
+			<xsl:with-param name=\"predicate\">skos:inScheme</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"concat($pravniFormaPrefix, 'Číselník')\"/>
+		</xsl:call-template>	
+	</xsl:template>
+
+<!--#################################################################### SUPPORT TEMPLATES ###################################################################################-->
+	
+	<xsl:template name=\"OUTPUT_IDENTIFIER\">
+		<xsl:param name=\"conceptURI\"/>
+		<xsl:param name=\"conceptURI_NUI\"/>
+		<xsl:param name=\"notation\"/>
+		<xsl:param name=\"agencyName\"/>
+		<xsl:param name=\"agencyURI\"/>
+		<xsl:param name=\"schemeName\"/>
+		<xsl:param name=\"schemeURI\"/>
+		<!--<xsl:variable name=\"identifierURI\" select=\"concat($conceptURI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>-->
+		<xsl:variable name=\"identifierURI_NUI\" select=\"concat($conceptURI_NUI, '/identifier/', lower-case($schemeName), '/', $notation[1])\"/>
+		<!--
+		<xsl:call-template name=\"OUTPUT_SAME_AS_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI\" />
+			<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\" />
+		</xsl:call-template>
+-->
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$conceptURI\"/>
+			<xsl:with-param name=\"predicate\">adms:identifier</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$identifierURI_NUI\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_TYPE_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"type\">adms:Identifier</xsl:with-param>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">skos:notation</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"$notation\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_DATA_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">adms:schemeAgency</xsl:with-param>
+			<xsl:with-param name=\"data\" select=\"$agencyName\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">dcterms:creator</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$agencyURI\"/>
+		</xsl:call-template>
+		<xsl:call-template name=\"OUTPUT_OBJECT_TRIPLE\">
+			<xsl:with-param name=\"subject\" select=\"$identifierURI_NUI\"/>
+			<xsl:with-param name=\"predicate\">dcterms:type</xsl:with-param>
+			<xsl:with-param name=\"object\" select=\"$schemeURI\"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_OBJECT_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:if test=\"$object\">
+			<xsl:text>&lt;</xsl:text>
+			<xsl:value-of select=\"$subject\"/>
+			<xsl:text>&gt; </xsl:text>
+			<xsl:value-of select=\"$predicate\"/>
+			<xsl:text> &lt;</xsl:text>
+			<xsl:value-of select=\"$object\"/>
+			<xsl:text>&gt; .
+</xsl:text>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_OBJECT_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:if test=\"$object\">
+			<xsl:value-of select=\"$subject\"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select=\"$predicate\"/>
+			<xsl:text> </xsl:text>
+			<xsl:value-of select=\"$object\"/>
+			<xsl:text> .
+</xsl:text>
+		</xsl:if>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_TYPE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text>&gt; a </xsl:text>
+		<xsl:value-of select=\"$type\"/>
+		<xsl:text> .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_TYPE_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text> a </xsl:text>
+		<xsl:value-of select=\"$type\"/>
+		<xsl:text> .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_SAME_AS_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"object\"/>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$subject\"/>
+		<xsl:text>&gt; owl:sameAs </xsl:text>
+		<xsl:text>&lt;</xsl:text>
+		<xsl:value-of select=\"$object\"/>
+		<xsl:text>&gt; .
+</xsl:text>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_DATA_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:param name=\"lang\"/>
+		<xsl:param name=\"triplequote\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:text>&lt;</xsl:text>
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text>&gt; </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text> \"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text> \"</xsl:text>
+				</xsl:if>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text>\"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text>\"</xsl:text>
+				</xsl:if>
+				<xsl:choose>
+					<xsl:when test=\"$lang\">
+						<xsl:text>@</xsl:text>
+						<xsl:value-of select=\"$lang\"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test=\"$type\">
+							<xsl:text>^^</xsl:text>
+							<xsl:value-of select=\"$type\"/>
+						</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_DATA_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:param name=\"type\"/>
+		<xsl:param name=\"lang\"/>
+		<xsl:param name=\"triplequote\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text> \"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text> \"</xsl:text>
+				</xsl:if>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:if test=\"$triplequote=true()\">
+					<xsl:text>\"\"\"</xsl:text>
+				</xsl:if>
+				<xsl:if test=\"$triplequote=false()\">
+					<xsl:text>\"</xsl:text>
+				</xsl:if>
+				<xsl:choose>
+					<xsl:when test=\"$lang\">
+						<xsl:text>@</xsl:text>
+						<xsl:value-of select=\"$lang\"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:if test=\"$type\">
+							<xsl:text>^^</xsl:text>
+							<xsl:value-of select=\"$type\"/>
+						</xsl:if>
+					</xsl:otherwise>
+				</xsl:choose>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>
+	<xsl:template name=\"OUTPUT_BOOL_CURIE_TRIPLE\">
+		<xsl:param name=\"subject\"/>
+		<xsl:param name=\"predicate\"/>
+		<xsl:param name=\"data\"/>
+		<xsl:for-each select=\"$data\">
+			<xsl:variable name=\"data-item\" select=\"replace(replace(replace(., '\\\\', '\\\\\\\\'), '&quot;', '\\\\&quot;'),'\\n', ' ')\"/>
+			<xsl:if test=\"string-length($data-item) &gt; 0\">
+				<xsl:value-of select=\"$subject\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$predicate\"/>
+				<xsl:text> </xsl:text>
+				<xsl:value-of select=\"$data-item\"/>
+				<xsl:text> .
+</xsl:text>
+			</xsl:if>
+		</xsl:for-each>
+	</xsl:template>	
+	
+	<xsl:template match=\"*|@*\"/>
+
+</xsl:stylesheet>""";
+    <http://plugins.linkedpipes.com/ontology/t-xslt#templateControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-xslt#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566574/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566574/1> a
+      <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> . 
+
+@prefix číselník: <https://data.gov.cz/zdroj/typ-emailu/Číselník> .
+
+číselník: a skos:ConceptScheme ;
+  rdfs:label \"Schéma konceptů pro typy emailů datasetu OVM\"@cs ,
+    \"Concept scheme for email types in OVM dataset\"@en ;
+  skos:hasTopConcept <https://data.gov.cz/zdroj/typ-emailu/1>, <https://data.gov.cz/zdroj/typ-emailu/2> ;
+  .
+
+<https://data.gov.cz/zdroj/typ-emailu/1> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"1\" ;
+  skos:prefLabel \"oficiální\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-emailu/2> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"2\" ;
+  skos:prefLabel \"podatelna\"@cs ;
+  skos:topConceptOf číselník: ;
+  .""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "typ-email.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566576/1> a
+      <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail> false .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566578/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100665665716310066566578/1> a
+      <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:       <http://www.w3.org/2004/02/skos/core#> . 
+
+@prefix číselník:   <https://data.gov.cz/zdroj/typ-www/Číselník> .
+
+číselník: a skos:ConceptScheme ;
+  rdfs:label \"Schéma konceptů pro typy webových stránek datasetu OVM\"@cs ,
+    \"Concept scheme for web pages types in OVM dataset\"@en ;
+  skos:hasTopConcept <https://data.gov.cz/zdroj/typ-www/1>, <https://data.gov.cz/zdroj/typ-www/2>, <https://data.gov.cz/zdroj/typ-www/3>, <https://data.gov.cz/zdroj/typ-www/4>, <https://data.gov.cz/zdroj/typ-www/5>, <https://data.gov.cz/zdroj/typ-www/6>, <https://data.gov.cz/zdroj/typ-www/7>, <https://data.gov.cz/zdroj/typ-www/8>, <https://data.gov.cz/zdroj/typ-www/9>, <https://data.gov.cz/zdroj/typ-www/10>, <https://data.gov.cz/zdroj/typ-www/11>, <https://data.gov.cz/zdroj/typ-www/12>, <https://data.gov.cz/zdroj/typ-www/13>, <https://data.gov.cz/zdroj/typ-www/14>, <https://data.gov.cz/zdroj/typ-www/15>, <https://data.gov.cz/zdroj/typ-www/16>, <https://data.gov.cz/zdroj/typ-www/17>, <https://data.gov.cz/zdroj/typ-www/18>, <https://data.gov.cz/zdroj/typ-www/19>, <https://data.gov.cz/zdroj/typ-www/20>, <https://data.gov.cz/zdroj/typ-www/21> ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/1> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"1\" ;
+  skos:prefLabel \"oficiální\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/2> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"2\" ;
+  skos:prefLabel \"získání informací\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/3> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"3\" ;
+  skos:prefLabel \"řešení životních situací\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/4> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"4\" ;
+  skos:prefLabel \"předpisy\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/5> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"5\" ;
+  skos:prefLabel \"podatelna\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/6> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"6\" ;
+  skos:prefLabel \"elektronická úřední deska\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/7> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"7\" ;
+  skos:prefLabel \"ostatní\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/8> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"8\" ;
+  skos:prefLabel \"seznam hlavních dokumentů\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/9> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"9\" ;
+  skos:prefLabel \"rozpočet\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/10> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"10\" ;
+  skos:prefLabel \"žádosti o informace\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/11> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"11\" ;
+  skos:prefLabel \"příjem žádostí a dalších podání\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/12> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"12\" ;
+  skos:prefLabel \"opravné prostředky\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/13> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"13\" ;
+  skos:prefLabel \"formuláře\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/14> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"14\" ;
+  skos:prefLabel \"používané předpisy\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/15> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"15\" ;
+  skos:prefLabel \"vydané předpisy\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/16> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"16\" ;
+  skos:prefLabel \"sazebník úhrad za poskytování informac��\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/17> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"17\" ;
+  skos:prefLabel \"usnesení o výši úhrad za poskytování informací\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/18> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"18\" ;
+  skos:prefLabel \"vzory licenčních smluv\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/19> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"19\" ;
+  skos:prefLabel \"výhradní licence\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/20> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"20\" ;
+  skos:prefLabel \"výroční zpráva\"@cs ;
+  skos:topConceptOf číselník: ;
+  .
+
+<https://data.gov.cz/zdroj/typ-www/21> a skos:Concept ;
+  skos:inScheme číselník: ;
+  skos:notation \"21\" ;
+  skos:prefLabel \"organizační struktura\"@cs ;
+  skos:topConceptOf číselník: ;
+  .""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "typ-www.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}

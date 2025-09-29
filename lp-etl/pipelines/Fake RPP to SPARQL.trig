@@ -1,0 +1,181 @@
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-0001> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-0001> a <http://linkedpipes.com/ontology/Pipeline>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Fake RPP to SPARQL";
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/events/created> "2023-02-02T07:29:53.6700996"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2023-09-04T14:04:21.03549766"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-0001/profile/default> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-0001/profile/default>
+    a <http://linkedpipes.com/ontology/ExecutionProfile>;
+    <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/SingleRepository>;
+    <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/MemoryStore>;
+    <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00010a77-a9eb>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL endpoint loader";
+    <http://purl.org/dc/terms/description> """Nahrát do
+umělého SPARQL
+endpointu""";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00010a77-a9eb/configuration>;
+    <http://linkedpipes.com/ontology/x> "526"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "106"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-sparqlEndpoint/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00015f36-9303>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Text holder";
+    <http://purl.org/dc/terms/description> """Umělá RPP data
+o údajích a číselnících""";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00015f36-9303/configuration>;
+    <http://linkedpipes.com/ontology/x> "243"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "109"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-textHolder/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949/configuration>;
+    <http://linkedpipes.com/ontology/x> "237"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "197"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00011a60-98e6>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00015f36-9303>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001b097-ba1d>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00010a77-a9eb>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00010a77-a9eb/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00010a77-a9eb/configuration>
+    a <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraph> true;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpoint> "http://localhost:8891/sparql-auth";
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpointControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURI> "http://fake-rpp";
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURIControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthentication> true;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00015f36-9303/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-00015f36-9303/1>
+    a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/veřejný-údaj
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/iri-datové-sady-publikující-veřejný-údaj
+
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/údaj
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/je-kódovaný-číselníkem
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/číselník
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/iri-číselníku
+
+#https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda
+#^https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/ohlašuje-agendu ?OVM
+
+#https://slovník.gov.cz/agendový/104/pojem/objekt-nebo-subjekt-údajů
+#https://slovník.gov.cz/agendový/104/pojem/sdružuje-údaje-vedené-nebo-vytvářené-v-rámci-agendy ?agenda
+
+#https://slovník.gov.cz/agendový/104/pojem/objekt-nebo-subjekt-údajů
+#https://slovník.gov.cz/agendový/104/pojem/má-údaj ?údaj
+
+@prefix pojmy: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/> .
+@prefix a104: <https://slovník.gov.cz/agendový/104/pojem/> .
+
+<http://example.org/údaj/vú1> a pojmy:veřejný-údaj, pojmy:údaj ;
+    pojmy:iri-datové-sady-publikující-veřejný-údaj 
+        # DS je ve VDF, a díky vú1 má 2 číselníky
+        <https://data.gov.cz/zdroj/datové-sady/00007064/9c73b802263c5e0ccf5542f10fbc35bb> , #Agendy
+        # DS je ve VDF, a díky vú1 má 2 číselníky
+        <https://data.gov.cz/zdroj/datové-sady/00007064/44a9d6abacd4d0e83a0694e74d028f51> ; #Orgány veřejné moci
+    pojmy:je-kódovaný-číselníkem <http://example.org/číselník1>, <http://example.org/číselník2>.
+
+<http://example.org/objekt-nebo-subjekt-údajů/os1> a a104:objekt-nebo-subjekt-údajů ;
+    a104:má-údaj <http://example.org/údaj/vú1> ;
+    a104:sdružuje-údaje-vedené-nebo-vytvářené-v-rámci-agendy <http://example.org/agendy/A999> .
+
+<http://example.org/agendy/A999> a pojmy:agenda .
+    
+<https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/44992785> a pojmy:orgán-veřejné-moci ;
+    pojmy:ohlašuje-agendu <http://example.org/agendy/A999> .
+
+<http://example.org/objekt-nebo-subjekt-údajů/os2> a a104:objekt-nebo-subjekt-údajů ;
+    a104:má-údaj <http://example.org/údaj/vú2> .
+
+<http://example.org/údaj/vú2> a pojmy:veřejný-údaj, pojmy:údaj ;
+    pojmy:iri-datové-sady-publikující-veřejný-údaj 
+        # DS je ve VDF, a díky vú1 má 2 číselníky
+        <https://data.gov.cz/zdroj/datové-sady/00007064/9c73b802263c5e0ccf5542f10fbc35bb> , #Agendy
+        # DS je ve VDF, ale nemá související číselník
+        <https://data.gov.cz/zdroj/datové-sady/00007064/64f3831b09ab80f3cd731e2fe9ee7999> , #Převod činností v rámci působnosti
+        # DS je ve VDF, ale nemá související číselník
+        <https://data.gov.cz/zdroj/datové-sady/00007064/3e4cb5fb5ef67b5e728b95e8a2004e3a> . #Převod služeb v rámci působnosti
+
+<http://example.org/objekt-nebo-subjekt-údajů/os3> a a104:objekt-nebo-subjekt-údajů ;
+    a104:má-údaj <http://example.org/údaj/ú3> .
+
+# Neveřejný údaj kódovaný číselníkem
+<http://example.org/údaj/ú3> a pojmy:údaj ;
+    pojmy:je-kódovaný-číselníkem <http://example.org/číselník3> .
+
+<http://example.org/objekt-nebo-subjekt-údajů/os4> a a104:objekt-nebo-subjekt-údajů ;
+    a104:má-údaj <http://example.org/údaj/vú4> .
+
+<http://example.org/údaj/vú4> a pojmy:veřejný-údaj, pojmy:údaj ;
+    pojmy:iri-datové-sady-publikující-veřejný-údaj 
+        # DS je ve VDF, a díky vú1 má 2 číselníky
+        <https://data.gov.cz/zdroj/datové-sady/00007064/9c73b802263c5e0ccf5542f10fbc35bb> , #Agendy
+        # DS je ve VDF, a díky vú1 má 2 číselníky
+        <https://data.gov.cz/zdroj/datové-sady/00007064/44a9d6abacd4d0e83a0694e74d028f51> ; #Orgány veřejné moci
+    pojmy:je-kódovaný-číselníkem <http://example.org/číselník1> .
+
+<http://example.org/číselník1> 
+    pojmy:iri-číselníku-v-nkod 
+        # DS je číselník ve VDF, a používá ho DS Agendy a OVM
+        <https://data.gov.cz/zdroj/datové-sady/00007064/7e1c097e0b500f25d0d5a33832dd3dff> , # Číselník pro stupně přístupnosti
+        # DS je číselník ve VDF, a používá ho DS Agendy a OVM
+        <https://data.gov.cz/zdroj/datové-sady/00007064/cd9a963ddff984087857cc891a790784> . # Číselník povinností sběru adres
+
+<http://example.org/číselník2> 
+    pojmy:iri-číselníku-v-nkod 
+        # DS je číselník ve VDF, a používá ho DS Agendy a OVM
+        <https://data.gov.cz/zdroj/datové-sady/00007064/c2b66c6c9d2331a0eb7ffbc9684cc08f> . # Číselník pohlaví
+
+<http://example.org/číselník3> 
+    pojmy:iri-číselníku-v-nkod 
+        # DS je číselník ve VDF, ale pro neveřejné údaje, tj. není k němu sada, která by údaj publikovala.
+        <https://data.gov.cz/zdroj/datové-sady/00007064/061ca3fee077a5f0633f755fc38837f1> . # Číselník pro sporty
+
+
+# Pokud existuje údaj kódovaný číselníkem, jehož IRI = IRI datové sady v NKOD, je datová sada číselníkem ve VDF.
+# Pokud existuje veřejný údaj, který má iri publikující datové sady = IRI datové sady v NKOD, datová sada je ve VDF.""";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "fake.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1675319393579-00011675319393579-0001f00d-b949/1>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType> "";
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
