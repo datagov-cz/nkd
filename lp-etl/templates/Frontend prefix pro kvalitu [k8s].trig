@@ -1,0 +1,20 @@
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693827644849-0047> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693827644849-0047> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Frontend prefix pro kvalitu [k8s]";
+    <http://www.w3.org/2002/07/owl#sameAs> <https://dev.nkod.opendata.cz/etl/resources/components/1612813914311-08827910-3de4-4fd0-9b27-f9653c92f939>;
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1693827644849-0047/configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/components/1693827644849-0047/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1693827644849-0047/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """CONSTRUCT {
+  [] <urn:prefix> \"https://172.205.23.154/soubor/kvalita/\" .
+}
+WHERE {}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}

@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "09 Statistika dostupnosti distribucí, schémat, podmínek užití a dokumentace - HEAD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:25:09.692"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2024-10-15T11:51:03.77261339"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2025-10-24T07:38:19.695528853"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY", "5";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/profile/default> .
   
@@ -13,6 +13,49 @@
     <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/PerInputRepository>;
     <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/NativeStore>;
     <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to Virtuoso [k8s]";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f/configuration>;
+    <http://linkedpipes.com/ontology/x> "2369"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "883"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760178357746-0001> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/8afe-aac0>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtuoso [k8s]";
+    <http://purl.org/dc/terms/description> "dostupnost-*.ttl.gz";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/8afe-aac0/configuration>;
+    <http://linkedpipes.com/ontology/x> "2698"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "890"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760178501398-0002> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to frontend";
+    <http://purl.org/dc/terms/description> "/data/public/soubor/kvalita";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a/configuration>;
+    <http://linkedpipes.com/ontology/x> "2696"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "703"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/dc79-982f>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtuoso [k8s]";
+    <http://purl.org/dc/terms/description> "dostupnost.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/dc79-982f/configuration>;
+    <http://linkedpipes.com/ontology/x> "2689"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1000"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760178501398-0002> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/ee57-9a84>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to Virtuoso [k8s]";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/ee57-9a84/configuration>;
+    <http://linkedpipes.com/ontology/x> "2368"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "984"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760178357746-0001> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969211>
     a <http://linkedpipes.com/ontology/Component>;
@@ -254,14 +297,6 @@ na poskytovatele""";
     <http://linkedpipes.com/ontology/y> "526"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-streamCompression/0.0.0> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "SCP to Frontend";
-    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232/configuration>;
-    <http://linkedpipes.com/ontology/x> "2578"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "697"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693826025360-0008> .
-  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969234>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Union";
@@ -322,8 +357,8 @@ na NKOD""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "NKOD SPARQL endpoint select";
     <http://purl.org/dc/terms/description> "Seznam datových sad";
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969247/configuration>;
-    <http://linkedpipes.com/ontology/x> "-170"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "618"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "-169"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "501"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0045> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969248>
@@ -332,7 +367,7 @@ na NKOD""";
     <http://purl.org/dc/terms/description> "Záznamy datových sad";
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969248/configuration>;
     <http://linkedpipes.com/ontology/x> "-183"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "684"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "645"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693827597826-0044> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692163100670969216310067096925>
@@ -344,23 +379,6 @@ s nedostupným souborem ke stažení""";
     <http://linkedpipes.com/ontology/x> "973"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-388"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to SCP NKOD";
-    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250/configuration>;
-    <http://linkedpipes.com/ontology/x> "2319"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "786"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693826283744-0012> .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969251>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtuoso NKOD";
-    <http://purl.org/dc/terms/description> "Archiv";
-    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969251/configuration>;
-    <http://linkedpipes.com/ontology/x> "2503"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "905"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693826283743-0009> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>
     a <http://linkedpipes.com/ontology/Component>;
@@ -419,7 +437,7 @@ s nedostupnými popisy přístupových bodů""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP Request";
     <http://purl.org/dc/terms/description> "HEAD service specification";
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969268/configuration>;
-    <http://linkedpipes.com/ontology/x> "501"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "502"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1760"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/x-httpRequest/0.0.0> .
   
@@ -430,14 +448,6 @@ s nedostupnými popisy přístupových bodů""";
     <http://linkedpipes.com/ontology/x> "-22"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "771"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-chunkedToGraph/0.0.0> .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969271>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtuoso NKOD";
-    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969271/configuration>;
-    <http://linkedpipes.com/ontology/x> "2234"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "911"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693826283743-0009> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969278>
     a <http://linkedpipes.com/ontology/Component>;
@@ -515,7 +525,7 @@ a formátem indikovaným serverem""";
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692101>
@@ -545,10 +555,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969234>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921194-81a8> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/26e7-a58d> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921194-81a8> <http://linkedpipes.com/ontology/x>
-      "308"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/26e7-a58d>
+    <http://linkedpipes.com/ontology/x> "308"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "2163"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -614,10 +624,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969288>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692d2be-af2c> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/efd7-ae9f> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692d2be-af2c> <http://linkedpipes.com/ontology/x>
-      "385"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/efd7-ae9f>
+    <http://linkedpipes.com/ontology/x> "385"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "975"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -655,10 +665,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692115>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096926493-9575> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/c418-a658> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096926493-9575> <http://linkedpipes.com/ontology/x>
-      "403"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/c418-a658>
+    <http://linkedpipes.com/ontology/x> "403"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1895"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -766,10 +776,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692126>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692ec32-bbc7> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/12df-87f1> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692ec32-bbc7> <http://linkedpipes.com/ontology/x>
-      "377"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/12df-87f1>
+    <http://linkedpipes.com/ontology/x> "377"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "384"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -786,10 +796,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692130>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692ca44-b6d8> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/5e16-89a8> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692ca44-b6d8> <http://linkedpipes.com/ontology/x>
-      "374"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/5e16-89a8>
+    <http://linkedpipes.com/ontology/x> "374"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "152"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -799,10 +809,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692141>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096925ca5-8b4f> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/4624-927f> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096925ca5-8b4f> <http://linkedpipes.com/ontology/x>
-      "382"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/4624-927f>
+    <http://linkedpipes.com/ontology/x> "382"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "876"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -812,10 +822,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692138>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969273ea-85a6> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/35cf-a867> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969273ea-85a6> <http://linkedpipes.com/ontology/x>
-      "359"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/35cf-a867>
+    <http://linkedpipes.com/ontology/x> "359"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-8"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -825,10 +835,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692146>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969202db-96b4> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/4a19-abb4> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969202db-96b4> <http://linkedpipes.com/ontology/x>
-      "381"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/4a19-abb4>
+    <http://linkedpipes.com/ontology/x> "381"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "707"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -838,10 +848,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692163100670969216310067096924>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969267f2-bec5> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/6b12-a85f> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969267f2-bec5> <http://linkedpipes.com/ontology/x>
-      "344"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/6b12-a85f>
+    <http://linkedpipes.com/ontology/x> "344"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-184"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -851,10 +861,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969294>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692d3d3-80cf> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/cd4f-aa76> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692d3d3-80cf> <http://linkedpipes.com/ontology/x>
-      "359"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/cd4f-aa76>
+    <http://linkedpipes.com/ontology/x> "359"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "536"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -871,10 +881,10 @@ a formátem indikovaným serverem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692143>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969230a5-bbe7> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/56a7-9d15> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969230a5-bbe7> <http://linkedpipes.com/ontology/x>
-      "322"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/56a7-9d15>
+    <http://linkedpipes.com/ontology/x> "322"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-336"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -882,22 +892,91 @@ a formátem indikovaným serverem""";
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969237>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692167>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692141>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969237>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692168>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969278>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f/configuration> {
+  <http://localhost:8080/resources/components/1760178357746-0001/configuration/1> a
+      <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> false;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/database/upload/";
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/8afe-aac0/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/8afe-aac0/configuration>
+    a <http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpoint> true;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpointControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph> true;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directory> "/database/upload/";
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName> "dostupnost-*.ttl.gz";
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graph> <https://data.gov.cz/zdroj/datová-sada/dostupnost-nkod/archiv>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 15;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateIntervalControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a/configuration>
+    a <http://plugins.linkedpipes.com/ontology/l-filesToLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/public/soubor/kvalita";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/dc79-982f/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/dc79-982f/configuration>
+    a <http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpoint> true;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpointControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph> true;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directory> "/database/upload/";
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName> "dostupnost.ttl";
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graph> <https://data.gov.cz/zdroj/datová-sada/dostupnost-nkod>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 15;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateIntervalControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/ee57-9a84/configuration> {
+  <http://localhost:8080/resources/components/1760178357746-0001/configuration/1> a
+      <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> false;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/database/upload/";
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969211/configuration> {
@@ -1922,22 +2001,6 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/t-streamCompression#formatControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
-<https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232/1>
-    a <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> false;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/data/soubor/kvalita";
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
-}
-
 <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969234/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969234/1>
     a <http://plugins.linkedpipes.com/ontology/t-singleGraphUnion#Configuration> .
@@ -2414,44 +2477,6 @@ WHERE
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
-<https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250/1>
-    a <http://plugins.linkedpipes.com/ontology/l-filesToScp#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectory> false;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#clearDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#connectionTimeOutControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/data/upload/kvalita";
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
-}
-
-<https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969251/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969251/1>
-    a <http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpoint> true;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpointControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph> true;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directory> "/data/upload/kvalita";
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName> "dostupnost-*.ttl.gz";
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graph> <https://data.gov.cz/zdroj/datová-sada/dostupnost-nkod/archiv>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCount> 1;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 10;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateIntervalControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
-}
-
 <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253/1>
     a <http://plugins.linkedpipes.com/ontology/t-rdfToFile#Configuration>;
@@ -2624,28 +2649,6 @@ BIND (IRI(CONCAT(STR(?endpointConformsTo), \"/ua-header\")) AS ?header)
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692163100670969216310067096927/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692163100670969216310067096927/1>
     a <http://plugins.linkedpipes.com/ontology/t-chunkedToGraph#Configuration> .
-}
-
-<https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969271/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969271/1>
-    a <http://plugins.linkedpipes.com/ontology/x-virtuoso#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpoint> true;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#checkpointControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraph> true;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directory> "/data/upload/kvalita";
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName> "dostupnost.ttl";
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graph> <https://data.gov.cz/zdroj/datová-sada/dostupnost-nkod>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#graphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCount> 1;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 10;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateIntervalControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969278/configuration> {
@@ -2976,6 +2979,23 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692165>
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692167>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692141>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969237>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692168>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969278>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692169>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692166>;
@@ -3015,7 +3035,7 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969227>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/163100670969216310067096921631006709692174>
@@ -3078,7 +3098,7 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969231>;
     <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969233>
@@ -3122,10 +3142,10 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969224>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096923433-9eee> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/9c27-b5c3> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096923433-9eee> <http://linkedpipes.com/ontology/x>
-      "383"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/9c27-b5c3>
+    <http://linkedpipes.com/ontology/x> "383"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1338"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -3177,10 +3197,10 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692163100670969216310067096928>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096924684-a95c> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/afdb-a161> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096924684-a95c> <http://linkedpipes.com/ontology/x>
-      "389"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/afdb-a161>
+    <http://linkedpipes.com/ontology/x> "389"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1123"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -3190,10 +3210,10 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969261>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692a91a-8e04> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/dd0a-b06a> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692a91a-8e04> <http://linkedpipes.com/ontology/x>
-      "385"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/dd0a-b06a>
+    <http://linkedpipes.com/ontology/x> "385"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1507"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -3215,7 +3235,7 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969227>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969232>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/a884-a97a>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969266>
@@ -3236,7 +3256,7 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969231>;
     <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969273>
@@ -3252,10 +3272,10 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969267>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692dd2c-8329> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/b92c-a83d> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692dd2c-8329> <http://linkedpipes.com/ontology/x>
-      "398"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/b92c-a83d>
+    <http://linkedpipes.com/ontology/x> "398"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1709"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -3319,8 +3339,14 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969253>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>;
-    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/ee57-9a84>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput";
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/c366-9c71> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/c366-9c71>
+    <http://linkedpipes.com/ontology/x> "2079"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "802"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969287>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -3370,10 +3396,10 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969297>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692c347-b052> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/adb7-bf38> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692c347-b052> <http://linkedpipes.com/ontology/x>
-      "346"^^<http://www.w3.org/2001/XMLSchema#int>;
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/vertex/adb7-bf38>
+    <http://linkedpipes.com/ontology/x> "346"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1999"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
@@ -3384,13 +3410,13 @@ BIND (IRI(CONCAT(STR(?downloadURL), \"/ua-header\")) AS ?header)
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969258>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969249>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/connection/5e9b-8587>
     a <http://linkedpipes.com/ontology/RunAfter>;
-    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>;
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969251> .
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/ee57-9a84>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/dc79-982f> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969270>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/connection/d99c-8a41>
     a <http://linkedpipes.com/ontology/RunAfter>;
-    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969250>;
-    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/16310067096921631006709692163100670969271> .
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/82d4-801f>;
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006709692/component/8afe-aac0> .
 }

@@ -9,7 +9,8 @@
 }
 
 <https://oha02.dia.gov.cz/etl/resources/components/1694777831274-0006/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/components/1694777831274-0006/1> a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
+  <https://oha02.dia.gov.cz/etl/resources/components/1694777831274-0006/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
     <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """@prefix req: <http://plugins.linkedpipes.com/ontology/x-httpRequest#> .
 
 <http://localhost/slack> a req:Task ;
@@ -21,6 +22,6 @@
 <http://localhost/slack/content> a req:Content ;
   req:fileReference \"configuration.json\" .""";
     <http://plugins.linkedpipes.com/ontology/e-textHolder#contentControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
-    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "task1.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-textHolder#fileName> "task-send-slack-message.ttl";
     <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
 }

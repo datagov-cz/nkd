@@ -1,20 +1,22 @@
 
-<https://oha02.dia.gov.cz/etl/resources/components/1736242865175-0001> {
-  <https://oha02.dia.gov.cz/etl/resources/components/1736242865175-0001> a <http://linkedpipes.com/ontology/Template>;
+<https://oha02.dia.gov.cz/etl/resources/components/1694767500108-0003> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694767500108-0003> a <http://linkedpipes.com/ontology/Template>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Historie datových sad";
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "NKOD minulý měsíc [DEPRECATED]";
+    <http://www.w3.org/2002/07/owl#sameAs> <https://pod-test.mvcr.gov.cz/etl/resources/components/1638257600466-73941383-7bdc-4c6a-9446-0da2b4b99c80>;
     <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1736242865175-0001/configuration> .
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1694767500108-0003/configuration> .
 }
 
-<https://oha02.dia.gov.cz/etl/resources/components/1736242865175-0001/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/components/1736242865175-0001/configuration>
+<https://oha02.dia.gov.cz/etl/resources/components/1694767500108-0003/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694767500108-0003/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "historie-datových-sad.csv";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "nkod-minulý-měsíc.trig";
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "https://data.gov.cz/soubor/nkod-minulý-měsíc.trig";
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;

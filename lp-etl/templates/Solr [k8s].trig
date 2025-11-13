@@ -1,0 +1,23 @@
+
+<http://localhost:8080/resources/components/1760185884311-0001> {
+  <http://localhost:8080/resources/components/1760185884311-0001> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-solr/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Solr [k8s]";
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/l-solr/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/components/1760185884311-0001/configuration> .
+}
+
+<http://localhost:8080/resources/components/1760185884311-0001/configuration> {
+  <http://localhost:8080/resources/components/1760185884311-0001/configuration> a <http://plugins.linkedpipes.com/ontology/l-solr#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#coreControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#replace> true;
+    <http://plugins.linkedpipes.com/ontology/l-solr#replaceControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#server> "";
+    <http://plugins.linkedpipes.com/ontology/l-solr#serverControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#serverSubstitution> "{LP_ETL_NKOD_SOLR_URL}";
+    <http://plugins.linkedpipes.com/ontology/l-solr#useAuthentication> false;
+    <http://plugins.linkedpipes.com/ontology/l-solr#useAuthenticationControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-solr#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}

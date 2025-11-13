@@ -1,0 +1,27 @@
+
+<http://localhost:8080/resources/components/1760187944768-0002> {
+  <http://localhost:8080/resources/components/1760187944768-0002> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-couchDb/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "CouchDB [k8s]";
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/l-couchDb/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/components/1760187944768-0002/configuration> .
+}
+
+<http://localhost:8080/resources/components/1760187944768-0002/configuration> {
+  <http://localhost:8080/resources/components/1760187944768-0002/configuration> a <http://plugins.linkedpipes.com/ontology/l-couchDb#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#batchSize> 8;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#batchSizeControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#clearBeforeLoading> true;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#clearBeforeLoadingControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#databaseControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#passwordSubstitution> "{LP_ETL_NKOD_COUCHDB_PASSWORD}";
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#url> "";
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#urlControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#urlSubstitution> "{LP_ETL_NKOD_COUCHDB_URL}";
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthentication> true;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthenticationControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-couchDb#userNameSubstitution> "{LP_ETL_NKOD_COUCHDB_USER}" .
+}
