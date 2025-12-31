@@ -17,7 +17,7 @@
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectory> true;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#createDirectoryControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#directory> "/database/upload/";
-    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_URL}";
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
