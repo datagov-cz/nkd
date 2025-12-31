@@ -22,6 +22,7 @@
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#hostSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_URL}";
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#passwordSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_SSH_PASSWORD}";
+    <http://plugins.linkedpipes.com/ontology/l-filesToScp#port> 22;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#portControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/l-filesToScp#userNameSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_SSH_USER}" .
