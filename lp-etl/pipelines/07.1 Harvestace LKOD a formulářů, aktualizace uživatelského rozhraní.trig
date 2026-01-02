@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1 Harvestace LKOD a formulářů, aktualizace uživatelského rozhraní";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2025-12-31T12:29:27.661955173"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-01-02T11:18:27.399947009"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1764943595711-0001/profile/default> .
   
@@ -12,6 +12,38 @@
     <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/PerInputRepository>;
     <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/NativeStore>;
     <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7/configuration>;
+    <http://linkedpipes.com/ontology/x> "-1269"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-55"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/component/1d7c-a3e6>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get list";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/1d7c-a3e6/configuration>;
+    <http://linkedpipes.com/ontology/x> "-1272"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "42"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFiles/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ba3b-9e6a>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ba3b-9e6a/configuration>;
+    <http://linkedpipes.com/ontology/x> "-1279"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-141"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ea69-bd95>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Configuration from local [k8s]";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ea69-bd95/configuration>;
+    <http://linkedpipes.com/ontology/x> "-1296"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-199"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1767091081311-0001> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000103b2-a1e9>
     a <http://linkedpipes.com/ontology/Component>;
@@ -41,14 +73,6 @@
     <http://linkedpipes.com/ontology/y> "-435"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0>;
     <http://linkedpipes.com/ontology/disabled> true .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790501-9302>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Testovací záznamy z GitHubu";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790501-9302/configuration>;
-    <http://linkedpipes.com/ontology/x> "-1096"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "67"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693827570145-0039> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790503-9c97>
     a <http://linkedpipes.com/ontology/Component>;
@@ -261,8 +285,7 @@ package_list""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779135/configuration>;
     <http://linkedpipes.com/ontology/x> "-681"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "540"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779136>
     a <http://linkedpipes.com/ontology/Component>;
@@ -315,9 +338,8 @@ a rušeními""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779142/configuration>;
     <http://linkedpipes.com/ontology/x> "-664"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "625"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
+    <http://linkedpipes.com/ontology/y> "626"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779143>
     a <http://linkedpipes.com/ontology/Component>;
@@ -460,7 +482,8 @@ registračních datových zpráv""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779166/configuration>;
     <http://linkedpipes.com/ontology/x> "-238"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "317"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779168>
     a <http://linkedpipes.com/ontology/Component>;
@@ -490,7 +513,8 @@ registračních datových zpráv""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779170/configuration>;
     <http://linkedpipes.com/ontology/x> "-156"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-65"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779176>
     a <http://linkedpipes.com/ontology/Component>;
@@ -663,31 +687,67 @@ LKOD dcat:Catalog""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779242/configuration>;
     <http://linkedpipes.com/ontology/x> "-653"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "712"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update chunked";
-    <http://purl.org/dc/terms/description> "Upgrade \"vlastní licence\"";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/configuration>;
-    <http://linkedpipes.com/ontology/x> "2920"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "1320"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
-    <http://purl.org/dc/terms/description> "Zpracovat rušení katalogů";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/configuration>;
-    <http://linkedpipes.com/ontology/x> "808"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "325"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlLinkerChunked/0.0.0> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177927>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked" .
+    a <http://linkedpipes.com/ontology/Component> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX httpList: <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#>
+CONSTRUCT {
+<http://localhost/resource/configuration> a httpList:Configuration ;
+    httpList:reference <http://localhost/resource/ref/1> .
+
+<http://localhost/resource/ref/1> a httpList:Reference ;
+    httpList:fileUri \"https://raw.githubusercontent.com/linkedpipes/etl/master/LICENSE\" ;
+    httpList:fileName \"LICENSE\" .
+
+} WHERE {
+  [] <urn:testFilesBranch> ?branch .
+  BIND(CONCAT(\"https://github.com/datagov-cz/nkod-test/archive/refs/heads/\", ?branch, \".zip\") AS ?url)
+  BIND(CONCAT(?branch, \".zip\") AS ?filename)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-0001/component/1d7c-a3e6/configuration> {
+  <http://etl.linkedpipes.com/resources/components/e-httpGetFiles/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#threads> 1;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#threadsPerGroup> 1;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#detailLogControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#headerControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#retryCountControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#retryWaitTimeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threadsPerGroupControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#timeoutControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#waitTimeControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-0001/component/ba3b-9e6a/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSize> 50000;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeType> "";
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfGraph#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-0001/component/ea69-bd95/configuration> {
+  <http://localhost:8080/resources/components/1767091081311-0001/configuration/1> a
+      <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000103b2-a1e9/configuration> {
@@ -767,23 +827,6 @@ WHERE
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "data/lp-etl/nkod-cache/ssp/typy-objektů.ttl";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790501-9302/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790501-9302/1>
-    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "test.zip";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "https://github.com/datagov-cz/nkod-test/archive/refs/heads/develop.zip";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790503-9c97/configuration> {
@@ -3511,77 +3554,28 @@ OPTIONAL { ?be gr:legalName ?name .}
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """PREFIX dcterms: <http://purl.org/dc/terms/>
-DELETE { 
-  ?s dcterms:license ?license .
-}
-INSERT { 
-  ?s <https://data.gov.cz/slovník/podmínky-užití/specifikace> ?tou .
-
-  ?tou a <https://data.gov.cz/slovník/podmínky-užití/Specifikace> ;
-   	<https://data.gov.cz/slovník/podmínky-užití/autorské-dílo> ?license ;
-	<https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autorské-dílo> ?license ;
-    <https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-zvláštními-právy> ?license ;
-	<https://data.gov.cz/slovník/podmínky-užití/osobní-údaje> <https://data.gov.cz/podmínky-užití/není-specifikováno-zda-obsahuje-osobní-údaje/> .
-} 
-WHERE { 
-  ?s dcterms:license ?license .
-  BIND(IRI(CONCAT(STR(?s), \"/podmínky-užití\")) AS ?tou)
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 8;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX adms: <http://www.w3.org/ns/adms#>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX gr: <http://purl.org/goodrelations/v1#>
-PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-
-PREFIX status: <http://purl.org/adms/status/> 
-PREFIX tz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/>
-PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
-PREFIX ds: <https://data.gov.cz/slovník/datové-schránky/>
-PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
-
-CONSTRUCT { 
-?catalog adms:status status:Withdrawn ;
-    nkod:zrušovatel ?ovm .  
-} 
-WHERE {
-?catalog a dcat:Catalog ;
-         adms:status status:Withdrawn .
-
-# chunked:fileName jde z chunkování, je to link na metadata, která půjdou z extra souboru
-[] chunked:fileName ?filename .
-[] nkod:jméno-souboru ?filename ;
-   nkod:id-datové-zprávy ?iddz ;
-   nkod:datová-schránka-poskytovatele ?ds ;
-   nkod:datová-zpráva-přijata ?rmodified .
-  
-?ds ^ds:datová-schránka ?ovm .
-?ovm gr:legalName ?pname ;
-     skos:notation ?ovmid .
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFail> false;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 8;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
 <http://localhost:8080/resources/pipelines/1764943595711-0001> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926>
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update chunked";
+    <http://purl.org/dc/terms/description> "Upgrade \"vlastní licence\"";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/configuration>;
+    <http://linkedpipes.com/ontology/x> "2920"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1320"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
+    <http://purl.org/dc/terms/description> "Zpracovat rušení katalogů";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/configuration>;
+    <http://linkedpipes.com/ontology/x> "808"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "325"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlLinkerChunked/0.0.0> .
+  
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177927>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
     <http://purl.org/dc/terms/description> "Mapování frekvencí";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177927/configuration>;
     <http://linkedpipes.com/ontology/x> "3000"^^<http://www.w3.org/2001/XMLSchema#int>;
@@ -4147,7 +4141,7 @@ NKOD verze 2016""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Decompress zip archive";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177951cd-a91b/configuration>;
     <http://linkedpipes.com/ontology/x> "-1069"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "152"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "125"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-unpackZip/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177953>
@@ -4234,25 +4228,76 @@ email na IRI""";
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update chunked";
     <http://purl.org/dc/terms/description> "Duplikovat downloadURL do accessURL";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/configuration>;
-    <http://linkedpipes.com/ontology/x> "954"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-100"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0> .
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/configuration> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177926/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """PREFIX dcterms: <http://purl.org/dc/terms/>
+DELETE { 
+  ?s dcterms:license ?license .
+}
+INSERT { 
+  ?s <https://data.gov.cz/slovník/podmínky-užití/specifikace> ?tou .
+
+  ?tou a <https://data.gov.cz/slovník/podmínky-užití/Specifikace> ;
+   	<https://data.gov.cz/slovník/podmínky-užití/autorské-dílo> ?license ;
+	<https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autorské-dílo> ?license ;
+    <https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-zvláštními-právy> ?license ;
+	<https://data.gov.cz/slovník/podmínky-užití/osobní-údaje> <https://data.gov.cz/podmínky-užití/není-specifikováno-zda-obsahuje-osobní-údaje/> .
+} 
+WHERE { 
+  ?s dcterms:license ?license .
+  BIND(IRI(CONCAT(STR(?s), \"/podmínky-užití\")) AS ?tou)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+PREFIX status: <http://purl.org/adms/status/> 
+PREFIX tz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/>
+PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
+PREFIX ds: <https://data.gov.cz/slovník/datové-schránky/>
+PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
+
+CONSTRUCT { 
+?catalog adms:status status:Withdrawn ;
+    nkod:zrušovatel ?ovm .  
+} 
+WHERE {
+?catalog a dcat:Catalog ;
+         adms:status status:Withdrawn .
+
+# chunked:fileName jde z chunkování, je to link na metadata, která půjdou z extra souboru
+[] chunked:fileName ?filename .
+[] nkod:jméno-souboru ?filename ;
+   nkod:id-datové-zprávy ?iddz ;
+   nkod:datová-schránka-poskytovatele ?ds ;
+   nkod:datová-zpráva-přijata ?rmodified .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
-    <http://purl.org/dc/terms/description> """Metadata registrací
-datových sad přijatých
-NKOD verze 2016""";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/configuration>;
-    <http://linkedpipes.com/ontology/x> "-292"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "23"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961ad-847d>
-    a <http://linkedpipes.com/ontology/Component> .
+?ds ^ds:datová-schránka ?ovm .
+?ovm gr:legalName ?pname ;
+     skos:notation ?ovmid .
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177927/configuration> {
@@ -7112,42 +7157,26 @@ WHERE
     <http://plugins.linkedpipes.com/ontology/e-textHolder#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-INSERT 
-{ ?distribution dcat:accessURL ?url .}
-WHERE 
-{ ?distribution dcat:downloadURL ?url .
-FILTER NOT EXISTS { ?distribution dcat:accessURL ?url . } }""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 8;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/1>
-    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "nkod-input-metadata.zip";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "http://localhost/nkod/nkod-input-metadata.zip";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
 <http://localhost:8080/resources/pipelines/1764943595711-0001> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796>
+    <http://linkedpipes.com/ontology/x> "954"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-100"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP get";
+    <http://purl.org/dc/terms/description> """Metadata registrací
+datových sad přijatých
+NKOD verze 2016""";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/configuration>;
+    <http://linkedpipes.com/ontology/x> "-292"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "23"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-httpGetFile/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961ad-847d>
+    a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Text holder";
     <http://purl.org/dc/terms/description> """Mapování
 Kód OVM <-> IČO""";
@@ -7767,32 +7796,41 @@ s VDF, HVDS""";
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files renamer";
-    <http://purl.org/dc/terms/description> "včerejší-nkod.trig";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/configuration>;
-    <http://linkedpipes.com/ontology/x> "4842"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "826"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesRenamer/0.0.0> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
-    <http://purl.org/dc/terms/description> "eurovoc-skos-ap-eu.rdf";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/configuration>;
-    <http://linkedpipes.com/ontology/x> "4704"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "402"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157>
-    a <http://linkedpipes.com/ontology/Component>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
-    <http://purl.org/dc/terms/description> "typy-vlastností.ttl";
-    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/configuration>;
-    <http://linkedpipes.com/ontology/x> "1882"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-668"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0>;
-    <http://linkedpipes.com/ontology/disabled> true .
+    a <http://linkedpipes.com/ontology/Component> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+INSERT 
+{ ?distribution dcat:accessURL ?url .}
+WHERE 
+{ ?distribution dcat:downloadURL ?url .
+FILTER NOT EXISTS { ?distribution dcat:accessURL ?url . } }""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961/1>
+    a <http://plugins.linkedpipes.com/ontology/e-httpGetFile#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrl> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileName> "nkod-input-metadata.zip";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUri> "http://localhost/nkod/nkod-input-metadata.zip";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#fileUriControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgent> "";
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#userAgentControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8Redirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFile#utf8RedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177961ad-847d/configuration> {
@@ -9793,30 +9831,34 @@ WHERE
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/1>
-    a <http://plugins.linkedpipes.com/ontology/t-filesRenamer#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#pattern> "nkod.trig";
-    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#patternControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWith> "včerejší-nkod.trig";
-    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWithControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/1>
-    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/eurovoc-skos-ap-eu.rdf";
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/configuration> {
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/1>
-    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "data/lp-etl/nkod-cache/ssp/typy-vlastností.ttl";
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
 <http://localhost:8080/resources/pipelines/1764943595711-0001> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b>
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files renamer";
+    <http://purl.org/dc/terms/description> "včerejší-nkod.trig";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/configuration>;
+    <http://linkedpipes.com/ontology/x> "4842"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "826"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesRenamer/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "eurovoc-skos-ap-eu.rdf";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/configuration>;
+    <http://linkedpipes.com/ontology/x> "4704"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "402"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "typy-vlastností.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/configuration>;
+    <http://linkedpipes.com/ontology/x> "1882"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-668"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
+  
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000177d3-8975>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
@@ -10016,6 +10058,34 @@ WHERE
     <http://linkedpipes.com/ontology/y> "1027"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760881250680-0003> .
   
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/connection/120e-b877>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ba3b-9e6a>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/connection/36b2-a932>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/0e80-a0a7>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/1d7c-a3e6>;
+    <http://linkedpipes.com/ontology/targetBinding> "Configuration" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/connection/85e1-816e>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ea69-bd95>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/ba3b-9e6a>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/connection/dcd3-b735>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-0001/component/1d7c-a3e6>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177951cd-a91b>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000103d5-9b4c>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779140>;
@@ -10092,9 +10162,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177913>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4112-a091> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/afd3-b116> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4112-a091> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/afd3-b116> <http://linkedpipes.com/ontology/x>
       "222"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-117"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10112,9 +10182,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779c8b1-b179>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/54e4-96de> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9354-b89f> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/54e4-96de> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9354-b89f> <http://linkedpipes.com/ontology/x>
       "-443"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-19"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10188,9 +10258,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177918>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2a2b-922f> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/f9d7-91cd> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2a2b-922f> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/f9d7-91cd> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-280"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10208,15 +10278,15 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779113>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/73db-b5dd>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2d98-914a> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8fe2-9bb5>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7631-bf48> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/73db-b5dd> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8fe2-9bb5> <http://linkedpipes.com/ontology/x>
       "765"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "945"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2d98-914a> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7631-bf48> <http://linkedpipes.com/ontology/x>
       "675"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1149"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10234,9 +10304,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779182>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/139b-b987> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/48b6-8cf1> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/139b-b987> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/48b6-8cf1> <http://linkedpipes.com/ontology/x>
       "3940"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "600"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10247,9 +10317,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779178>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4657-a503> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c205-ab95> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4657-a503> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c205-ab95> <http://linkedpipes.com/ontology/x>
       "3880"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "640"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10274,13 +10344,6 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317797c4a-91b1>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317791aae-8251>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317790501-9302>;
-    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177951cd-a91b>;
-    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779202>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10358,18 +10421,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779182>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1a9b-8e60>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c8f0-b180> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e901-9e18>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/928d-93e9> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1a9b-8e60> <http://linkedpipes.com/ontology/x>
-      "4004"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "549"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c8f0-b180> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e901-9e18> <http://linkedpipes.com/ontology/x>
       "4862"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "565"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/928d-93e9> <http://linkedpipes.com/ontology/x>
+      "4004"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "549"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779218>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10398,18 +10461,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779446>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e391-9670>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/58af-bc38> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/989e-ac27>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/46c1-a405> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e391-9670> <http://linkedpipes.com/ontology/x>
-      "-554"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-382"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/58af-bc38> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/989e-ac27> <http://linkedpipes.com/ontology/x>
       "57"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-371"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/46c1-a405> <http://linkedpipes.com/ontology/x>
+      "-554"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-382"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779226>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10431,9 +10494,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779181>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/242a-bb28> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b87c-91a8> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/242a-bb28> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b87c-91a8> <http://linkedpipes.com/ontology/x>
       "3580"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "320"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10451,9 +10514,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779158>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/02d0-8967> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e372-9ead> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/02d0-8967> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e372-9ead> <http://linkedpipes.com/ontology/x>
       "1500"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "420"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10471,18 +10534,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177979>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/68bd-8c7c>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7b3c-a43f> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8f86-bac1>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c24f-a71a> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/68bd-8c7c> <http://linkedpipes.com/ontology/x>
-      "1080"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "920"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7b3c-a43f> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8f86-bac1> <http://linkedpipes.com/ontology/x>
       "1520"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "920"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c24f-a71a> <http://linkedpipes.com/ontology/x>
+      "1080"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "920"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177923ff-accd>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10490,18 +10553,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177916>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1967-b79d>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5e67-a2f9> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/afbd-9e97>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1d09-b13f> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1967-b79d> <http://linkedpipes.com/ontology/x>
-      "-590"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-82"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5e67-a2f9> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/afbd-9e97> <http://linkedpipes.com/ontology/x>
       "145"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-87"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1d09-b13f> <http://linkedpipes.com/ontology/x>
+      "-590"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-82"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779241>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10516,23 +10579,23 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779143>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a447-9f77>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/56ac-9892>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2f0a-a7ec> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a7aa-8946>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8987-8628>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/0d17-a952> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a447-9f77> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a7aa-8946> <http://linkedpipes.com/ontology/x>
       "4070"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "344"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/56ac-9892> <http://linkedpipes.com/ontology/x>
-      "3780"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "480"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2f0a-a7ec> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8987-8628> <http://linkedpipes.com/ontology/x>
       "3914"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "343"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/0d17-a952> <http://linkedpipes.com/ontology/x>
+      "3780"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "480"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177925>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10561,9 +10624,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177934>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2119-9b35> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a0e8-84ba> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2119-9b35> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a0e8-84ba> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-40"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10574,9 +10637,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779114>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c65e-a0ac> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/face-a97d> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c65e-a0ac> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/face-a97d> <http://linkedpipes.com/ontology/x>
       "3920"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "640"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10594,9 +10657,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779140>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b82b-a84c> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8b82-a29d> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b82b-a84c> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8b82-a29d> <http://linkedpipes.com/ontology/x>
       "58"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "932"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10635,9 +10698,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177929>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/deb7-9ac6> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/50e0-8091> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/deb7-9ac6> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/50e0-8091> <http://linkedpipes.com/ontology/x>
       "600"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "600"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10683,18 +10746,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779160>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/13e1-9a7d>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/f437-9524> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ed8e-bbe4>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4aa4-a52a> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/13e1-9a7d> <http://linkedpipes.com/ontology/x>
-      "1420"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "360"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/f437-9524> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ed8e-bbe4> <http://linkedpipes.com/ontology/x>
       "2400"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "360"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4aa4-a52a> <http://linkedpipes.com/ontology/x>
+      "1420"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "360"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779293>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -10730,9 +10793,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177979>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2336-a1eb> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d097-a72e> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2336-a1eb> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d097-a72e> <http://linkedpipes.com/ontology/x>
       "1480"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10806,9 +10869,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779169>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/44b3-a380> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ebdc-8a58> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/44b3-a380> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ebdc-8a58> <http://linkedpipes.com/ontology/x>
       "-233"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "905"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10819,9 +10882,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177934>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6e75-a028> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9254-b2a4> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6e75-a028> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9254-b2a4> <http://linkedpipes.com/ontology/x>
       "880"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-20"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10832,9 +10895,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779332>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e157-8e44> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5418-9dd8> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e157-8e44> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5418-9dd8> <http://linkedpipes.com/ontology/x>
       "3560"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "240"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10873,20 +10936,20 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779348>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/97d9-b1a4>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/cdc8-bad4>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2946-80eb> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3de1-995d>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a7dc-9bda>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/cc3d-80d3> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/97d9-b1a4> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3de1-995d> <http://linkedpipes.com/ontology/x>
       "3456"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "243"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/cdc8-bad4> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/a7dc-9bda> <http://linkedpipes.com/ontology/x>
       "3310"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-85"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2946-80eb> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/cc3d-80d3> <http://linkedpipes.com/ontology/x>
       "3314"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "196"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -10955,72 +11018,30 @@ WHERE
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317793731-8d4b>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779073d-acb7>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779f5ff-a637>;
-    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779374>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177956>;
-    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779355>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779375>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779369>;
-    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779370>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779376>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779371>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779372>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779377>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779370>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779373>;
-    <http://linkedpipes.com/ontology/targetBinding> "Task" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779378>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317794>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779371>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/402c-88a9>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1ec6-95ea> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/402c-88a9> <http://linkedpipes.com/ontology/x>
-      "3479"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "1041"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1ec6-95ea> <http://linkedpipes.com/ontology/x>
-      "3306"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "1088"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779379>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779372>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779373>;
-    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779380>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177911>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779317>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+    a <http://linkedpipes.com/ontology/Connection> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00016bf1-9d0b/1>
+    a <http://plugins.linkedpipes.com/ontology/t-filesRenamer#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#pattern> "nkod.trig";
+    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#patternControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWith> "včerejší-nkod.trig";
+    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWithControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000170a0-ba98/1>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/eurovoc-skos-ap-eu.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/configuration> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000176b1-9157/1>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "data/lp-etl/nkod-cache/ssp/typy-vlastností.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000177d3-8975/configuration> {
@@ -11337,15 +11358,82 @@ WHERE
 }
 
 <http://localhost:8080/resources/pipelines/1764943595711-0001> {
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317793731-8d4b>
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779073d-acb7>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779f5ff-a637>;
+    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779374>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177956>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779355>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779375>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779369>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779370>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779376>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779371>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779372>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779377>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779370>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779373>;
+    <http://linkedpipes.com/ontology/targetBinding> "Task" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779378>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317794>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779371>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4c20-b826>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2fcf-9f45> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4c20-b826> <http://linkedpipes.com/ontology/x>
+      "3306"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1088"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2fcf-9f45> <http://linkedpipes.com/ontology/x>
+      "3479"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1041"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779379>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779372>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779373>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779380>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177911>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779317>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779381>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177913>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317797>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/07a0-a986> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/142b-9901> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/07a0-a986> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/142b-9901> <http://linkedpipes.com/ontology/x>
       "860"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-140"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11356,15 +11444,15 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177911>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/eabf-b5f6>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/26a1-9d19> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/691e-bf0b>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6ada-88cb> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/eabf-b5f6> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/691e-bf0b> <http://linkedpipes.com/ontology/x>
       "1945"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "502"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/26a1-9d19> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6ada-88cb> <http://linkedpipes.com/ontology/x>
       "1480"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "500"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11382,9 +11470,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177918>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8099-93c0> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/17f0-895c> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8099-93c0> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/17f0-895c> <http://linkedpipes.com/ontology/x>
       "880"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-260"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11395,9 +11483,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177914>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5eb7-9bb4> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e048-a5fe> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5eb7-9bb4> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e048-a5fe> <http://linkedpipes.com/ontology/x>
       "1400"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "40"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11485,23 +11573,23 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779242>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2a3c-b35a>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7394-b35a>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2fba-967a> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3dbd-a2f7>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b13d-9082>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2073-b6cc> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2a3c-b35a> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3dbd-a2f7> <http://linkedpipes.com/ontology/x>
       "-739"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "278"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/7394-b35a> <http://linkedpipes.com/ontology/x>
-      "434"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "257"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2fba-967a> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b13d-9082> <http://linkedpipes.com/ontology/x>
       "-732"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "756"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2073-b6cc> <http://linkedpipes.com/ontology/x>
+      "434"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "257"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779403>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -11516,9 +11604,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779264>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3fe9-aad2> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4522-bdb4> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3fe9-aad2> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/4522-bdb4> <http://linkedpipes.com/ontology/x>
       "680"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "460"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11536,18 +11624,18 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000116110389317791611038931779161103893177942>;
     <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6894-9258>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6cd0-b62f> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d970-8bdd>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d6d5-8a65> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6894-9258> <http://linkedpipes.com/ontology/x>
-      "1180"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "360"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/6cd0-b62f> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d970-8bdd> <http://linkedpipes.com/ontology/x>
       "1199"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "890"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d6d5-8a65> <http://linkedpipes.com/ontology/x>
+      "1180"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "360"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779410>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -11562,9 +11650,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317796>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/119f-939e> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c671-aefa> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/119f-939e> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c671-aefa> <http://linkedpipes.com/ontology/x>
       "520"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-60"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11722,9 +11810,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317797>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2bc0-acf4> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/52a3-ae10> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2bc0-acf4> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/52a3-ae10> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-160"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11742,9 +11830,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779425>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ed6c-a223> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9ad3-ba68> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ed6c-a223> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/9ad3-ba68> <http://linkedpipes.com/ontology/x>
       "-486"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "36"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11769,9 +11857,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779446>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d27c-aa6d> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2d6a-b19e> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d27c-aa6d> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2d6a-b19e> <http://linkedpipes.com/ontology/x>
       "-464"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "6"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -11831,9 +11919,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779443>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b0c5-9e9c> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c71c-9773> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b0c5-9e9c> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c71c-9773> <http://linkedpipes.com/ontology/x>
       "3533"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "202"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12110,9 +12198,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779119>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ef1d-820e> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1b58-8ddf> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/ef1d-820e> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/1b58-8ddf> <http://linkedpipes.com/ontology/x>
       "3857"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "322"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12130,9 +12218,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779119>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e66b-b787> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c5aa-83c9> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e66b-b787> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/c5aa-83c9> <http://linkedpipes.com/ontology/x>
       "4064"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "289"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12178,9 +12266,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001161103893177916110389317791611038931779204>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2e04-9a47> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b61f-8276> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/2e04-9a47> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b61f-8276> <http://linkedpipes.com/ontology/x>
       "80"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "243"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12359,9 +12447,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001c622-838d>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8b01-ba95> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e632-9575> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/8b01-ba95> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/e632-9575> <http://linkedpipes.com/ontology/x>
       "3516"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "719"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12484,9 +12572,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-000186dc-a3a4>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/768e-b2a1> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/44a1-bf56> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/768e-b2a1> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/44a1-bf56> <http://linkedpipes.com/ontology/x>
       "4030"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "1156"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12504,15 +12592,15 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00011611038931779161103893177916110389317794>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/16ea-a79f>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/81cf-add2> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5e46-ae6d>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/0809-8d2b> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/16ea-a79f> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/5e46-ae6d> <http://linkedpipes.com/ontology/x>
       "3190"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-146"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/81cf-add2> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/0809-8d2b> <http://linkedpipes.com/ontology/x>
       "3573"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-142"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -12530,23 +12618,23 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-00014092-9792>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/38a8-abc7>,
-      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/82bb-a4c1>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3531-9545> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/bdd7-8979>,
+      <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b3a5-a44e>, <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/705e-b01c> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/38a8-abc7> <http://linkedpipes.com/ontology/x>
-      "5149"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "1632"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/bdd7-8979> <http://linkedpipes.com/ontology/x>
+      "685"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1593"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/82bb-a4c1> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/b3a5-a44e> <http://linkedpipes.com/ontology/x>
       "5299"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "489"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/3531-9545> <http://linkedpipes.com/ontology/x>
-      "685"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "1593"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/705e-b01c> <http://linkedpipes.com/ontology/x>
+      "5149"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "1632"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001a762-b5a6>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -12596,9 +12684,9 @@ WHERE
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1764943595711-00011764943595711-0001c622-838d>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d9d6-bc9e> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/290c-ac73> .
   
-  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/d9d6-bc9e> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1764943595711-0001/vertex/290c-ac73> <http://linkedpipes.com/ontology/x>
       "4594"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "687"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
