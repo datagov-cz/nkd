@@ -42,8 +42,9 @@ WHERE {
     #BIND(CONCAT(STR(?Poskytovatel), \" má \", STR(?PočetDatovýchSad), \" datových sad. \\n\") as ?line)
   }
   }
+  [] <urn:slackETLInstanceName> ?instance .
   
-  BIND(CONCAT(\"Testovací verze NKOD@UPAAS k \", STR(NOW()), \" obsahuje \", STR(?DatovýchSad), \" datových sad a \", STR(?Distribucí), \" distribucí od \", STR(?Poskytovatelů), \" poskytovatelů.\") as ?finaltext)
+  BIND(CONCAT(?instance, \" k \", STR(NOW()), \" obsahuje \", STR(?DatovýchSad), \" datových sad a \", STR(?Distribucí), \" distribucí od \", STR(?Poskytovatelů), \" poskytovatelů.\") as ?finaltext)
  
 }""";
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .

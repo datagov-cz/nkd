@@ -1,0 +1,19 @@
+
+<http://localhost:8080/resources/components/1769084845792-0005> {
+  <http://localhost:8080/resources/components/1769084845792-0005> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to frontend (kvalita)";
+    <http://purl.org/dc/terms/description> "/data/public/soubor/kvalita";
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/components/1769084845792-0005/configuration> .
+}
+
+<http://localhost:8080/resources/components/1769084845792-0005/configuration> {
+  <http://localhost:8080/resources/components/1769084845792-0005/1> a <http://plugins.linkedpipes.com/ontology/l-filesToLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/public/soubor/kvalita";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/Force> .
+}
