@@ -11,8 +11,10 @@
 <http://localhost:8080/resources/components/1760898265802-0007/configuration> {
   <http://localhost:8080/resources/components/1760898265802-0007/configuration> a <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#Configuration>;
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#endpoint> "";
-    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#endpointControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#endpointControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#endpointSubstitution>
+      "http://{LP_ETL_NKOD_VIRTUOSO_NDC_URL}:8890/sparql-graph-crud-auth/";
+    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#passwordSubstitution>
       "{LP_ETL_NKOD_VIRTUOSO_NDC_PASSWORD}";
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#repository> "VIRTUOSO";
@@ -20,9 +22,7 @@
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#useAuthentication> true;
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#useAuthenticationControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#useAuthenticationSubstitution>
-      "http://{LP_ETL_NKOD_VIRTUOSO_NDC_URL}:8890/sparql-graph-crud-auth/";
-    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#usernameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-graphStorePurger#usernameSubstitution>
       "{LP_ETL_NKOD_VIRTUOSO_NDC_USER}" .
 }
