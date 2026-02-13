@@ -12,13 +12,13 @@
 <https://oha02.dia.gov.cz/etl/resources/components/1700148415226-0012/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/components/1700148415226-0012/configuration>
     a <http://plugins.linkedpipes.com/ontology/x-pipeline#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingData> true;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingData> false;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingDataControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#instance> <http://localhost:8080>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#instanceControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevel> "INFO";
     <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevelControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicy> <http://plugins.linkedpipes.com/ontology/x-pipeline#DeleteOnSuccess>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicy> <http://plugins.linkedpipes.com/ontology/x-pipeline#PreserveLogs>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicyControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#pipeline> <https://oha02.dia.gov.cz/etl/resources/pipelines/1614849417812>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#pipelineControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
