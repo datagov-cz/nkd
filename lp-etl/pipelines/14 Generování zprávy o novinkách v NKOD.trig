@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "14 Generování zprávy o novinkách v NKOD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:25:37.957"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-16T11:39:14.16478307"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-16T13:15:19.555351604"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY", "8";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006737957/profile/default> .
   
@@ -38,7 +38,8 @@
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006737957/component/8e3f-abc6/configuration>;
     <http://linkedpipes.com/ontology/x> "1199"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-119"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0> .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006737957/component/b3e6-883a>
     a <http://linkedpipes.com/ontology/Component>;
@@ -107,7 +108,8 @@
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006737957163100673795713/configuration>;
     <http://linkedpipes.com/ontology/x> "816"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-101"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006737957163100673795714> a
       <http://linkedpipes.com/ontology/Component>;
@@ -205,7 +207,8 @@ počtu DS a DIST""";
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100673795716310067379578/configuration>;
     <http://linkedpipes.com/ontology/x> "1032"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-104"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-mustache/0.0.0> .
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-mustache/0.0.0>;
+    <http://linkedpipes.com/ontology/disabled> true .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/163100673795716310067379579> a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "HTTP Request";
@@ -491,7 +494,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/public/dokuwiki/data/media/statistika";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/public/soubor/kvalita/statistika";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
