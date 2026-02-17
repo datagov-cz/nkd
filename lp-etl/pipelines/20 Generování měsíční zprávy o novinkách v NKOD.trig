@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "20 Generování měsíční zprávy o novinkách v NKOD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-11-30T08:48:37.134"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-17T06:36:52.267304572"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-17T07:05:02.07651236"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/profile/default> .
   
@@ -305,15 +305,15 @@ počtu DS a DIST""";
     <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134163825851713453>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/d197-ab25>,
-      <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/91a6-8326> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/4ef4-9db3>,
+      <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/7c9a-9f89> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/d197-ab25>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/4ef4-9db3>
     <http://linkedpipes.com/ontology/x> "66"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-180"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/91a6-8326>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/7c9a-9f89>
     <http://linkedpipes.com/ontology/x> "184"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "398"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -472,9 +472,9 @@ počtu DS a DIST""";
     a <http://linkedpipes.com/ontology/RunAfter>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163825851713416382585171346>;
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/component/65ed-9aed>;
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/6b16-b035> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/c5a7-b485> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/6b16-b035>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134/vertex/c5a7-b485>
     <http://linkedpipes.com/ontology/x> "1387"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-293"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -1009,9 +1009,9 @@ CONSTRUCT WHERE {
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134163825851713453/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134163825851713453/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1638258517134163825851713453/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-filesRenamer#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#pattern> "včerejší-nkod\\.trig";
+    <http://plugins.linkedpipes.com/ontology/t-filesRenamer#pattern> "nkod\\.trig";
     <http://plugins.linkedpipes.com/ontology/t-filesRenamer#patternControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWith> "nkod-minulý-měsíc\\.trig";
     <http://plugins.linkedpipes.com/ontology/t-filesRenamer#replaceWithControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
