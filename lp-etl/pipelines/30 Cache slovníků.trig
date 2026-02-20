@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "30 Cache slovníků";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2025-06-09T13:35:53.49146592"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-20T08:03:34.226165187"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-20T08:36:02.264917988"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default>
@@ -213,9 +213,9 @@ WHERE {
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/component/96bb-8ce0/configuration> {
-  <http://etl.linkedpipes.com/resources/components/t-jsonLdToRdfTitanium/0.0.0/configuration/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/component/96bb-8ce0/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#softFail> true;
     <http://plugins.linkedpipes.com/ontology/t-jsonLdToRdfTitanium#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
