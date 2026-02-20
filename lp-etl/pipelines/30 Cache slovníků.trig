@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "30 Cache slovníků";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2025-06-09T13:35:53.49146592"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-19T15:32:44.41221052"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-20T08:03:34.226165187"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default>
@@ -260,11 +260,11 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#detailLogControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#encodeUrl> false;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#encodeUrlControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirect> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirect> true;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#hardRedirectControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#retryCountControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#retryWaitTimeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnError> false;
+    <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnError> true;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#skipOnErrorControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threads> 8;
     <http://plugins.linkedpipes.com/ontology/e-httpGetFiles#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
