@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "13 Generování reportů v CSV";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2022-02-03T08:23:26.338"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-03T07:59:39.971471055"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-03T08:17:36.998074727"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY", "7";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338/profile/default> .
   
@@ -2427,7 +2427,7 @@ LIMIT 30""";
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633869/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633869/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633869/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a3-1-nedostupnost-podminek-uziti.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -2447,49 +2447,84 @@ WHERE
   # hack na zrychlení v rdf4j
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskéDílo ;
-    dqv:value ?procento_nedostupných_autorské_dílo .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskéDílo ;
-    dqv:value ?počet_nedostupných_autorské_dílo .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskáDatabáze ;
-    dqv:value ?procento_nedostupných_autorská_databáze .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskáDatabáze ;
-    dqv:value ?počet_nedostupných_autorská_databáze .
 
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíZvláštníPrávoPořizovateleDatabáze ;
-    dqv:value ?procento_nedostupných_zvláštní_právo .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíZvláštníPrávoPořizovateleDatabáze ;
-    dqv:value ?počet_nedostupných_zvláštní_právo .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných_autorské_dílo 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskéDílo ;
+                          dqv:value ?procento_nedostupných_autorské_dílo .
+    }
+  }
 
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSad ;
-    dqv:value ?počet_distribucí_celkem .
-  
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných_autorské_dílo 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskéDílo ;
+                          dqv:value ?počet_nedostupných_autorské_dílo .
+    }
+  }
+
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných_autorská_databáze 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskáDatabáze ;
+                          dqv:value ?procento_nedostupných_autorská_databáze .
+    }
+  }
+
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných_autorská_databáze 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíAutorskáDatabáze ;
+                          dqv:value ?počet_nedostupných_autorská_databáze .
+    }
+  }
+
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných_zvláštní_právo 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíZvláštníPrávoPořizovateleDatabáze ;
+                          dqv:value ?procento_nedostupných_zvláštní_právo .
+    }
+  }
+
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných_zvláštní_právo 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmiPodmínkamiUžitíZvláštníPrávoPořizovateleDatabáze ;
+                          dqv:value ?počet_nedostupných_zvláštní_právo .
+    }
+  }
+
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_distribucí_celkem 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+                          dqv:computedOn ?poskytovatel ;
+                          sdmx-dimension:refPeriod ?period ;
+                          dqv:isMeasurementOf :PočetDistribucíDatovýchSad ;
+                          dqv:value ?počet_distribucí_celkem .
+    }
+  }
+
   FILTER((?počet_nedostupných_autorské_dílo > 0) || (?počet_nedostupných_autorská_databáze > 0) ||(?počet_nedostupných_zvláštní_právo > 0))
 }
 ORDER BY DESC(?procento_nedostupných_autorské_dílo) DESC(?procento_nedostupných_autorská_databáze) DESC(?procento_nedostupných_zvláštní_právo) ?jméno_poskytovatele""";
