@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "13 Generování reportů v CSV";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2022-02-03T08:23:26.338"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-03T07:35:02.774881109"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-03T07:59:39.971471055"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY", "7";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338/profile/default> .
   
@@ -1180,17 +1180,27 @@ WHERE {
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
 	
-  ?pozorováníDS a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDatovýchSad ;
-    dqv:value ?početDatovýchSad .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?početDatovýchSad
+    WHERE {
+      [] a dqv:QualityMeasurement ;
+      dqv:computedOn ?poskytovatel ;
+      sdmx-dimension:refPeriod ?period ;
+      dqv:isMeasurementOf :PočetDatovýchSad ;
+      dqv:value ?početDatovýchSad .
+    }
+  }
    
-  ?pozorováníDistribuce a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSad ;
-    dqv:value ?početDistribucí .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?početDistribucí
+    WHERE {
+      [] a dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSad ;
+        dqv:value ?početDistribucí .
+    }
+  }
   
 }
 ORDER BY DESC(?početDatovýchSad) DESC(?početDistribucí)""";
