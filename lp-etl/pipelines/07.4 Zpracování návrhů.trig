@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.4 Zpracování návrhů";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2023-11-02T11:13:38.545138406"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-19T16:04:12.032338559"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-18T10:21:33.533442816"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "3";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/profile/default> .
   
@@ -478,18 +478,18 @@ témata""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/66bc-a03c>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/4818-b57f>,
-      <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/b5d9-b676> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/252a-bd99>,
+      <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/33cc-b7c1> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/4818-b57f>
-    <http://linkedpipes.com/ontology/x> "1464"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "752"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
-  
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/b5d9-b676>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/252a-bd99>
     <http://linkedpipes.com/ontology/x> "830"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "763"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/33cc-b7c1>
+    <http://linkedpipes.com/ontology/x> "1464"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "752"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/order> "2"^^<http://www.w3.org/2001/XMLSchema#int> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/connection/722b-8cde>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -546,9 +546,9 @@ témata""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/66bc-a03c>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/faff-80ec> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/d8d4-a7ef> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/faff-80ec>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/d8d4-a7ef>
     <http://linkedpipes.com/ontology/x> "911"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "347"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -678,9 +678,9 @@ témata""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/66bc-a03c>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf";
-    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/f0b1-ae07> .
+    <http://linkedpipes.com/ontology/vertex> <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/1d58-a157> .
   
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/f0b1-ae07>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/vertex/1d58-a157>
     <http://linkedpipes.com/ontology/x> "1436"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "583"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -1552,9 +1552,9 @@ PREFIX návrhy: <https://slovník.gov.cz/generický/datový-slovník-návrhů-na
     \"description_cs\" : \"{{{dcterms:description}}}\",
     \"theme\" : [{{#dcat:theme}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/dcat:theme}}],
     \"created\" : \"{{dcterms:created}}\",
+    \"state\" : {{#návrhy:má-stav-návrhu}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/návrhy:má-stav-návrhu}},
 {{#dcterms:publisher}}
     \"publisher\" : \"{{{@id}}}\",
-    \"state\" : {{#návrhy:má-stav-návrhu}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/návrhy:má-stav-návrhu}},
     \"mandatory_106\" : \"{{návrhy:je-povinným-subjektem-dle-z--106-1999-sb}}\",
     \"publisher_cs\" : \"{{{foaf:name}}}\",
 {{/dcterms:publisher}}
