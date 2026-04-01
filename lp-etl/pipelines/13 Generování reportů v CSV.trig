@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "13 Generování reportů v CSV";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2022-02-03T08:23:26.338"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-03T08:17:36.998074727"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-04-01T15:39:38.68064137"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "RUNEXTERNALLY", "7";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338/profile/default> .
   
@@ -1105,7 +1105,7 @@ ORDER BY DESC(?procento_distribucí_nedostupných) DESC(?počet_distribucí_se_s
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/16438730063381643873006338122/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/16438730063381643873006338122/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/16438730063381643873006338122/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a6-3-nedostupnost-endpoint-url-cors.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -1126,23 +1126,36 @@ WHERE
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDistribucíDatovýchSadSNedostupnýmCORSnaPřístupovémBoduSlužby ;
-    dqv:value ?procento_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSbezCORSnaPřístupovémBoduSlužby ;
-    dqv:value ?počet_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
-    dqv:value ?počet_celkem .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :ProcentoDistribucíDistribucíDatovýchSadSNedostupnýmCORSnaPřístupovémBoduSlužby ;
+        dqv:value ?procento_nedostupných .
+    }
+  }
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadSbezCORSnaPřístupovémBoduSlužby ;
+        dqv:value ?počet_nedostupných .
+    }
+  }
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_celkem 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
+        dqv:value ?počet_celkem .
+    }
+  }
   
   FILTER(?počet_nedostupných > 0)
 }
@@ -1335,7 +1348,7 @@ ORDER BY DESC(?procento_distribucí_nedostupných) DESC(?počet_distribucí_se_s
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633814/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633814/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633814/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a7-3-nedostupnost-endpoint-description-cors.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -1356,23 +1369,37 @@ WHERE
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmCORSnaPopisuPřístupovéhoBoduSlužby ;
-    dqv:value ?procento_nedostupných .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmCORSnaPopisuPřístupovéhoBoduSlužby ;
+        dqv:value ?procento_nedostupných .
+    }
+  }
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadSbezCORSnaPopisuPřístupovéhoBoduSlužby ;
+        dqv:value ?počet_nedostupných .
+    }
+  }
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSbezCORSnaPopisuPřístupovéhoBoduSlužby ;
-    dqv:value ?počet_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
-    dqv:value ?počet_celkem .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_celkem 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
+        dqv:value ?počet_celkem .
+    }
+  }
   
   FILTER(?počet_nedostupných > 0)
 }
@@ -2006,7 +2033,7 @@ ORDER BY ?jméno_poskytovatele""";
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633846/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633846/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633846/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a6-1-nedostupnost-endpoint-url.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -2027,23 +2054,37 @@ WHERE
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDistribucíDatovýchSadSNedostupnýmPřístupovýmBodemSlužby ;
-    dqv:value ?procento_nedostupných .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :ProcentoDistribucíDistribucíDatovýchSadSNedostupnýmPřístupovýmBodemSlužby ;
+        dqv:value ?procento_nedostupných .
+    }
+  }
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmPřístupovýmBodemSlužby ;
+        dqv:value ?počet_nedostupných .
+    }
+  }
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmPřístupovýmBodemSlužby ;
-    dqv:value ?počet_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
-    dqv:value ?počet_celkem .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_celkem 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
+        dqv:value ?počet_celkem .
+    }
+  }
   
   FILTER(?počet_nedostupných > 0)
 }
@@ -2200,7 +2241,7 @@ WHERE
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633856/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633856/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633856/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "q6.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -2224,7 +2265,8 @@ WHERE
       skos:related ?periodicitaIRI ;
       dqv:value ?výsledek .
   
-  ?poskytovatel foaf:name ?jméno_poskytovatele .
+  OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
+  FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
   
   ?periodicitaIRI skos:prefLabel ?periodicita .
   FILTER(langMatches(LANG(?periodicita), \"cs\"))
@@ -2671,7 +2713,7 @@ ORDER BY DESC(?procento) DESC(?počet_distribucí_bez_podmínek) ?jméno_poskyto
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633879/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633879/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633879/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a8-1-nedostupnost-specifikaci-sluzeb.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -2692,24 +2734,38 @@ WHERE
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
 
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnouSpecifikacíSlužby ;
+        dqv:value ?procento_nedostupných .
+    }
+  }
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnouSpecifikacíSlužby ;
-    dqv:value ?procento_nedostupných .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnouSpecifikacíSlužby ;
+        dqv:value ?počet_nedostupných .
+    }
+  }
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnouSpecifikacíSlužby ;
-    dqv:value ?počet_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
-    dqv:value ?počet_celkem .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_celkem
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
+        dqv:value ?počet_celkem .
+    }
+  }
   
   FILTER(?počet_nedostupných > 0)
 }
@@ -3037,7 +3093,7 @@ ORDER BY ?jméno_poskytovatele""";
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633893/configuration> {
-  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633893/1>
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338164387300633893/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "a7-1-nedostupnost-endpoint-description.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -3058,23 +3114,37 @@ WHERE
   OPTIONAL {?poskytovatel foaf:name ?jméno_poskytovatele . }
   FILTER(BOUND(?jméno_poskytovatele) && langMatches(LANG(?jméno_poskytovatele), \"cs\"))
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmPopisemPřístupovéhoBoduSlužby ;
-    dqv:value ?procento_nedostupných .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?procento_nedostupných 
+    WHERE {
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :ProcentoDistribucíDatovýchSadSNedostupnýmPopisemPřístupovéhoBoduSlužby ;
+        dqv:value ?procento_nedostupných .
+    }
+  }
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_nedostupných 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmPopisemPřístupovéhoBoduSlužby ;
+        dqv:value ?počet_nedostupných .
+    }
+  }
   
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadSNedostupnýmPopisemPřístupovéhoBoduSlužby ;
-    dqv:value ?počet_nedostupných .
-  
-  [] a qb:Observation, dqv:QualityMeasurement ;
-    dqv:computedOn ?poskytovatel ;
-    sdmx-dimension:refPeriod ?period ;
-    dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
-    dqv:value ?počet_celkem .
+  {
+    SELECT DISTINCT ?poskytovatel ?period ?počet_celkem 
+    WHERE {  
+      [] a qb:Observation, dqv:QualityMeasurement ;
+        dqv:computedOn ?poskytovatel ;
+        sdmx-dimension:refPeriod ?period ;
+        dqv:isMeasurementOf :PočetDistribucíDatovýchSadDatováSlužba ;
+        dqv:value ?počet_celkem .
+    }
+  }
   
   FILTER(?počet_nedostupných > 0)
 }
