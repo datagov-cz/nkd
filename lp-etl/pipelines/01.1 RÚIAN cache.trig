@@ -1,10 +1,10 @@
 
 <http://localhost:8080/resources/pipelines/1771342962079-0001> {
   <http://localhost:8080/resources/pipelines/1771342962079-0001> a <http://linkedpipes.com/ontology/Pipeline>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "00 RÚIAN cache";
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "01.1 RÚIAN cache";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2017-12-08T11:34:31.628"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-02-19T08:36:00.613469463"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-04-02T09:24:54.604181791"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RÚIAN";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1771342962079-0001/profile/default> .
   
@@ -12,6 +12,14 @@
     <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/SingleRepository>;
     <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/NativeStore>;
     <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <http://localhost:8080/resources/pipelines/1771342962079-0001/component/7342-9478>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "01.2";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1771342962079-0001/component/7342-9478/configuration>;
+    <http://linkedpipes.com/ontology/x> "1676"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "109"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1775121889332-0002> .
   
   <http://localhost:8080/resources/pipelines/1771342962079-00011771342962079-00011771342962079-00011771342962079-00011771340855175-00011771340855175-000112>
     a <http://linkedpipes.com/ontology/Component>;
@@ -339,6 +347,28 @@
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFile";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1771342962079-00011771342962079-000140da-b98a>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <http://localhost:8080/resources/pipelines/1771342962079-0001/connection/2540-b907>
+    a <http://linkedpipes.com/ontology/RunAfter>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1771342962079-00011771342962079-000140da-b98a>;
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1771342962079-0001/component/7342-9478> .
+}
+
+<http://localhost:8080/resources/pipelines/1771342962079-0001/component/7342-9478/configuration> {
+  <http://localhost:8080/resources/pipelines/1771342962079-0001/component/7342-9478/configuration>
+    a <http://plugins.linkedpipes.com/ontology/x-pipeline#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingData> true;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingDataControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#instance> <http://localhost:8080>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#instanceControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevel> "INFO";
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevelControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicy> <http://plugins.linkedpipes.com/ontology/x-pipeline#PreserveLogs>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicyControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipeline> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006650983>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipelineControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugData> true;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugDataControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1771342962079-00011771342962079-00011771342962079-00011771342962079-00011771340855175-00011771340855175-000112/configuration> {
