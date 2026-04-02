@@ -2,7 +2,7 @@
 <https://oha02.dia.gov.cz/etl/resources/components/1700148377707-0008> {
   <https://oha02.dia.gov.cz/etl/resources/components/1700148377707-0008> a <http://linkedpipes.com/ontology/Template>;
     <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1700141340878-0004>;
-    <http://www.w3.org/2004/02/skos/core#prefLabel> "08.1";
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "08";
     <http://purl.org/dc/terms/description> "";
     <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/x-pipeline/0.0.0>;
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
