@@ -42,6 +42,6 @@ NKOD pak komunikuje pomocí následujících rozhraní:
 2. NKOD přijímá volání z GitHub webhooků na `https://<base>/deploy/<název-webhooku>.php`
 3. NKOD přistupuje k [webové službě Seznamů držitelů datových schránek](https://www.mojedatovaschranka.cz/sds/ws/call) pro identifikaci majitele datové schránky, ze které přišel registrační záznam
 4. NKOD přistupuje ke [SPARQL endpointu Registru práv a povinností](https://rpp-opendata.egon.gov.cz/odrpp/sparql/) pro získání informací o [Orgánech veřejné moci](https://data.gov.cz/datová-sada?iri=https%3A%2F%2Fdata.gov.cz%2Fzdroj%2Fdatové-sady%2F17651921%2Ff736c16d147dbda1d721f46c3dd91347) a v rámci pipeline `07.2` pro získání dat pro Inventární seznam.
-5. NKOD přistupuje ke [SPARQL endpointu MFF UK obsahujícího RDF verzi RÚIAN](https://linked.cuzk.cz.opendata.cz/sparql) pro získání názvů územních prvků použitých ve frontendové aplikaci a registračních formulářích
+5. NKOD využívá [Veřejný dálkový přístup k RÚIAN](https://vdp.cuzk.gov.cz/vdp/ruian) pro získání názvů územních prvků použitých ve frontendové aplikaci a registračních formulářích
 6. NKOD přistupuje k číselníkům na webu [EU Vocabularies](https://op.europa.eu/en/web/eu-vocabularies/authority-tables), viz pipeline [01 Cache externích zdrojů](pipeliny/README.md).
-7. NKOD přistupuje k MS Sharepoint DIA pro získání registrovaných aplikací a podnětů na otevření dat (TODO - pomocí aplikace)
+7. NKOD přistupuje k MS Sharepoint DIA pro získání registrovaných aplikací a podnětů na otevření dat

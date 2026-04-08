@@ -1,0 +1,39 @@
+
+<https://oha02.dia.gov.cz/etl/resources/components/1694111175645-0001> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694111175645-0001> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <https://oha02.dia.gov.cz/etl/resources/components/1693827583462-0040>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Datum harvestace [k8s]";
+    <http://purl.org/dc/terms/description> "";
+    <http://www.w3.org/2002/07/owl#sameAs> <https://dev.nkod.opendata.cz/etl/resources/components/1614178661881-e6d217d1-4925-47b4-9de9-9bba8d101875>;
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/e-sparqlEndpoint/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/components/1694111175645-0001/configuration> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/components/1694111175645-0001/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/components/1694111175645-0001/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#defaultGraph> <https://data.gov.cz/zdroj/datová-sada/NKOD>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#defaultGraphControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#encodeRdf> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#encodeRdfControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#endpoint> "http://localhost:8890/sparql";
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#endpointControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#handleInvalidData> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#handleInvalidDataControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#headerAcceptControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#query> """PREFIX dcterms: <http://purl.org/dc/terms/>
+CONSTRUCT WHERE {
+  <https://data.gov.cz/zdroj/katalog/NKOD> dcterms:modified ?modified .
+}""";
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#queryControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useAuthentication> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useTolerantRepository> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#useTolerantRepositoryControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpoint#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}

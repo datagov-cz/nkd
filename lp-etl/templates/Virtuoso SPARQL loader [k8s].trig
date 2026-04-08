@@ -1,0 +1,27 @@
+
+<http://localhost:8080/resources/components/1760898021252-0006> {
+  <http://localhost:8080/resources/components/1760898021252-0006> a <http://linkedpipes.com/ontology/Template>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-sparqlEndpoint/0.0.0>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Virtuoso SPARQL loader [k8s]";
+    <http://linkedpipes.com/ontology/pluginTemplate> <http://etl.linkedpipes.com/resources/components/l-sparqlEndpoint/0.0.0>;
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/components/1760898021252-0006/configuration> .
+}
+
+<http://localhost:8080/resources/components/1760898021252-0006/configuration> {
+  <http://localhost:8080/resources/components/1760898021252-0006/configuration> a <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraph> false;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#clearGraphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpoint> "";
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpointControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#endpointSubstitution> "http://{LP_ETL_NKOD_VIRTUOSO_NDC_URL}:8890/sparql-auth";
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#passwordSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_PASSWORD}";
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#targetGraphURIControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthentication> true;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
+    <http://plugins.linkedpipes.com/ontology/l-sparqlEndpoint#userNameSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_USER}" .
+}
