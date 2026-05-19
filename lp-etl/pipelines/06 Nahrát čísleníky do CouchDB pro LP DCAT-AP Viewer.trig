@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "06 Nahrát čísleníky do CouchDB pro LP DCAT-AP Viewer";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:24:36.612"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-03-02T13:20:57.750233421"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-18T13:41:28.997392083"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "DEPENDENCY", "2";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/profile/default> .
   
@@ -21,6 +21,15 @@
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/11a3-a537/configuration>;
     <http://linkedpipes.com/ontology/x> "454"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "7"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/2ca6-ac21>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "způsoby-získání-údajů.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/2ca6-ac21/configuration>;
+    <http://linkedpipes.com/ontology/x> "719"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-245"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/3aee-b4d4>
@@ -67,6 +76,15 @@
     <http://linkedpipes.com/ontology/x> "2151"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "231"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760187944768-0002> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "typy-obsahu-údajů.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0/configuration>;
+    <http://linkedpipes.com/ontology/x> "637"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-173"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/63c4-8a82>
     a <http://linkedpipes.com/ontology/Component>;
@@ -205,6 +223,15 @@
     <http://linkedpipes.com/ontology/y> "-105"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ed25-9ebb>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "způsoby-sdílení-údajů.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ed25-9ebb/configuration>;
+    <http://linkedpipes.com/ontology/x> "788"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-313"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ee12-a8bd>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
@@ -309,6 +336,13 @@
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
   
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/3176-b712>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ed25-9ebb>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/324b-ad9a>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/c4a3-93d2>;
@@ -386,6 +420,13 @@
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766125>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
   
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/95f4-8faa>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/2ca6-ac21>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/9944-8704>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/c2ca-a19c>;
@@ -413,6 +454,13 @@
     <http://linkedpipes.com/ontology/sourceBinding> "OutputFiles";
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/4156-9e56>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/ae83-8959>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/b809-892b>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -519,6 +567,13 @@
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/2ca6-ac21/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/2ca6-ac21/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/číselníky/způsoby-získání-údajů.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/3aee-b4d4/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/3aee-b4d4/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
@@ -561,6 +616,13 @@
     <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthentication> false;
     <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthenticationControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
     <http://plugins.linkedpipes.com/ontology/l-couchDb#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/číselníky/typy-obsahu-údajů.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/63c4-8a82/configuration> {
@@ -663,6 +725,13 @@
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/e462-9840/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/eurovoc-skos-ap-eu.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ed25-9ebb/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/ed25-9ebb/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/číselníky/způsoby-sdílení-údajů.ttl";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

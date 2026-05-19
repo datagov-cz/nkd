@@ -22,7 +22,7 @@
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#passwordSubstitution> "{LP_ETL_NKOD_VIRTUOSO_NDC_PASSWORD}";
-    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 15;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateInterval> 2;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#updateIntervalControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriControl> <http://plugins.linkedpipes.com/resource/configuration/Force>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#uriSubstitution> "jdbc:virtuoso://{LP_ETL_NKOD_VIRTUOSO_NDC_URL}:1111/charset=UTF-8/";
