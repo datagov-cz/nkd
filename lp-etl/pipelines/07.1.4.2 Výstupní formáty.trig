@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.4.2 Výstupní formáty";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-19T07:54:02.597126385"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-20T12:30:05.104178681"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779116262165-0004/profile/default> .
   
@@ -594,7 +594,7 @@ WHERE
 }
 
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779182/configuration> {
-  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779182/1>
+  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779182/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileName> "datové-sady.csv";
     <http://plugins.linkedpipes.com/ontology/t-sparqlSelect#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -607,7 +607,7 @@ PREFIX dct: <http://purl.org/dc/terms/>
 PREFIX dcterm: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
-SELECT DISTINCT ?datová_sada ?název ?popis ?poskytovatel_IRI ?poskytovatel ?klíčová_slova ?prostorové_pokrytí ?téma_IRI ?téma ?periodicita_aktualizace_IRI ?periodicita_aktualizace ?je_součástí_IRI ?právní_předpis ?kategorie_hvd_IRI ?kategorie_hvd_název
+SELECT DISTINCT ?datová_sada ?název ?popis ?poskytovatel_IRI ?poskytovatel ?klíčová_slova ?prostorové_pokrytí ?téma_IRI ?téma ?periodicita_aktualizace_IRI ?periodicita_aktualizace ?je_součástí_IRI ?právní_předpis ?kategorie_hvd_IRI ?kategorie_hvd_název ?vstupní_stránka
 WHERE 
 {
 ?datová_sada a dcat:Dataset ;
@@ -657,6 +657,7 @@ WHERE
     }
 
     OPTIONAL{ ?datová_sada dcatap:applicableLegislation ?právní_předpis . }
+    OPTIONAL{ ?datová_sada dcat:landingPage ?vstupní_stránka . }
     OPTIONAL{ 
     	?datová_sada dcatap:hvdCategory ?kategorie_hvd_IRI . 
     	?kategorie_hvd_IRI skos:prefLabel ?hvd_label .
@@ -706,7 +707,7 @@ WHERE
 }
 
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779358/configuration> {
-  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779358/1>
+  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779358/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX srtfl: <http://plugins.linkedpipes.com/ontology/t-sparqlConstructToFileList#>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
@@ -768,6 +769,7 @@ CONSTRUCT {
     dcterms:creator ?původce ;
     dcatap:applicableLegislation ?datasetApplicableLegislation ;
     dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage ;
     adms:identifier ?datasetId .
     
 ?datasetId a adms:Identifier ;
@@ -925,6 +927,7 @@ WHERE {
   } UNION { <\"\"\",STR(?dataset),\"\"\"> dcterms:accessRights ?accessRights . 
   } UNION { <\"\"\",STR(?dataset),\"\"\"> dcatap:applicableLegislation ?datasetApplicableLegislation . 
   } UNION { <\"\"\",STR(?dataset),\"\"\"> dcatap:hvdCategory ?datasethvdCategory .
+  } UNION { <\"\"\",STR(?dataset),\"\"\"> dcat:landingPage ?datasetLandingPage .
   } UNION { <\"\"\",STR(?dataset),\"\"\"> adms:identifier ?datasetId .
     ?datasetId skos:notation ?datasetIdNotation ;
         dcterms:creator ?datasetIdCreator .
@@ -1777,7 +1780,7 @@ WHERE {
 }
 
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779ddc5-98ac/configuration> {
-  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779ddc5-98ac/1>
+  <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779ddc5-98ac/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-textHolder#Configuration>;
     <http://plugins.linkedpipes.com/ontology/e-textHolder#content> """{
     \"@context\": [
@@ -1868,6 +1871,11 @@ WHERE {
                 \"titles\": \"kategorie_hvd_název\",
                 \"dc:description\": \"Název kategorie HVD.\",
                 \"datatype\": \"string\"
+            },
+            {
+                \"titles\": \"vstupní_stránka\",
+                \"dc:description\": \"URL vstupní stránky datové sady.\",
+                \"datatype\": \"anyURI\"
             }
         ]
     }

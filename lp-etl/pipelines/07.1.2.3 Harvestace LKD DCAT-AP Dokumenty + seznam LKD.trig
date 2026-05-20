@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.3 Harvestace LKD DCAT-AP Dokumenty + seznam LKD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-19T06:46:28.360842518"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-20T12:23:51.946055543"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171546131-0003/profile/default> .
   
@@ -633,12 +633,11 @@ WHERE {
 }
 
 <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177911/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177911/1>
+  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177911/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dct: <http://purl.org/dc/terms/>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -677,7 +676,8 @@ CONSTRUCT {
     dcterms:publisher ?publisher ;
     dcterms:identifier ?dataset_old_str ;
     dcatap:applicableLegislation ?datasetApplicableLegislation ;
-    dcatap:hvdCategory ?datasethvdCategory .
+    dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage .
 
   ?cp_new a ?cptype; 
     vcard:fn ?cpfn ;
@@ -792,7 +792,7 @@ WHERE {
   OPTIONAL { 
     ?dataset dcatap:hvdCategory ?datasethvdCategory . 
     FILTER(isIRI(?datasethvdCategory))
-  }  
+  }
   OPTIONAL { 
     ?dataset foaf:page ?page . 
     FILTER(isIRI(?page))
@@ -806,6 +806,9 @@ WHERE {
   OPTIONAL { 
     ?dataset dcterms:isPartOf|dcat:inSeries ?topDataset . 
     FILTER(isIRI(?topDataset))
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
   }
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
@@ -871,14 +874,14 @@ WHERE {
         FILTER(isIRI(?dataServicehvdCategory))
       }
       OPTIONAL { 
-        ?dataService foaf:page ?dataServiceDocumentation . 
+        ?dataService foaf:page ?dataServiceDocumentation .
         FILTER(isIRI(?dataServiceDocumentation))
       }
-      OPTIONAL { ?dataService dcat:contactPoint ?dscp . 
+      OPTIONAL { ?dataService dcat:contactPoint ?dscp .
         ?dscp a ?dscptype.
         OPTIONAL { ?dscp vcard:fn ?dscpfn . }
         OPTIONAL { 
-          ?dscp vcard:hasEmail ?dscpemail . 
+          ?dscp vcard:hasEmail ?dscpemail .
           FILTER(isIRI(?dscpemail))
         }
       }      
@@ -902,7 +905,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFail> false;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 4;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1294,7 +1297,7 @@ WHERE {
 }
 
 <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779a3e2-bbe4/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779a3e2-bbe4/1>
+  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779a3e2-bbe4/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#commitSize> 100;
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -1308,7 +1311,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#mimeTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#softFail> true;
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#threads> 4;
     <http://plugins.linkedpipes.com/ontology/t-filesToRdfChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1329,7 +1332,7 @@ WHERE {
 }
 
 <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001b403-b767/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001b403-b767/1>
+  <http://localhost:8080/resources/pipelines/1779171546131-00031779171546131-00031779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001b403-b767/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
 INSERT { ?série a dcat:Dataset } 
@@ -1337,7 +1340,7 @@ WHERE { ?série a dcat:DatasetSeries }""";
     <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
     <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 4;
     <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
