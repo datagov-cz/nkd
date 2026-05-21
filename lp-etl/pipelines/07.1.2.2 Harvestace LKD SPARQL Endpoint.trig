@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.2 Harvestace LKD SPARQL Endpoint";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-19T06:45:36.26758175"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-20T12:26:50.551472381"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171403535-0002/profile/default> .
   
@@ -391,7 +391,7 @@ BIND(UUID() as ?configiri)
 }
 
 <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/1>
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX esl: <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#>
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
@@ -445,7 +445,8 @@ CONSTRUCT {
     dcat:inSeries ?topDataset ;
     dcat:distribution ?distribution ;
     dcatap:applicableLegislation ?datasetApplicableLegislation ;
-    dcatap:hvdCategory ?datasethvdCategory .
+    dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage .
 
   ?cp a ?cptype; 
     vcard:fn ?cpfn ;
@@ -532,7 +533,10 @@ WHERE {
   OPTIONAL { 
     ?dataset dcatap:hvdCategory ?datasethvdCategory . 
     FILTER(isIRI(?datasethvdCategory))
-  }  
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
+  }
 
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
@@ -666,7 +670,7 @@ WHERE
 }
 
 <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/1>
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -709,7 +713,8 @@ CONSTRUCT {
     dcterms:publisher ?publisher ;
     dcterms:identifier ?dataset_old_str ;
     dcatap:applicableLegislation ?datasetApplicableLegislation ;
-    dcatap:hvdCategory ?datasethvdCategory .
+    dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage .
 
   ?cp_new a ?cptype; 
     vcard:fn ?cpfn ;
@@ -816,6 +821,9 @@ WHERE {
   OPTIONAL { ?dataset dcat:spatialResolutionInMeters ?spatialResolution . }
   OPTIONAL { ?dataset dcat:temporalResolution ?temporalResolution . }
   OPTIONAL { ?dataset dcterms:isPartOf|dcat:inSeries ?topDataset . }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
+  }
 
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
