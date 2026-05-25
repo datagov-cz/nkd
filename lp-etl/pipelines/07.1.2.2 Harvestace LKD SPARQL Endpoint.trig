@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.2 Harvestace LKD SPARQL Endpoint";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-19T06:45:36.26758175"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-21T13:48:09.024434707"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171403535-0002/profile/default> .
   
@@ -13,12 +13,31 @@
     <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontology/repository/MemoryStore>;
     <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
   
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Union";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553/configuration>;
+    <http://linkedpipes.com/ontology/x> "2229"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "384"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
+    <http://purl.org/dc/terms/description> """Vytvořit záznamy datovýh sad z
+LKD řešených SPARQL endpointem
+Otevřená data + HVD""";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5/configuration>;
+    <http://linkedpipes.com/ontology/x> "2535"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "341"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlLinkerChunked/0.0.0> .
+  
   <http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.3";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1/configuration>;
-    <http://linkedpipes.com/ontology/x> "3106"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "317"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "3275"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "300"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1779173130019-0004> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779121>
@@ -49,8 +68,8 @@ SPARQL endpointem""";
     <http://purl.org/dc/terms/description> """Harvestace LKODů řešených
 SPARQL endpointem""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132/configuration>;
-    <http://linkedpipes.com/ontology/x> "2084"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "220"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "2043"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "218"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-sparqlEndpointChunkedList/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139>
@@ -97,26 +116,27 @@ záznamem""";
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
     <http://purl.org/dc/terms/description> """Vytvořit záznamy datovýh sad z
-LKODů řešených SPARQL endpointem""";
+LKD řešených SPARQL endpointem
+DCAT-AP-CZ-360-2023""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration>;
-    <http://linkedpipes.com/ontology/x> "2473"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "201"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "2533"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "176"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlLinkerChunked/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Chunked to Files";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601/configuration>;
-    <http://linkedpipes.com/ontology/x> "2551"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "312"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "2919"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "323"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-chunkedToFiles/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002472d-920b>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to RDF single graph";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002472d-920b/configuration>;
-    <http://linkedpipes.com/ontology/x> "2223"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "425"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "1779"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "484"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-filesToRdfGraph/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00026c8d-b0b2>
@@ -124,8 +144,8 @@ LKODů řešených SPARQL endpointem""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Files from local";
     <http://purl.org/dc/terms/description> "metadata-a-poskytovatelé.ttl";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00026c8d-b0b2/configuration>;
-    <http://linkedpipes.com/ontology/x> "2204"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "516"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "1742"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "574"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00027adc-b685>
@@ -149,8 +169,8 @@ LKODů řešených SPARQL endpointem""";
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Delete directory";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-000284bb-b385/configuration>;
-    <http://linkedpipes.com/ontology/x> "2780"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "324"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "3094"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "251"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/x-deleteDirectory/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002d0fe-932c>
@@ -158,9 +178,51 @@ LKODů řešených SPARQL endpointem""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Files to local";
     <http://purl.org/dc/terms/description> "sparql";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002d0fe-932c/configuration>;
-    <http://linkedpipes.com/ontology/x> "2778"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "400"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "3120"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "358"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/l-filesToLocal/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/0551-95ed>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5>;
+    <http://linkedpipes.com/ontology/targetBinding> "DataRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/2488-86a6>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160>;
+    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/38ad-9256>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5>;
+    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/402b-a8f8>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/d40d-af18>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002472d-920b>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/connection/e351-af20>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputChunked" .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021199-8c76>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -203,13 +265,6 @@ LKODů řešených SPARQL endpointem""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779124>;
     <http://linkedpipes.com/ontology/targetBinding> "Tasks" .
-  
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779232>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160>;
-    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
   
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779253>
     a <http://linkedpipes.com/ontology/Connection>;
@@ -260,13 +315,6 @@ LKODů řešených SPARQL endpointem""";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002d0fe-932c>;
     <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
   
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002885e-b26a>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002472d-920b>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160>;
-    <http://linkedpipes.com/ontology/targetBinding> "ReferenceRdf" .
-  
   <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-0002aec5-91c9>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160>;
@@ -290,383 +338,13 @@ LKODů řešených SPARQL endpointem""";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-000284bb-b385> .
 }
 
-<http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1/configuration>
-    a <http://plugins.linkedpipes.com/ontology/x-pipeline#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingData> false;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingDataControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#instance> <http://localhost:8080>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#instanceControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevel> "INFO";
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevelControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicy> <http://plugins.linkedpipes.com/ontology/x-pipeline#PreserveLogs>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicyControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipeline> <http://localhost:8080/resources/pipelines/1779171546131-0003>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipelineControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugData> true;
-    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugDataControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+<http://localhost:8080/resources/pipelines/1779171403535-0002/component/1f5b-8553/configuration> {
+  <http://etl.linkedpipes.com/resources/components/t-singleGraphUnion/0.0.0/configuration/1>
+    a <http://plugins.linkedpipes.com/ontology/t-singleGraphUnion#Configuration> .
 }
 
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779121/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779121/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX localhost: <http://localhost/>
-PREFIX ss: <http://plugins.linkedpipes.com/ontology/t-sparqlSelectMultiple#> 
-PREFIX loc: <http://www.w3.org/2007/uwa/context/location.owl#>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-
-CONSTRUCT { 
-?configiri a ss:Configuration ;
-    ss:query ?query ;
-    ss:fileName ?filename .
-} 
-WHERE 
-{ 
-  {SELECT DISTINCT ?catalog WHERE {?catalog dcat:dataset [] . }}
-
-BIND(CONCAT(\"\"\"
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-SELECT ?dataset
-WHERE {
-<\"\"\",STR(?catalog),\"\"\"> dcat:dataset ?dataset .
-}
-\"\"\") as ?query)
-
-BIND(CONCAT(REPLACE(STR(?catalog),\"[:/\\\\.]\",\"_\"),\".csv\") as ?filename)
-BIND(UUID() as ?configiri)
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779124/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779124/1>
-    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#commitSize> 0;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#encodeRdf> false;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#encodeRdfControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#taskPerGroupLimit> 0;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#taskPerGroupLimitControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#threads> 1;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#timeLimit> -1;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#timeLimitControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useAuthentication> false;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useAuthenticationControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useTolerantRepository>
-      false;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useTolerantRepositoryControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132/1>
-    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#encodeRdf> true;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#encodeRdfControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#passwordControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#threads> 1;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#threadsControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#timeLimit> 10000;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#timeLimitControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useAuthentication>
-      false;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useAuthenticationControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useTolerantRepository>
-      false;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useTolerantRepositoryControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#userNameControl>
-      <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX esl: <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#>
-PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
-PREFIX localhost: <http://localhost/>
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-
-CONSTRUCT { 
-  ?configiri a esl:Task ;
-    esl:query ?query ;
-    esl:fileName ?filename ;
-    esl:endpoint ?endpoint ;
-    esl:chunkSize \"20\"  .
-} 
-WHERE 
-{ 
-  { 
-    SELECT DISTINCT ?catalog ?endpoint 
-    WHERE {
-      ?catalog dcat:endpointURL ?endpoint . 
-    } 
-  }
-   
-BIND(CONCAT(\"\"\"
-PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX dcterms: <http://purl.org/dc/terms/>
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX schema: <http://schema.org/>
-PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
-PREFIX dcatap: <http://data.europa.eu/r5r/>
-
-PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
-
-CONSTRUCT {
-  <\"\"\", STR(?catalog), \"\"\"> a dcat:Catalog ;
-    dcat:dataset ?dataset .
-
-  ?dataset a ?datasetType, dcat:Dataset ;
-    dcterms:title ?title ;
-    dcterms:description ?description ;
-    dcat:theme ?theme ;
-    dcterms:accrualPeriodicity ?accrualPeriodicity ;
-    dcat:keyword ?keyword ;
-    dcterms:spatial ?spatial ;
-    dcterms:temporal ?temporal ;
-    dcat:contactPoint ?cp ;
-    foaf:page ?page ;
-    dcterms:conformsTo ?conformsTo ;
-    dcat:spatialResolutionInMeters ?spatialResolution ;
-    dcat:temporalResolution ?temporalResolution ;
-    dcat:inSeries ?topDataset ;
-    dcat:distribution ?distribution ;
-    dcatap:applicableLegislation ?datasetApplicableLegislation ;
-    dcatap:hvdCategory ?datasethvdCategory .
-
-  ?cp a ?cptype; 
-    vcard:fn ?cpfn ;
-    vcard:hasEmail ?cpemail .
-
-  ?temporal a dcterms:PeriodOfTime; 
-    dcat:startDate ?finalStartDate ;
-    dcat:endDate ?finalEndDate .
-
-  ?distribution a dcat:Distribution ;
-    dcat:downloadURL ?ddURL ;
-    dcat:accessURL ?daURL ;
-    dcterms:format ?dformat ;
-    dcat:mediaType ?dmimeType ;
-    dcterms:conformsTo ?dconformsTo ;
-    dcat:compressFormat ?dcompressFormat ;
-    dcat:packageFormat ?dpackageFormat ;
-    dcatap:applicableLegislation ?distributionApplicableLegislation ;
-    dcterms:title ?dtitle .
-
-  ?distribution pu:specifikace ?tou .
-  ?tou a pu:Specifikace ;
-    pu:autorské-dílo ?touGeneral ;
-    pu:databáze-jako-autorské-dílo ?touDatabase ;
-    pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
-    pu:osobní-údaje ?touPersonalData ;
-    pu:autor ?touGeneralAuthor ;
-    pu:autor-databáze ?touDatabaselAuthor .
-
-  ?distribution dcat:accessService ?dataService . 
-
-  ?dataService a dcat:DataService ;
-    dcterms:title ?sTitle ;
-    dcterms:conformsTo ?sConformsTo ;
-    dcat:endpointURL ?sEndpointURL ;
-    dcat:endpointDescription ?sEndpointDescription ;
-    dcatap:applicableLegislation ?dataServiceApplicableLegislation ;
-    dcatap:hvdCategory ?dataServicehvdCategory ;
-    foaf:page ?dataServiceDocumentation ;
-    dcat:contactPoint ?dscp .
-
-  ?dscp a ?dscptype; 
-    vcard:fn ?dscpfn ;
-    vcard:hasEmail ?dscpemail .
-
-}
-WHERE { 
-  ${VALUES}
-
-  ?dataset a ?datasetType ;
-    dcterms:title ?title ;
-    dcterms:description ?description ;
-    dcat:theme ?theme ;
-    dcterms:accrualPeriodicity ?accrualPeriodicity ;
-    dcat:keyword ?keyword ;
-    dcterms:spatial ?spatial .
-
-    FILTER(isIRI(?spatial) && isIRI(?theme) && isIRI(?accrualPeriodicity))  
-  OPTIONAL {
-    ?dataset dcterms:temporal ?temporal . 
-    OPTIONAL { ?temporal dcat:startDate ?startDate . }
-    OPTIONAL { ?temporal dcat:endDate ?endDate . }
-    OPTIONAL { ?temporal schema:startDate ?schemaStartDate . }
-    OPTIONAL { ?temporal schema:endDate ?schemaEndDate . }
-  }
-
-  OPTIONAL {
-    ?dataset dcat:contactPoint ?cp . 
-
-    ?cp a ?cptype.
-    OPTIONAL { ?cp vcard:fn ?cpfn . }
-    OPTIONAL { ?cp vcard:hasEmail ?cpemail . }
-  }
-
-  OPTIONAL { ?dataset foaf:page ?page . }
-  OPTIONAL { ?dataset dcterms:conformsTo ?conformsTo . }
-  OPTIONAL { ?dataset dcat:spatialResolutionInMeters ?spatialResolution . }
-  OPTIONAL { ?dataset dcat:temporalResolution ?temporalResolution . }
-  OPTIONAL { ?dataset dcterms:isPartOf|dcat:inSeries ?topDataset . }
-  OPTIONAL { 
-    ?dataset dcatap:applicableLegislation ?datasetApplicableLegislation . 
-    FILTER(isIRI(?datasetApplicableLegislation))
-  }
-  OPTIONAL { 
-    ?dataset dcatap:hvdCategory ?datasethvdCategory . 
-    FILTER(isIRI(?datasethvdCategory))
-  }  
-
-  OPTIONAL {
-    ?dataset dcat:distribution ?distribution .
-    FILTER(isIRI(?distribution))
-
-    ?distribution a dcat:Distribution ;
-             dcat:accessURL ?daURL ;
-             pu:specifikace ?tou .
-
-    ?tou a pu:Specifikace ;
-             pu:autorské-dílo ?touGeneral ;
-             pu:databáze-jako-autorské-dílo ?touDatabase ;
-             pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
-             pu:osobní-údaje ?touPersonalData .
-
-    OPTIONAL { ?tou pu:autor ?touGeneralAuthor . }
-    OPTIONAL { ?tou pu:autor-databáze ?touDatabaselAuthor . }
-
-    OPTIONAL { 
-      ?distribution dcatap:applicableLegislation ?distributionApplicableLegislation . 
-      FILTER(isIRI(?distributionApplicableLegislation))
-    }
-    OPTIONAL { ?distribution dcat:downloadURL ?ddURL . }
-    OPTIONAL { ?distribution dcterms:format ?dformat . }
-    OPTIONAL { ?distribution dcat:mediaType ?dmimeType . }
-    OPTIONAL { ?distribution dcterms:conformsTo ?dconformsTo . }
-    OPTIONAL { ?distribution dcat:compressFormat ?dcompressFormat . }
-    OPTIONAL { ?distribution dcat:packageFormat ?dpackageFormat . }
-    OPTIONAL { ?distribution dcterms:title ?dtitle . }
-
-    OPTIONAL { 
-      ?distribution dcat:accessService ?dataService . 
-      FILTER(isIRI(?dataService))
-
-      ?dataService a dcat:DataService ;
-                    dcterms:title ?sTitle ;
-                    dcat:endpointURL ?sEndpointURL .
-      OPTIONAL { ?dataService dcat:endpointDescription ?sEndpointDescription .}
-      OPTIONAL { ?dataService dcterms:conformsTo ?sConformsTo .}
-      OPTIONAL { 
-        ?dataService dcatap:applicableLegislation ?dataServiceApplicableLegislation . 
-        FILTER(isIRI(?dataServiceApplicableLegislation))
-      }
-      OPTIONAL { 
-        ?dataService dcatap:hvdCategory ?dataServicehvdCategory . 
-        FILTER(isIRI(?dataServicehvdCategory))
-      }
-      OPTIONAL { 
-        ?dataService foaf:page ?dataServiceDocumentation . 
-        FILTER(isIRI(?dataServiceDocumentation))
-      }
-      OPTIONAL { ?dataService dcat:contactPoint ?dscp . 
-        ?dscp a ?dscptype.
-        OPTIONAL { ?dscp vcard:fn ?dscpfn . }
-        OPTIONAL { 
-          ?dscp vcard:hasEmail ?dscpemail . 
-          FILTER(isIRI(?dscpemail))
-        }
-      }
-    }
-  }
-  VALUES ?datasetType { dcat:Dataset dcat:DatasetSeries }
-  BIND(IF(BOUND(?startDate), ?startDate, ?schemaStartDate) AS ?finalStartDate)
-  BIND(IF(BOUND(?endDate), ?endDate, ?schemaEndDate) AS ?finalEndDate)
-}
-\"\"\") as ?query)
-
-	BIND(CONCAT(REPLACE(STR(?catalog),\"[:/\\\\.]\",\"_\"),\".csv\") as ?filename)
-	BIND(UUID() as ?configiri)
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779153/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779153/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
-
-PREFIX esl: <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#>
-PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
-
-CONSTRUCT 
-{ 
-  ?catalog a esl:Task ;
-    esl:query ?query ;
-    esl:group ?uritext ;
-    esl:endpoint ?uritext ;
-} 
-WHERE { 
-  ?catalog a dcat:Catalog, nkod:DcatApSparql ;
-    dcat:endpointURL ?endpoint .
-
-  BIND(STR(?endpoint) as ?uritext)
-
-  BIND(CONCAT(\"\"\"PREFIX dcat: <http://www.w3.org/ns/dcat#>
-PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-
-CONSTRUCT {
-<\"\"\", STR(?catalog), \"\"\"> dcat:endpointURL \\\"\"\"\",?uritext,\"\"\"\\\"^^xsd:anyURI ;
-dcat:dataset ?dataset .
-} WHERE { 
-{ ?dataset a dcat:Dataset . } UNION { ?dataset a dcat:DatasetSeries }
-}\"\"\") as ?query)
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779155/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779155/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlSelectMultiple#Configuration> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158/1>
-    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
-
-PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
-PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
-
-CONSTRUCT 
-{ 
-  ?catalog chunked:fileName ?mdfilename .
-} 
-WHERE 
-{ 
-  ?catalog a dcat:Catalog, nkod:DcatApSparql ;
-  chunked:fileName ?mdfilename .
-}""";
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
-}
-
-<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/1>
+<http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/component/a926-ada5/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
@@ -709,7 +387,8 @@ CONSTRUCT {
     dcterms:publisher ?publisher ;
     dcterms:identifier ?dataset_old_str ;
     dcatap:applicableLegislation ?datasetApplicableLegislation ;
-    dcatap:hvdCategory ?datasethvdCategory .
+    dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage .
 
   ?cp_new a ?cptype; 
     vcard:fn ?cpfn ;
@@ -816,6 +495,9 @@ WHERE {
   OPTIONAL { ?dataset dcat:spatialResolutionInMeters ?spatialResolution . }
   OPTIONAL { ?dataset dcat:temporalResolution ?temporalResolution . }
   OPTIONAL { ?dataset dcterms:isPartOf|dcat:inSeries ?topDataset . }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
+  }
 
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
@@ -890,12 +572,796 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFail> false;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 8;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 4;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-0002/component/e0a6-91c1/configuration>
+    a <http://plugins.linkedpipes.com/ontology/x-pipeline#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingData> false;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#deleteWorkingDataControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#instance> <http://localhost:8080>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#instanceControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevel> "INFO";
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logLevelControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicy> <http://plugins.linkedpipes.com/ontology/x-pipeline#PreserveLogs>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#logPolicyControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipeline> <http://localhost:8080/resources/pipelines/1779171546131-0003>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#pipelineControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugData> true;
+    <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugDataControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779121/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779121/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX localhost: <http://localhost/>
+PREFIX ss: <http://plugins.linkedpipes.com/ontology/t-sparqlSelectMultiple#> 
+PREFIX loc: <http://www.w3.org/2007/uwa/context/location.owl#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+CONSTRUCT { 
+?configiri a ss:Configuration ;
+    ss:query ?query ;
+    ss:fileName ?filename .
+} 
+WHERE 
+{ 
+  {SELECT DISTINCT ?catalog WHERE {?catalog dcat:dataset [] . }}
+
+BIND(CONCAT(\"\"\"
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+SELECT ?dataset
+WHERE {
+<\"\"\",STR(?catalog),\"\"\"> dcat:dataset ?dataset .
+}
+\"\"\") as ?query)
+
+BIND(CONCAT(REPLACE(STR(?catalog),\"[:/\\\\.]\",\"_\"),\".csv\") as ?filename)
+BIND(UUID() as ?configiri)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779124/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779124/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#commitSize> 0;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#commitSizeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#encodeRdf> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#encodeRdfControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#passwordControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#taskPerGroupLimit> 0;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#taskPerGroupLimitControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#threads> 1;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#timeLimit> 10000;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#timeLimitControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useAuthentication> false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useTolerantRepository>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#useTolerantRepositoryControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779132/1>
+    a <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#encodeRdf> true;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#encodeRdfControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#passwordControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#threads> 1;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#threadsControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#timeLimit> 10000;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#timeLimitControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useAuthentication>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useAuthenticationControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useTolerantRepository>
+      false;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#useTolerantRepositoryControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#userNameControl>
+      <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779139/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX esl: <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointChunkedList#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+CONSTRUCT { 
+  ?configiri a esl:Task ;
+    esl:query ?query ;
+    esl:fileName ?filename ;
+    esl:endpoint ?endpoint ;
+    esl:chunkSize \"20\"  .
+} 
+WHERE 
+{ 
+  { 
+    SELECT DISTINCT ?catalog ?endpoint 
+    WHERE {
+      ?catalog dcat:endpointURL ?endpoint . 
+    } 
+  }
+   
+BIND(CONCAT(\"\"\"
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.org/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+
+PREFIX v-sgov: <https://slovník.gov.cz/veřejný-sektor/pojem/>
+PREFIX p360-2023: <https://slovník.gov.cz/legislativní/sbírka/360/2023/pojem/>
+PREFIX p365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/>
+PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
+PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
+
+PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
+
+CONSTRUCT {
+  <\"\"\", STR(?catalog), \"\"\"> a dcat:Catalog ;
+    dcat:dataset ?dataset .
+
+  ?dataset a ?datasetType, dcat:Dataset ;
+    dcterms:title ?title ;
+    dcterms:description ?description ;
+    dcat:theme ?theme ;
+    dcterms:accrualPeriodicity ?accrualPeriodicity ;
+    dcat:keyword ?keyword ;
+    dcterms:spatial ?spatial ;
+    dcterms:temporal ?temporal ;
+    dcat:contactPoint ?cp ;
+    foaf:page ?page ;
+    dcterms:conformsTo ?conformsTo ;
+    dcat:spatialResolutionInMeters ?spatialResolution ;
+    dcat:temporalResolution ?temporalResolution ;
+    dcat:inSeries ?topDataset ;
+    dcat:distribution ?distribution ;
+    dcatap:applicableLegislation ?datasetApplicableLegislation ;
+    dcatap:hvdCategory ?datasethvdCategory ;
+    dcat:landingPage ?datasetLandingPage ;
+    v-sgov:týká-se-pojmu ?pojemDatovéSady .
+
+  ?isvs p365-2000:zahrnuje ?dataset .
+
+  ?cp a ?cptype; 
+    vcard:fn ?cpfn ;
+    vcard:hasEmail ?cpemail .
+
+  ?temporal a dcterms:PeriodOfTime; 
+    dcat:startDate ?finalStartDate ;
+    dcat:endDate ?finalEndDate .
+
+  ?distribution a dcat:Distribution, ?dType ;
+    dcat:downloadURL ?ddURL ;
+    dcat:accessURL ?daURL ;
+    dcterms:format ?dformat ;
+    dcat:mediaType ?dmimeType ;
+    dcterms:conformsTo ?dconformsTo ;
+    dcat:compressFormat ?dcompressFormat ;
+    dcat:packageFormat ?dpackageFormat ;
+    dcatap:applicableLegislation ?distributionApplicableLegislation ;
+    dcterms:title ?dtitle .
+
+  ?distribution
+      p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
+      p360-2023:má-způsob-sdílení-rozhraním ?dZpůsobSdílení ;
+      p360-2023:má-způsob-získání-dat-sdílených-rozhraním ?dZpůsobZískání .
+
+  ?distribution p360-2023:zprostředkovává-sdílení ?sdílení .
+  
+  ?sdílení a p360-2023:sdílení-údaje ;
+      p360-2023:je-sdílen-jako ?údajTypObsahu ;
+      p360-2023:je-sdílen-způsobem ?údajZpůsobSdílení ;
+      p360-2023:je-získán-způsobem ?údajZpůsobZískání ;
+      p360-2023:odpovídající-pojem ?údajPojem .
+
+  ?distribution pu:specifikace ?tou .
+  ?tou a pu:Specifikace ;
+    pu:autorské-dílo ?touGeneral ;
+    pu:databáze-jako-autorské-dílo ?touDatabase ;
+    pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
+    pu:osobní-údaje ?touPersonalData ;
+    pu:autor ?touGeneralAuthor ;
+    pu:autor-databáze ?touDatabaselAuthor .
+
+  ?distribution dcat:accessService ?dataService . 
+
+  ?dataService a dcat:DataService ;
+    dcterms:title ?sTitle ;
+    dcterms:conformsTo ?sConformsTo ;
+    dcat:endpointURL ?sEndpointURL ;
+    dcat:endpointDescription ?sEndpointDescription ;
+    dcatap:applicableLegislation ?dataServiceApplicableLegislation ;
+    dcatap:hvdCategory ?dataServicehvdCategory ;
+    foaf:page ?dataServiceDocumentation ;
+    dcat:contactPoint ?dscp .
+
+  ?dscp a ?dscptype; 
+    vcard:fn ?dscpfn ;
+    vcard:hasEmail ?dscpemail .
+
+}
+WHERE { 
+  ${VALUES}
+
+  ?dataset a ?datasetType ;
+    dcterms:title ?title ;
+    dcterms:description ?description ;
+    dcat:keyword ?keyword .
+
+  OPTIONAL {
+    ?dataset dcterms:temporal ?temporal . 
+    OPTIONAL { ?temporal dcat:startDate ?startDate . }
+    OPTIONAL { ?temporal dcat:endDate ?endDate . }
+    OPTIONAL { ?temporal schema:startDate ?schemaStartDate . }
+    OPTIONAL { ?temporal schema:endDate ?schemaEndDate . }
+  }
+
+  OPTIONAL {
+    ?dataset dcat:contactPoint ?cp . 
+
+    ?cp a ?cptype.
+    OPTIONAL { ?cp vcard:fn ?cpfn . }
+    OPTIONAL { ?cp vcard:hasEmail ?cpemail . }
+  }
+
+  OPTIONAL { ?dataset dcat:theme ?theme . FILTER(isIRI(?theme))}
+  OPTIONAL { ?dataset dcterms:accrualPeriodicity ?accrualPeriodicity . FILTER(isIRI(?accrualPeriodicity))}
+  OPTIONAL { ?dataset dcterms:spatial ?spatial . FILTER(isIRI(?spatial))}
+  OPTIONAL { ?dataset foaf:page ?page . }
+  OPTIONAL { ?dataset dcterms:conformsTo ?conformsTo . }
+  OPTIONAL { ?dataset dcat:spatialResolutionInMeters ?spatialResolution . }
+  OPTIONAL { ?dataset dcat:temporalResolution ?temporalResolution . }
+  OPTIONAL { ?dataset dcterms:isPartOf|dcat:inSeries ?topDataset . }
+  OPTIONAL { 
+    ?dataset dcatap:applicableLegislation ?datasetApplicableLegislation . 
+    FILTER(isIRI(?datasetApplicableLegislation))
+  }
+  OPTIONAL { 
+    ?dataset dcatap:hvdCategory ?datasethvdCategory . 
+    FILTER(isIRI(?datasethvdCategory))
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
+  }
+  OPTIONAL { ?isvs p365-2000:zahrnuje ?dataset .
+    FILTER(isIRI(?isvs))
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
+  }
+  OPTIONAL { 
+    ?dataset v-sgov:týká-se-pojmu ?pojemDatovéSady . 
+    FILTER(isIRI(?pojemDatovéSady) && STRSTARTS(STR(?pojemDatovéSady), \"https://\"))
+  }
+
+  OPTIONAL {
+    ?dataset dcat:distribution ?distribution .
+    FILTER(isIRI(?distribution))
+
+    ?distribution a dcat:Distribution ;
+             dcat:accessURL ?daURL ;
+             pu:specifikace ?tou .
+
+    ?tou a pu:Specifikace ;
+             pu:autorské-dílo ?touGeneral ;
+             pu:databáze-jako-autorské-dílo ?touDatabase ;
+             pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
+             pu:osobní-údaje ?touPersonalData .
+
+    OPTIONAL { ?tou pu:autor ?touGeneralAuthor . }
+    OPTIONAL { ?tou pu:autor-databáze ?touDatabaselAuthor . }
+
+    OPTIONAL { 
+      ?distribution dcatap:applicableLegislation ?distributionApplicableLegislation . 
+      FILTER(isIRI(?distributionApplicableLegislation))
+    }
+    OPTIONAL { ?distribution p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
+             p360-2023:má-způsob-sdílení-rozhraním ?dZpůsobSdílení ;
+             p360-2023:má-způsob-získání-dat-sdílených-rozhraním ?dZpůsobZískání .
+   }
+    OPTIONAL { ?distribution a ?dType . }
+    OPTIONAL { ?distribution dcat:downloadURL ?ddURL . }
+    OPTIONAL { ?distribution dcterms:format ?dformat . }
+    OPTIONAL { ?distribution dcat:mediaType ?dmimeType . }
+    OPTIONAL { ?distribution dcterms:conformsTo ?dconformsTo . }
+    OPTIONAL { ?distribution dcat:compressFormat ?dcompressFormat . }
+    OPTIONAL { ?distribution dcat:packageFormat ?dpackageFormat . }
+    OPTIONAL { ?distribution dcterms:title ?dtitle . }
+
+    OPTIONAL {
+      ?distribution p360-2023:zprostředkovává-sdílení ?sdílení .
+      ?sdílení a p360-2023:sdílení-údaje ;
+          p360-2023:je-sdílen-jako ?údajTypObsahu ;
+          p360-2023:je-sdílen-způsobem ?údajZpůsobSdílení ;
+          p360-2023:je-získán-způsobem ?údajZpůsobZískání ;
+          p360-2023:odpovídající-pojem ?údajPojem .
+
+      	  FILTER(isIRI(?dTypObsahu) && STRSTARTS(STR(?údajTypObsahu), \"https://data.dia.gov.cz/zdroj/číselníky/typy-obsahu-údajů/položky/\"))
+          FILTER(isIRI(?dZpůsobSdílení) && STRSTARTS(STR(?údajZpůsobSdílení), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-sdílení-údajů/položky/\"))
+          FILTER(isIRI(?dZpůsobZískání) && STRSTARTS(STR(?údajZpůsobZískání), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-získání-údajů/položky/\"))
+          FILTER(isIRI(?údajPojem) && STRSTARTS(STR(?údajPojem), \"https://\"))
+    }
+
+    OPTIONAL { 
+      ?distribution dcat:accessService ?dataService . 
+      FILTER(isIRI(?dataService))
+
+      ?dataService a dcat:DataService ;
+                    dcterms:title ?sTitle ;
+                    dcat:endpointURL ?sEndpointURL .
+      OPTIONAL { ?dataService dcat:endpointDescription ?sEndpointDescription .}
+      OPTIONAL { ?dataService dcterms:conformsTo ?sConformsTo .}
+      OPTIONAL { 
+        ?dataService dcatap:applicableLegislation ?dataServiceApplicableLegislation . 
+        FILTER(isIRI(?dataServiceApplicableLegislation))
+      }
+      OPTIONAL { 
+        ?dataService dcatap:hvdCategory ?dataServicehvdCategory . 
+        FILTER(isIRI(?dataServicehvdCategory))
+      }
+      OPTIONAL { 
+        ?dataService foaf:page ?dataServiceDocumentation . 
+        FILTER(isIRI(?dataServiceDocumentation))
+      }
+      OPTIONAL { ?dataService dcat:contactPoint ?dscp . 
+        ?dscp a ?dscptype.
+        OPTIONAL { ?dscp vcard:fn ?dscpfn . }
+        OPTIONAL { 
+          ?dscp vcard:hasEmail ?dscpemail . 
+          FILTER(isIRI(?dscpemail))
+        }
+      }
+    }
+  }
+  VALUES ?datasetType { dcat:Dataset dcat:DatasetSeries }
+  BIND(IF(BOUND(?startDate), ?startDate, ?schemaStartDate) AS ?finalStartDate)
+  BIND(IF(BOUND(?endDate), ?endDate, ?schemaEndDate) AS ?finalEndDate)
+}
+\"\"\") as ?query)
+
+	BIND(CONCAT(REPLACE(STR(?catalog),\"[:/\\\\.]\",\"_\"),\".csv\") as ?filename)
+	BIND(UUID() as ?configiri)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779153/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779153/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+PREFIX esl: <http://plugins.linkedpipes.com/ontology/e-sparqlEndpointList#>
+PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
+
+CONSTRUCT 
+{ 
+  ?catalog a esl:Task ;
+    esl:query ?query ;
+    esl:group ?uritext ;
+    esl:endpoint ?uritext ;
+} 
+WHERE { 
+  ?catalog a dcat:Catalog, nkod:DcatApSparql ;
+    dcat:endpointURL ?endpoint .
+
+  BIND(STR(?endpoint) as ?uritext)
+
+  BIND(CONCAT(\"\"\"PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+<\"\"\", STR(?catalog), \"\"\"> dcat:endpointURL \\\"\"\"\",?uritext,\"\"\"\\\"^^xsd:anyURI ;
+dcat:dataset ?dataset .
+} WHERE { 
+{ ?dataset a dcat:Dataset . } UNION { ?dataset a dcat:DatasetSeries }
+}\"\"\") as ?query)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779155/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779155/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlSelectMultiple#Configuration> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779158/1>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX dcat: <http://www.w3.org/ns/dcat#>
+
+PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
+PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
+
+CONSTRUCT 
+{ 
+  ?catalog chunked:fileName ?mdfilename .
+} 
+WHERE 
+{ 
+  ?catalog a dcat:Catalog, nkod:DcatApSparql ;
+  chunked:fileName ?mdfilename .
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputMode> <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#createNewChunk>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#outputModeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#query> """PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX schema: <http://schema.org/>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX gr: <http://purl.org/goodrelations/v1#>
+PREFIX dcatap: <http://data.europa.eu/r5r/>
+
+PREFIX tz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/>
+PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
+PREFIX ds: <https://data.gov.cz/slovník/datové-schránky/>
+PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
+PREFIX v-sgov: <https://slovník.gov.cz/veřejný-sektor/pojem/>
+PREFIX p360-2023: <https://slovník.gov.cz/legislativní/sbírka/360/2023/pojem/>
+PREFIX p365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/>
+PREFIX languages: <http://publications.europa.eu/resource/authority/language/>
+
+PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
+PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
+PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
+
+CONSTRUCT {
+  ?catalog dcat:dataset ?dataset_new .
+
+  ?dataset_new a ?datasetType, tz:SPARQL, tz:LKOD ;
+    dcterms:title ?title ;
+    dcterms:description ?description ;
+    dcat:theme ?theme ;
+    dcterms:accrualPeriodicity ?accrualPeriodicity ;
+    dcat:keyword ?keyword ;
+    dcterms:temporal ?temporal_new ;
+    dcat:contactPoint ?cp_new ;
+    foaf:page ?page ;
+    dcterms:conformsTo ?conformsTo ;
+    dcat:inSeries ?topDatasetNew ;
+    dcat:distribution ?distribution_new ;
+    dcterms:publisher ?publisher ;
+    dcterms:identifier ?dataset_old_str ;
+    dcatap:applicableLegislation ?datasetApplicableLegislation .
+    
+  # 360/2023 specifické
+  ?dataset_new 
+      dcatap:applicableLegislation l365:, l360: ;
+      v-sgov:týká-se-pojmu ?pojemDatovéSady .
+  
+  ?isvs p365-2000:zahrnuje ?dataset_new .
+
+  ?cp_new a ?cptype; 
+    vcard:fn ?cpfn ;
+    vcard:hasEmail ?cpemail .
+
+  ?temporal_new a dcterms:PeriodOfTime; 
+    dcat:startDate ?finalStartDate ;
+    dcat:endDate ?finalEndDate .
+
+  ?publisher a foaf:Agent, foaf:Organization;
+    foaf:name ?pname .
+
+  ?distribution_new a dcat:Distribution ;
+    dcat:downloadURL ?ddURL ;
+    dcat:accessURL ?daURL ;
+    dcterms:format ?dformat ;
+    dcat:mediaType ?dmimeType ;
+    dcterms:conformsTo ?dconformsTo ;
+    dcat:compressFormat ?dcompressFormat ;
+    dcat:packageFormat ?dpackageFormat ;
+    dcterms:title ?dtitle ;
+    dcatap:applicableLegislation ?distributionApplicableLegislation ;
+    pu:specifikace ?tou_new .
+
+  # 360/2023 specifické
+  ?distribution_new 
+      dcatap:applicableLegislation l365:, l360: ;
+      p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
+      p360-2023:má-způsob-sdílení-rozhraním ?dZpůsobSdílení ;
+      p360-2023:má-způsob-získání-dat-sdílených-rozhraním ?dZpůsobZískání .
+
+  ?distribution_new p360-2023:zprostředkovává-sdílení ?sdílení_new .
+  ?sdílení_new a p360-2023:sdílení-údaje ;
+      p360-2023:je-sdílen-jako ?údajTypObsahu ;
+      p360-2023:je-sdílen-způsobem ?údajZpůsobSdílení ;
+      p360-2023:je-získán-způsobem ?údajZpůsobZískání ;
+      p360-2023:odpovídající-pojem ?údajPojem .
+
+    ?tou_new a pu:Specifikace ;
+    pu:autorské-dílo ?touGeneral ;
+    pu:databáze-jako-autorské-dílo ?touDatabase ;
+    pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra ;
+    pu:osobní-údaje ?touPersonalData ;
+    pu:autor ?touGeneralAuthor ;
+    pu:autor-databáze ?touDatabaselAuthor .
+
+  ?distribution_new dcat:accessService ?dataservice_new . 
+  ?dataservice_new a dcat:DataService ;
+    dcterms:title ?sTitle ;
+    dcterms:conformsTo ?sConformsTo ;
+    dcat:endpointURL ?sEndpointURL ;
+    dcat:endpointDescription ?sEndpointDescription ;
+    dcterms:identifier ?service_old_str ;
+    dcatap:applicableLegislation ?dataServiceApplicableLegislation ;
+    foaf:page ?dataServiceDocumentation .
+  
+  # 360/2023 specifické
+  ?dataservice_new 
+      dcatap:applicableLegislation l365:, l360: .
+
+  ?record_new a dcat:CatalogRecord;
+    dcterms:source ?dataset ;
+    foaf:primaryTopic ?dataset_new ;
+    dcterms:language languages:CES, languages:ENG ;
+    dcterms:conformsTo <https://ofn.gov.cz/dcat-ap-cz-360-2023#> .
+}
+WHERE {
+  # chunked:fileName jde z chunkování, je to link na metadata, která půjdou z extra souboru
+  ?catalog a dcat:Catalog ;
+    dcat:dataset ?dataset ;
+    chunked:fileName ?filename .  
+  
+  [] nkod:jméno-souboru ?filename ;
+     nkod:datová-schránka-poskytovatele ?ds ;
+     nkod:datová-zpráva-přijata ?rmodified .
+
+  ?ds ^ds:datová-schránka ?publisher .
+  ?publisher gr:legalName ?pname ;
+             skos:notation ?publisherid .
+
+  ?catalog a dcat:Catalog ;
+             dcat:dataset ?dataset .
+
+  {?dataset a dcat:Dataset} UNION {?dataset a dcat:DatasetSeries }
+  ?dataset a ?datasetType ;
+  # chunked:fileName jde z chunkování, je to link na metadata, která půjdou z extra souboru
+             chunked:fileName ?filename ;
+             dcterms:title ?title ;
+             dcterms:description ?description ;
+             dcat:keyword ?keyword ;
+             dcatap:applicableLegislation l365:, l360: ;
+             ^p365-2000:zahrnuje ?isvs .
+  
+  FILTER(STRSTARTS(STR(?dataset), \"https://\"))
+  FILTER(isIRI(?isvs) && STRSTARTS(STR(?isvs), \"https://rpp-opendata.egon.gov.cz/odrpp/zdroj/isvs/\"))
+  FILTER(isIRI(?publisher) && STRSTARTS(STR(?publisher), \"https://rpp-opendata.egon.gov.cz/odrpp/zdroj/orgán-veřejné-moci/\"))
+  FILTER (
+    (datatype(?title) = rdf:langString) && (LANG(?title) != \"\")
+    && (datatype(?description) = rdf:langString) && (LANG(?description) != \"\")
+    && (datatype(?keyword) = rdf:langString) && (LANG(?keyword) != \"\")
+  )
+  OPTIONAL { 
+    ?dataset dcatap:applicableLegislation ?datasetApplicableLegislation . 
+    FILTER(isIRI(?datasetApplicableLegislation))
+  }
+
+  OPTIONAL { ?dataset dcterms:temporal ?temporal . 
+    OPTIONAL { 
+      ?temporal dcat:startDate ?startDate .
+      FILTER(REGEX(STR(?startDate), \"[0-9]{4}-[0-9]{2}-[0-9]{2}\") && DATATYPE(?startDate) = xsd:date)
+    }
+    OPTIONAL { 
+      ?temporal dcat:endDate ?endDate . 
+      FILTER(REGEX(STR(?endDate), \"[0-9]{4}-[0-9]{2}-[0-9]{2}\") && DATATYPE(?endDate) = xsd:date)
+    }
+    OPTIONAL { 
+      ?temporal schema:startDate ?schemaStartDate . 
+      FILTER(REGEX(STR(?schemaStartDate), \"[0-9]{4}-[0-9]{2}-[0-9]{2}\") && DATATYPE(?schemaStartDate) = xsd:date)
+    }
+    OPTIONAL { 
+      ?temporal schema:endDate ?schemaEndDate . 
+      FILTER(REGEX(STR(?schemaEndDate), \"[0-9]{4}-[0-9]{2}-[0-9]{2}\") && DATATYPE(?schemaEndDate) = xsd:date)
+    }
+    BIND(IF(BOUND(?startDate), ?startDate, ?schemaStartDate) AS ?finalStartDate)
+    BIND(IF(BOUND(?endDate), ?endDate, ?schemaEndDate) AS ?finalEndDate)
+  }
+
+  OPTIONAL { ?dataset dcat:contactPoint ?cp . 
+    ?cp a ?cptype.
+    OPTIONAL { ?cp vcard:fn ?cpfn . }
+    OPTIONAL { 
+      ?cp vcard:hasEmail ?cpemail . 
+      FILTER(isIRI(?cpemail) && STRSTARTS(STR(?cpemail), \"mailto:\"))
+    }
+  }
+
+  OPTIONAL { 
+    ?dataset dcat:theme ?theme ;
+    FILTER(
+      isIRI(?theme) 
+      && (
+        STRSTARTS(STR(?theme), \"http://publications.europa.eu/resource/authority/data-theme/\") 
+        || (STRSTARTS(STR(?theme), \"http://eurovoc.europa.eu/\")
+        )
+      )
+    )
+  }
+  OPTIONAL { 
+    ?dataset dcterms:accrualPeriodicity ?accrualPeriodicity . 
+    FILTER(isIRI(?accrualPeriodicity) && STRSTARTS(STR(?accrualPeriodicity), \"http://publications.europa.eu/resource/authority/frequency/\"))
+  }
+  OPTIONAL { 
+    ?dataset foaf:page ?page . 
+    FILTER(isIRI(?page) && STRSTARTS(STR(?page), \"https://\"))
+  }
+  OPTIONAL { 
+    ?dataset dcterms:conformsTo ?conformsTo . 
+    FILTER(isIRI(?conformsTo) && STRSTARTS(STR(?conformsTo), \"https://\"))
+  }
+  OPTIONAL { 
+    ?dataset dcat:inSeries ?topDataset . 
+    FILTER(isIRI(?topDataset) && STRSTARTS(STR(?topDataset), \"https://\"))
+  }
+  OPTIONAL { 
+    ?dataset v-sgov:týká-se-pojmu ?pojemDatovéSady . 
+    FILTER(isIRI(?pojemDatovéSady) && STRSTARTS(STR(?pojemDatovéSady), \"https://\"))
+  }
+  OPTIONAL {
+    ?dataset dcat:distribution ?distribution .
+    ?distribution a dcat:Distribution, p360-2023:datové-rozhraní;
+             dcatap:applicableLegislation l365:, l360: ;
+             dcat:accessURL ?daURL ;
+             pu:specifikace ?tou ;
+             p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
+             p360-2023:má-způsob-sdílení-rozhraním ?dZpůsobSdílení ;
+             p360-2023:má-způsob-získání-dat-sdílených-rozhraním ?dZpůsobZískání .
+
+    ?tou a pu:Specifikace .
+
+    FILTER(STRSTARTS(STR(?distribution), \"https://\"))
+    FILTER(isIRI(?daURL) && STRSTARTS(STR(?daURL), \"https://\"))
+    FILTER(isIRI(?dTypObsahu) && STRSTARTS(STR(?dTypObsahu), \"https://data.dia.gov.cz/zdroj/číselníky/typy-obsahu-údajů/položky/\"))
+    FILTER(isIRI(?dZpůsobSdílení) && STRSTARTS(STR(?dZpůsobSdílení), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-sdílení-údajů/položky/\"))
+    FILTER(isIRI(?dZpůsobZískání) && STRSTARTS(STR(?dZpůsobZískání), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-získání-údajů/položky/\"))
+
+    OPTIONAL {
+      ?distribution p360-2023:zprostředkovává-sdílení ?sdílení .
+      ?sdílení a p360-2023:sdílení-údaje ;
+          p360-2023:je-sdílen-jako ?údajTypObsahu ;
+          p360-2023:je-sdílen-způsobem ?údajZpůsobSdílení ;
+          p360-2023:je-získán-způsobem ?údajZpůsobZískání ;
+          p360-2023:odpovídající-pojem ?údajPojem .
+
+      	  FILTER(isIRI(?dTypObsahu) && STRSTARTS(STR(?údajTypObsahu), \"https://data.dia.gov.cz/zdroj/číselníky/typy-obsahu-údajů/položky/\"))
+          FILTER(isIRI(?dZpůsobSdílení) && STRSTARTS(STR(?údajZpůsobSdílení), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-sdílení-údajů/položky/\"))
+          FILTER(isIRI(?dZpůsobZískání) && STRSTARTS(STR(?údajZpůsobZískání), \"https://data.dia.gov.cz/zdroj/číselníky/způsoby-získání-údajů/položky/\"))
+          FILTER(isIRI(?údajPojem) && STRSTARTS(STR(?údajPojem), \"https://\"))
+    }
+    OPTIONAL { 
+    	?tou pu:autorské-dílo ?touGeneral . 
+    	FILTER(isIRI(?touGeneral) && STRSTARTS(STR(?touGeneral), \"https://\"))
+  	}
+    OPTIONAL {
+    	?tou pu:databáze-jako-autorské-dílo ?touDatabase . 
+    	FILTER(isIRI(?touDatabase) && STRSTARTS(STR(?touDatabase), \"https://\"))
+    }
+    OPTIONAL { 
+    	?tou pu:databáze-chráněná-zvláštními-právy ?touDatabaseExtra .
+    	FILTER(isIRI(?touDatabaseExtra) && STRSTARTS(STR(?touDatabaseExtra), \"https://\"))
+    }
+    OPTIONAL { 
+    	?tou pu:osobní-údaje ?touPersonalData .
+    	FILTER(isIRI(?touPersonalData) && STRSTARTS(STR(?touPersonalData), \"https://\"))
+    }
+    OPTIONAL { ?tou pu:autor ?touGeneralAuthor . }
+    OPTIONAL { ?tou pu:autor-databáze ?touDatabaselAuthor . }
+    
+    OPTIONAL { 
+      ?distribution dcatap:applicableLegislation ?distributionApplicableLegislation . 
+      FILTER(isIRI(?distributionApplicableLegislation))
+    }
+    OPTIONAL { 
+      ?distribution dcterms:title ?dtitle . 
+      FILTER((datatype(?dtitle) = rdf:langString) && (LANG(?dtitle) != \"\"))
+    }
+    
+    # Soubor ke stažení
+    {
+      ?distribution dcterms:format ?dformat .
+      FILTER(isIRI(?dformat) && STRSTARTS(STR(?dformat), \"http://publications.europa.eu/resource/authority/file-type/\"))
+      OPTIONAL { 
+        ?distribution dcat:compressFormat ?dcompressFormat . 
+        FILTER(isIRI(?dcompressFormat) && STRSTARTS(STR(?dcompressFormat), \"http://www.iana.org/assignments/media-types/\"))
+      }
+      OPTIONAL { 
+        ?distribution dcat:packageFormat ?dpackageFormat . 
+        FILTER(isIRI(?dpackageFormat) && STRSTARTS(STR(?dpackageFormat), \"http://www.iana.org/assignments/media-types/\"))
+      }
+      OPTIONAL { 
+       ?distribution dcat:downloadURL ?ddURL ;
+       FILTER(isIRI(?ddURL) && STRSTARTS(STR(?ddURL), \"https://\"))
+      }
+      OPTIONAL { 
+        ?distribution dcterms:conformsTo ?dconformsTo . 
+        FILTER(isIRI(?dconformsTo) && STRSTARTS(STR(?dconformsTo), \"https://\"))
+      }
+      OPTIONAL { 
+        ?distribution dcat:mediaType ?dmimeType . 
+        FILTER(isIRI(?dmimeType) && STRSTARTS(STR(?dmimeType), \"http://www.iana.org/assignments/media-types/\"))
+      }
+    }
+    UNION
+    # Distribuce datové služby
+    {
+      ?distribution dcat:accessService ?dataService . 
+      ?dataService a dcat:DataService ;
+                    dcatap:applicableLegislation l365:, l360: ;
+                    dcterms:title ?sTitle ;
+                    dcat:endpointURL ?sEndpointURL .
+      
+      FILTER((datatype(?sTitle) = rdf:langString) && (LANG(?sTitle) != \"\"))
+      FILTER(isIRI(?sEndpointURL) && STRSTARTS(STR(?sEndpointURL), \"https://\"))
+      
+      OPTIONAL { 
+        ?dataService dcat:endpointDescription ?sEndpointDescription .
+        FILTER(isIRI(?sEndpointDescription) && STRSTARTS(STR(?sEndpointDescription), \"https://\"))
+      }
+      OPTIONAL { 
+        ?dataService dcterms:conformsTo ?sConformsTo .
+        FILTER(isIRI(?sConformsTo) && STRSTARTS(STR(?sConformsTo), \"https://\"))
+      }
+      OPTIONAL { 
+        ?dataService dcatap:applicableLegislation ?dataServiceApplicableLegislation . 
+        FILTER(isIRI(?dataServiceApplicableLegislation))
+      }
+      OPTIONAL { 
+        ?dataService foaf:page ?dataServiceDocumentation .
+        FILTER(isIRI(?dataServiceDocumentation) && STRSTARTS(STR(?dataServiceDocumentation), \"https://\"))
+      }
+    }
+  }
+
+  BIND (STRDT(STR(?dataset), xsd:anyURI) as ?dataset_old_str)
+  BIND (STRDT(STR(?dataService), xsd:anyURI) as ?service_old_str)
+  BIND (CONCAT(\"https://data.gov.cz/zdroj/datové-sady/\", ?publisherid, \"/\") as ?new_IRI_base)
+  BIND (IRI(CONCAT(?new_IRI_base, MD5(STR(?dataset)))) as ?dataset_new)
+  BIND (IRI(CONCAT(?new_IRI_base, MD5(STR(?topDataset)))) as ?topDatasetNew)
+  BIND (IRI(CONCAT(STR(?dataset_new),\"/distribuce/\", MD5(STR(?distribution)))) as ?distribution_new)
+  BIND (IRI(CONCAT(STR(?distribution_new),\"/datová-služba/\", MD5(STR(?dataService)))) as ?dataservice_new)
+  BIND (IRI(CONCAT(STR(?distribution_new),\"/sdílení/\",
+  MD5(CONCAT(STR(?údajPojem), STR(?údajTypObsahu), STR(?údajZpůsobSdílení), STR(?údajZpůsobZískání)))
+  )) as ?sdílení_new)
+  BIND (IRI(CONCAT(STR(?dataset_new),\"/záznam\")) as ?record_new)
+  BIND (IRI(CONCAT(STR(?dataset_new),\"/kontaktní-bod\")) as ?cp_new)
+  BIND (IRI(CONCAT(STR(?distribution_new),\"/podmínky-užití\")) as ?tou_new)
+  BIND (IRI(CONCAT(STR(?dataset_new),\"/časové-pokrytí\")) as ?temporal_new)
+}""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threads> 4;
     <http://plugins.linkedpipes.com/ontology/t-sparqlConstruct#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601/configuration> {
-  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601/1>
+  <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00023fb2-8601/configuration>
     a <http://plugins.linkedpipes.com/ontology/t-chunkedToFiles#Configuration>;
     <http://plugins.linkedpipes.com/ontology/t-chunkedToFiles#fileType> "text/turtle";
     <http://plugins.linkedpipes.com/ontology/t-chunkedToFiles#fileTypeControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
