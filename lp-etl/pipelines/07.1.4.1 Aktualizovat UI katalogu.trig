@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.4.1 Aktualizovat UI katalogu";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-22T07:30:49.161016461"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-08T19:11:40.102752981"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171935944-0005/profile/default> .
   
@@ -159,12 +159,10 @@ poskytovateli - angličtina""";
   <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779348>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL construct";
-    <http://purl.org/dc/terms/description> """Připravit pro Solr
-TODO: Update pro 360/2023""";
-    <http://linkedpipes.com/ontology/color> "#ff00bb";
+    <http://purl.org/dc/terms/description> "Připravit pro Solr";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779348/configuration>;
-    <http://linkedpipes.com/ontology/x> "3803"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-166"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "3847"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-158"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlConstruct/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779432>
@@ -245,13 +243,10 @@ poskytovateli - čeština""";
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Mustache";
     <http://purl.org/dc/terms/description> """Vytvořit index
-pro Solr
-s VDF, HVDS
-TODO: Update pro 360/2023""";
-    <http://linkedpipes.com/ontology/color> "#ff00bb";
+pro Solr""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-00012416-bbde/configuration>;
-    <http://linkedpipes.com/ontology/x> "4616"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-209"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "4664"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-179"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-mustache/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-00013add-9484>
@@ -1044,6 +1039,7 @@ CONSTRUCT {
     temp:spatial ?spatial ;
     temp:vdf_public_data ?vdf_public_data ;
     temp:vdf_codelist ?vdf_číselník ;
+    temp:dataset_type ?dataset_type ;
     dcat:inSeries ?higherDataset ;
     temp:with_data_service ?with_data_service ;
     dcatap:hvdCategory ?hvdCategory ;
@@ -1054,7 +1050,8 @@ CONSTRUCT {
 
 } 
 WHERE { 
-?dataset a dcat:Dataset .
+?dataset a ?resourceType .
+  VALUES ?resourceType { dcat:Dataset dcat:DatasetSeries }
   BIND(EXISTS { ?dataset a vdf:datová-sada-publikující-veřejné-údaje } AS ?vdf_public_data)
   BIND(EXISTS { ?dataset a vdf:číselník } AS ?vdf_číselník)
   BIND(EXISTS { ?dataset dcat:distribution/dcat:accessService []} AS ?with_data_service)
@@ -1119,6 +1116,10 @@ WHERE {
   OPTIONAL {?dataset dcat:inSeries ?higherDataset . }
   OPTIONAL {?dataset dcatap:hvdCategory ?hvdCategory . }
   OPTIONAL {?dataset dcatap:applicableLegislation ?applicableLegislation . }
+  OPTIONAL {
+    ?dataset a ?dataset_type .
+    FILTER(STRSTARTS(STR(?dataset_type), \"https://data.dia.gov.cz/zdroj/číselníky/typ-datové-sady/položky/\"))
+  }
   
   BIND(IF(CONTAINS(STR(?temporalStart),\"+\"),STRBEFORE(STR(?temporalStart), \"+\"), STR(?temporalStart)) AS ?temporalStartStr)
   BIND(IF(CONTAINS(STR(?temporalEnd),\"+\"),STRBEFORE(STR(?temporalEnd), \"+\"), STR(?temporalEnd)) AS ?temporalEndStr)
@@ -1374,6 +1375,7 @@ PREFIX temp: <urn:>
     \"applicable_legislation\" : [{{#dcatap:applicableLegislation}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/dcatap:applicableLegislation}}],
     \"file_type\" : [{{#temp:file_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:file_type}}],
     \"data_service_type\" : [{{#temp:data_service_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:data_service_type}}],
+    \"dataset_type\" : [{{#temp:dataset_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:dataset_type}}],
     \"temporal_start\" : \"{{temp:temporalStart}}\",
     \"temporal_end\" : \"{{temp:temporalEnd}}\",
     \"vdf_public_data\" : \"{{temp:vdf_public_data}}\",
