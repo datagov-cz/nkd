@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "06 Nahrát čísleníky do CouchDB pro LP DCAT-AP Viewer";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:24:36.612"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-09T09:16:12.204840701"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-15T06:57:05.930988036"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "DEPENDENCY", "2";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/profile/default> .
   
@@ -76,6 +76,15 @@
     <http://linkedpipes.com/ontology/x> "2151"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "231"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1760187944768-0002> .
+  
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
+    <http://purl.org/dc/terms/description> "typy-datových-sad.ttl";
+    <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab/configuration>;
+    <http://linkedpipes.com/ontology/x> "971"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-449"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0>
     a <http://linkedpipes.com/ontology/Component>;
@@ -478,6 +487,13 @@
     <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
     <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
   
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/b53c-b0a3>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/163100667661216310066766129>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputFiles" .
+  
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/connection/b809-892b>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/3bc9-a5e2>;
@@ -632,6 +648,13 @@
     <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthentication> false;
     <http://plugins.linkedpipes.com/ontology/l-couchDb#useAuthenticationControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit>;
     <http://plugins.linkedpipes.com/ontology/l-couchDb#userNameControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab/configuration> {
+  <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/číselníky/isvs.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0/configuration> {
