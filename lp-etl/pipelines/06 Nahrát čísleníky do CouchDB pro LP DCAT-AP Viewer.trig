@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "06 Nahrát čísleníky do CouchDB pro LP DCAT-AP Viewer";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-09-07T11:24:36.612"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-15T06:57:05.930988036"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-15T07:07:22.836898004"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "NKOD", "DEPENDENCY", "2";
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/profile/default> .
   
@@ -80,10 +80,10 @@
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab>
     a <http://linkedpipes.com/ontology/Component>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cache";
-    <http://purl.org/dc/terms/description> "typy-datových-sad.ttl";
+    <http://purl.org/dc/terms/description> "isvs.ttl";
     <http://linkedpipes.com/ontology/configurationGraph> <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/45af-a0ab/configuration>;
-    <http://linkedpipes.com/ontology/x> "971"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-449"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "1035"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-441"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006676612/component/61fa-bfb0>
