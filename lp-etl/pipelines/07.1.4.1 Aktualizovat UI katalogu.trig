@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.4.1 Aktualizovat UI katalogu";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-08T19:11:40.102752981"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-22T09:08:39.30855678"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171935944-0005/profile/default> .
   
@@ -20,6 +20,16 @@
     <http://linkedpipes.com/ontology/x> "5281"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "3"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://localhost:8080/resources/components/1779173300339-0007> .
+  
+  <http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL update chunked";
+    <http://purl.org/dc/terms/description> """Přidat inverzní vazbu k
+\"ISVDS zahrnuje dataset\"""";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55/configuration>;
+    <http://linkedpipes.com/ontology/x> "4151"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-315"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171935944-0005/component/fedd-96b1>
     a <http://linkedpipes.com/ontology/Component>;
@@ -142,8 +152,8 @@
 datovou sadu, aby nevznikla
 rekurze""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779299/configuration>;
-    <http://linkedpipes.com/ontology/x> "4143"^^<http://www.w3.org/2001/XMLSchema#int>;
-    <http://linkedpipes.com/ontology/y> "-333"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/x> "4151"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "-434"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-sparqlUpdateChunked/0.0.0> .
   
   <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779332>
@@ -335,6 +345,20 @@ pro Solr""";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779145>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
   
+  <http://localhost:8080/resources/pipelines/1779171935944-0005/connection/bfcc-b21e>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779299>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
+  <http://localhost:8080/resources/pipelines/1779171935944-0005/connection/d9e9-a8cd>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55>;
+    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779176>;
+    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
+  
   <http://localhost:8080/resources/pipelines/1779171935944-0005/connection/e392-a5b9>
     a <http://linkedpipes.com/ontology/Connection>;
     <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171935944-0005/component/fedd-96b1>;
@@ -368,13 +392,6 @@ pro Solr""";
     <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779143>;
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779119>;
-    <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
-  
-  <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779342>
-    a <http://linkedpipes.com/ontology/Connection>;
-    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779299>;
-    <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
-    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779176>;
     <http://linkedpipes.com/ontology/targetBinding> "InputRdf" .
   
   <http://localhost:8080/resources/pipelines/1779171935944-00051779171935944-00051779116262165-00041779116262165-000416110389317791764943595711-0001161103893177916110389317791611038931779365>
@@ -625,6 +642,18 @@ pro Solr""";
     <http://plugins.linkedpipes.com/ontology/x-pipeline#pipelineControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugData> true;
     <http://plugins.linkedpipes.com/ontology/x-pipeline#saveDebugDataControl> <http://plugins.linkedpipes.com/resource/configuration/Inherit> .
+}
+
+<http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55/configuration> {
+  <http://localhost:8080/resources/pipelines/1779171935944-0005/component/9285-9f55/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#query> """INSERT { ?o <https://data.gov.cz/slovník/nkod/je-zahrnuta-v-isvs> ?s } 
+WHERE { ?s <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/zahrnuje> ?o }""";
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#queryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFail> false;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#softFailControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threads> 4;
+    <http://plugins.linkedpipes.com/ontology/t-sparqlUpdateChunked#threadsControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1779171935944-0005/component/fedd-96b1/configuration> {
@@ -1013,6 +1042,7 @@ PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX mustache: <http://plugins.linkedpipes.com/ontology/t-mustache#>
 PREFIX temp: <urn:>
 PREFIX vdf: <https://data.gov.cz/slovník/nkod/vdf/>
+PREFIX p365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/>
 
 CONSTRUCT { 
 <urn:root> a temp:Root ;
@@ -1041,6 +1071,7 @@ CONSTRUCT {
     temp:vdf_codelist ?vdf_číselník ;
     temp:dataset_type ?dataset_type ;
     dcat:inSeries ?higherDataset ;
+    temp:isvs ?isvs ;
     temp:with_data_service ?with_data_service ;
     dcatap:hvdCategory ?hvdCategory ;
     dcatap:applicableLegislation ?applicableLegislation .
@@ -1116,9 +1147,13 @@ WHERE {
   OPTIONAL {?dataset dcat:inSeries ?higherDataset . }
   OPTIONAL {?dataset dcatap:hvdCategory ?hvdCategory . }
   OPTIONAL {?dataset dcatap:applicableLegislation ?applicableLegislation . }
+  OPTIONAL {?dataset dcatap:applicableLegislation ?applicableLegislation . }
   OPTIONAL {
     ?dataset a ?dataset_type .
     FILTER(STRSTARTS(STR(?dataset_type), \"https://data.dia.gov.cz/zdroj/číselníky/typ-datové-sady/položky/\"))
+  }
+  OPTIONAL {
+    ?isvs p365-2000:zahrnuje ?dataset .
   }
   
   BIND(IF(CONTAINS(STR(?temporalStart),\"+\"),STRBEFORE(STR(?temporalStart), \"+\"), STR(?temporalStart)) AS ?temporalStartStr)
@@ -1376,6 +1411,7 @@ PREFIX temp: <urn:>
     \"file_type\" : [{{#temp:file_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:file_type}}],
     \"data_service_type\" : [{{#temp:data_service_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:data_service_type}}],
     \"dataset_type\" : [{{#temp:dataset_type}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:dataset_type}}],
+    \"isvs\" : [{{#temp:isvs}}{{^mustache:first}},{{/mustache:first}}\"{{{@id}}}\"{{/temp:isvs}}],
     \"temporal_start\" : \"{{temp:temporalStart}}\",
     \"temporal_end\" : \"{{temp:temporalEnd}}\",
     \"vdf_public_data\" : \"{{temp:vdf_public_data}}\",
