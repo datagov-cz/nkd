@@ -897,7 +897,8 @@ PREFIX dcatap: <http://data.europa.eu/r5r/>
 PREFIX accessRights: <http://publications.europa.eu/resource/authority/access-right/>
 PREFIX DGA: <http://data.europa.eu/eli/reg/2022/868/oj>
 PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
-PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
+PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
+PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 PREFIX nsip: <https://data.gov.cz/zdroj/katalog/NSIP>
 PREFIX typy: <https://data.dia.gov.cz/zdroj/číselníky/typ-datové-sady/položky/>
 
@@ -1037,7 +1038,8 @@ PREFIX dcatap: <http://data.europa.eu/r5r/>
 PREFIX accessRights: <http://publications.europa.eu/resource/authority/access-right/>
 PREFIX PSI: <http://data.europa.eu/eli/dir/2019/1024/oj>
 PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
-PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
+PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
+PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 
 INSERT { 
   ?dataset dcatap:applicableLegislation PSI: ;
