@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.2 Harvestace LKD SPARQL Endpoint";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-21T13:48:09.024434707"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-26T08:56:31.71510696"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171403535-0002/profile/default> .
   
@@ -117,7 +117,7 @@ záznamem""";
     <http://www.w3.org/2004/02/skos/core#prefLabel> "SPARQL linker chunked";
     <http://purl.org/dc/terms/description> """Vytvořit záznamy datovýh sad z
 LKD řešených SPARQL endpointem
-DCAT-AP-CZ-360-2023""";
+ZoSD a 360/2023""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171403535-00021779171403535-00021779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-0001161103893177916110389317791611038931779160/configuration>;
     <http://linkedpipes.com/ontology/x> "2533"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "176"^^<http://www.w3.org/2001/XMLSchema#int>;
@@ -710,8 +710,7 @@ PREFIX v-sgov: <https://slovník.gov.cz/veřejný-sektor/pojem/>
 PREFIX p360-2023: <https://slovník.gov.cz/legislativní/sbírka/360/2023/pojem/>
 PREFIX p365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/>
 PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
-PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
-PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
+PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
 
 PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
 
@@ -1030,8 +1029,7 @@ PREFIX languages: <http://publications.europa.eu/resource/authority/language/>
 
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
 PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
-PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
-PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
+PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
 
 CONSTRUCT {
   ?catalog dcat:dataset ?dataset_new .
@@ -1050,7 +1048,8 @@ CONSTRUCT {
     dcat:distribution ?distribution_new ;
     dcterms:publisher ?publisher ;
     dcterms:identifier ?dataset_old_str ;
-    dcatap:applicableLegislation ?datasetApplicableLegislation .
+    dcatap:applicableLegislation ?datasetApplicableLegislation ;
+    dcat:landingPage ?datasetLandingPage .
     
   # 360/2023 specifické
   ?dataset_new 
@@ -1224,6 +1223,9 @@ WHERE {
   OPTIONAL { 
     ?dataset v-sgov:týká-se-pojmu ?pojemDatovéSady . 
     FILTER(isIRI(?pojemDatovéSady) && STRSTARTS(STR(?pojemDatovéSady), \"https://\"))
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
   }
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .

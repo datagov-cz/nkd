@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.1 Zpracování záznamů z formuláře";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-05-22T06:10:04.21492543"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-26T08:55:21.408721745"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171267007-0001/profile/default> .
   
@@ -19,7 +19,7 @@
     <http://purl.org/dc/terms/description> """Vytvořit záznamy datových sad z formuláře
 se správnými IRI a vyřešenými editacemi
 a rušeními
-DCAT-AP-CZ-360-2023""";
+ZoSD a 360/2023""";
     <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1779171267007-0001/component/0a2a-a801/configuration>;
     <http://linkedpipes.com/ontology/x> "2158"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-60"^^<http://www.w3.org/2001/XMLSchema#int>;
@@ -227,9 +227,9 @@ datových sad""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171267007-0001/component/0a2a-a801>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/fd76-ac72> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/8071-97c7> .
   
-  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/fd76-ac72> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/8071-97c7> <http://linkedpipes.com/ontology/x>
       "1379"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "56"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -247,9 +247,9 @@ datových sad""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171267007-00011779171267007-00011779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177918>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/e4de-bbb6> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/0211-aa2a> .
   
-  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/e4de-bbb6> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/0211-aa2a> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-280"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -260,9 +260,9 @@ datových sad""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171267007-00011779171267007-00011779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177934>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/69c4-98c5> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/ef99-bf5f> .
   
-  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/69c4-98c5> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/ef99-bf5f> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-40"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -301,9 +301,9 @@ datových sad""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171267007-00011779171267007-00011779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-000116110389317791611038931779161103893177914>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/42d0-abbc> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/1064-b5f9> .
   
-  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/42d0-abbc> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/1064-b5f9> <http://linkedpipes.com/ontology/x>
       "1400"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "40"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -328,9 +328,9 @@ datových sad""";
     <http://linkedpipes.com/ontology/sourceBinding> "OutputRdf";
     <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1779171267007-00011779171267007-00011779112574119-00021779112574119-00021779112327880-00011779112327880-000116110389317791764943595711-00011611038931779161103893177916110389317797>;
     <http://linkedpipes.com/ontology/targetBinding> "DataRdf";
-    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/ee5f-ba0b> .
+    <http://linkedpipes.com/ontology/vertex> <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/3785-98a8> .
   
-  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/ee5f-ba0b> <http://linkedpipes.com/ontology/x>
+  <http://localhost:8080/resources/pipelines/1779171267007-0001/vertex/3785-98a8> <http://linkedpipes.com/ontology/x>
       "1340"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/y> "-160"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/order> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
@@ -454,7 +454,8 @@ CONSTRUCT {
     dcat:distribution ?distribution_new ;
     dcterms:publisher ?publisher ;
     dcterms:identifier ?dataset_old_str ;
-    dcatap:applicableLegislation ?datasetApplicableLegislation .
+    dcatap:applicableLegislation ?datasetApplicableLegislation ;
+    dcat:landingPage ?datasetLandingPage .
     
   # 360/2023 specifické
   ?dataset_new 
@@ -619,6 +620,9 @@ WHERE {
   OPTIONAL { 
     ?dataset v-sgov:týká-se-pojmu ?pojemDatovéSady . 
     FILTER(isIRI(?pojemDatovéSady) && STRSTARTS(STR(?pojemDatovéSady), \"https://\"))
+  }
+  OPTIONAL { ?dataset dcat:landingPage ?datasetLandingPage .
+    FILTER(isIRI(?datasetLandingPage))
   }
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
