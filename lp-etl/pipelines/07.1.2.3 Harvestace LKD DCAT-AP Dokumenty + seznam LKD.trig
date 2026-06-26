@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.3 Harvestace LKD DCAT-AP Dokumenty + seznam LKD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-26T08:57:36.588212578"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-26T09:08:54.498283663"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171546131-0003/profile/default> .
   
@@ -969,7 +969,8 @@ PREFIX languages: <http://publications.europa.eu/resource/authority/language/>
 
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
 PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
-PREFIX l360: <https://www.e-sbirka.cz/sb/2023/360/2024-07-01>
+PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
+PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 
 CONSTRUCT {
   ?catalog dcat:dataset ?dataset_new .
