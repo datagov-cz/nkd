@@ -435,7 +435,7 @@ PREFIX p365-2000: <https://slovník.gov.cz/legislativní/sbírka/365/2000/pojem/
 PREFIX languages: <http://publications.europa.eu/resource/authority/language/>
 
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
-PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
+PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2026-01-01>
 PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
 PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 
@@ -844,7 +844,7 @@ PREFIX ds: <https://data.gov.cz/slovník/datové-schránky/>
 PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
 
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
-PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2024-01-20>
+PREFIX l365: <https://www.e-sbirka.cz/eli/cz/sb/2000/365/2026-01-01>
 PREFIX l360: <https://www.e-sbirka.cz/eli/cz/sb/2023/360/2024-07-01>
 PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 
