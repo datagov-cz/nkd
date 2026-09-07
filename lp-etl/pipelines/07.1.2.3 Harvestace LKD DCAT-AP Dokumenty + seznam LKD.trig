@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.2.3 Harvestace LKD DCAT-AP Dokumenty + seznam LKD";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-26T09:08:54.498283663"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-09-07T11:21:24.459078196"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171546131-0003/profile/default> .
   
@@ -657,6 +657,7 @@ PREFIX tz: <https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/>
 PREFIX nkod: <https://data.gov.cz/slovník/nkod/>
 PREFIX ds: <https://data.gov.cz/slovník/datové-schránky/>
 PREFIX pu: <https://data.gov.cz/slovník/podmínky-užití/>
+PREFIX ZoSD: <https://www.e-sbirka.cz/eli/cz/sb/2026/60/2026-05-27>
 
 PREFIX chunked: <https://etl.linkedpipes.com/plugins/t-filestochunked/>
 
@@ -759,6 +760,11 @@ WHERE {
              dcterms:accrualPeriodicity ?accrualPeriodicity ;
              dcat:keyword ?keyword ;
              dcterms:spatial ?spatial .
+
+  # Otevřená data, nikoliv ZoSD + 360/2023 Sb. (datová rozhraní)
+  FILTER NOT EXISTS {
+    ?dataset dcatap:applicableLegislation ZoSD: .
+  }
 
   FILTER(isIRI(?spatial) && isIRI(?theme) && isIRI(?accrualPeriodicity))
   OPTIONAL { ?dataset dcterms:temporal ?temporal . 
@@ -994,7 +1000,7 @@ CONSTRUCT {
     
   # 360/2023 specifické
   ?dataset_new 
-      dcatap:applicableLegislation l365:, l360: ;
+      dcatap:applicableLegislation ZoSD: ;
       v-sgov:týká-se-pojmu ?pojemDatovéSady .
   
   ?isvs p365-2000:zahrnuje ?dataset_new .
@@ -1024,7 +1030,7 @@ CONSTRUCT {
 
   # 360/2023 specifické
   ?distribution_new 
-      dcatap:applicableLegislation l365:, l360: ;
+      dcatap:applicableLegislation ZoSD: ;
       p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
       p360-2023:má-způsob-sdílení-rozhraním ?dZpůsobSdílení ;
       p360-2023:má-způsob-získání-dat-sdílených-rozhraním ?dZpůsobZískání .
@@ -1056,7 +1062,7 @@ CONSTRUCT {
   
   # 360/2023 specifické
   ?dataservice_new 
-      dcatap:applicableLegislation l365:, l360: .
+      dcatap:applicableLegislation ZoSD: .
 
   ?record_new a dcat:CatalogRecord;
     dcterms:source ?dataset ;
@@ -1082,7 +1088,7 @@ WHERE {
              dcterms:title ?title ;
              dcterms:description ?description ;
              dcat:keyword ?keyword ;
-             dcatap:applicableLegislation l365:, l360: ;
+             dcatap:applicableLegislation ZoSD: ;
              ^p365-2000:zahrnuje ?isvs .
   
   FILTER(STRSTARTS(STR(?dataset), \"https://\"))
@@ -1165,7 +1171,7 @@ WHERE {
   OPTIONAL {
     ?dataset dcat:distribution ?distribution .
     ?distribution a dcat:Distribution, p360-2023:datové-rozhraní;
-             dcatap:applicableLegislation l365:, l360: ;
+             dcatap:applicableLegislation ZoSD: ;
              dcat:accessURL ?daURL ;
              pu:specifikace ?tou ;
              p360-2023:má-typ-obsahu-sdíleného-rozhraním ?dTypObsahu ;
@@ -1251,7 +1257,7 @@ WHERE {
     {
       ?distribution dcat:accessService ?dataService . 
       ?dataService a dcat:DataService ;
-                    dcatap:applicableLegislation l365:, l360: ;
+                    dcatap:applicableLegislation ZoSD: ;
                     dcterms:title ?sTitle ;
                     dcat:endpointURL ?sEndpointURL .
       
