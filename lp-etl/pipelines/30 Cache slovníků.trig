@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "30 Cache slovníků";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2025-06-09T13:35:53.49146592"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-04-02T10:59:32.941419113"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-10-01T07:28:07.130966738"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://linkedpipes.com/ontology/profile> <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default> .
   
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1749468953491-0002/profile/default>
@@ -240,6 +240,8 @@
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#directoryControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileName> "slovníky-cache.ttl";
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fulltextIndex> <http://plugins.linkedpipes.com/ontology/x-virtuoso#update>;
+    <http://plugins.linkedpipes.com/ontology/x-virtuoso#fulltextIndexControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#graph> <https://data.gov.cz/slovníky>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#graphControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/x-virtuoso#loaderCountControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
