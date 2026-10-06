@@ -4,7 +4,7 @@
     <http://www.w3.org/2004/02/skos/core#prefLabel> "07.1.4.1 Aktualizovat UI katalogu";
     <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
     <http://linkedpipes.com/ontology/events/created> "2021-01-19T07:48:51.779"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
-    <http://linkedpipes.com/ontology/lastUpdate> "2026-06-22T09:08:39.30855678"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-10-06T13:54:18.242264818"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
     <http://etl.linkedpipes.com/ontology/tag> "RUNSOTHERS", "NKOD", "3";
     <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1779171935944-0005/profile/default> .
   
@@ -1081,7 +1081,8 @@ CONSTRUCT {
 
 } 
 WHERE { 
-?dataset a ?resourceType .
+?dataset a ?resourceType ;
+      dcterms:publisher ?publisher .
   VALUES ?resourceType { dcat:Dataset dcat:DatasetSeries }
   BIND(EXISTS { ?dataset a vdf:datová-sada-publikující-veřejné-údaje } AS ?vdf_public_data)
   BIND(EXISTS { ?dataset a vdf:číselník } AS ?vdf_číselník)
@@ -1106,7 +1107,6 @@ WHERE {
   OPTIONAL { ?dataset dcterms:issued ?issued . }
   OPTIONAL { ?dataset dcterms:modified ?modified . }
   OPTIONAL { ?dataset dcterms:accrualPeriodicity ?accrualPeriodicity . }
-  OPTIONAL { ?dataset dcterms:publisher ?publisher . }
   OPTIONAL {
     ?dataset dcat:keyword ?keyword_cs .
     FILTER(LANGMATCHES(LANG(?keyword_cs), \"cs\"))
@@ -1155,6 +1155,8 @@ WHERE {
   OPTIONAL {
     ?isvs p365-2000:zahrnuje ?dataset .
   }
+  
+  FILTER(BOUND(?title_cs) || BOUND(?title_en))
   
   BIND(IF(CONTAINS(STR(?temporalStart),\"+\"),STRBEFORE(STR(?temporalStart), \"+\"), STR(?temporalStart)) AS ?temporalStartStr)
   BIND(IF(CONTAINS(STR(?temporalEnd),\"+\"),STRBEFORE(STR(?temporalEnd), \"+\"), STR(?temporalEnd)) AS ?temporalEndStr)
