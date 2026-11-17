@@ -2770,7 +2770,7 @@ WHERE {
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-00012c1a-859e/configuration> {
   <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-00012c1a-859e/1>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/data-theme-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/data-theme-skos.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -2856,14 +2856,14 @@ WHERE {
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-00019153-8fe4/configuration> {
   <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-00019153-8fe4/1>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/high-value-dataset-category.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/high-value-dataset-category.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
 <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001b091-af85/configuration> {
   <http://localhost:8080/resources/pipelines/1779116262165-00041779116262165-000416110389317791764943595711-0001b091-af85/1>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/frequencies-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/frequencies-skos.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

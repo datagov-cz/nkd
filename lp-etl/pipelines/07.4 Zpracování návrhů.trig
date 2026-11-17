@@ -935,7 +935,7 @@ WHERE {
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/0ebb-ab52/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/0ebb-ab52/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/data-theme-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/data-theme-skos.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1088,7 +1088,7 @@ WHERE {
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/32a5-bbd4/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/32a5-bbd4/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/zdroje-návrhu-na-data-k-otevření.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/zdroje-návrhu-na-data-k-otevření.ttl";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1506,7 +1506,7 @@ xpath-default-namespace=\"http://seznam.gov.cz/ovm/ws/v1\">
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/5d18-8f94/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1705576893693-0001/component/5d18-8f94/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/stavy-návrhu-na-data-k-otevření.ttl";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/stavy-návrhu-na-data-k-otevření.ttl";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

@@ -1069,7 +1069,7 @@ CONSTRUCT {
 <http://localhost:8080/resources/pipelines/1779114807953-0003/component/f781-97b0/configuration> {
   <http://localhost:8080/resources/pipelines/1779114807953-0003/component/f781-97b0/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/eurovoc-skos-ap-eu.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/eurovoc-skos-ap-eu.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

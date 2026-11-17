@@ -766,7 +766,7 @@ agregovanými indikátory kvality""";
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338/component/4712-ad08/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1643873006338/component/4712-ad08/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/eu-mdr/frequencies-skos.rdf";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/eu-mdr/frequencies-skos.rdf";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

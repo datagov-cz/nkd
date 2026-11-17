@@ -5478,7 +5478,7 @@ xpath-default-namespace=\"http://seznam.gov.cz/ovm/datafile/seznamovm/v1\">
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/rúian";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/rúian";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

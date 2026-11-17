@@ -698,7 +698,7 @@ měsíční indexy""";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/eu-mdr";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/eu-mdr";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -708,7 +708,7 @@ měsíční indexy""";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/pvs";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/pvs";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -735,7 +735,7 @@ měsíční indexy""";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/media-types";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/media-types";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -789,7 +789,7 @@ měsíční indexy""";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/číselníky";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/číselníky";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -889,7 +889,7 @@ měsíční indexy""";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/slovník";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/slovník";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1035,7 +1035,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/rpp";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/rpp";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1045,7 +1045,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/mapping";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/mapping";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -1055,7 +1055,7 @@ WHERE {
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/ovm";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/ovm";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 

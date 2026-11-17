@@ -216,7 +216,7 @@
 <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657/component/0196-bf78/configuration> {
   <https://oha02.dia.gov.cz/etl/resources/pipelines/1631006656657/component/0196-bf78/configuration>
     a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
-    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/lp-etl/nkod-cache/ovm/seznam-ovm.xml";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/cache/ovm/seznam-ovm.xml";
     <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
@@ -243,7 +243,7 @@
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#directoryPermissionsControl>
       <http://plugins.linkedpipes.com/resource/configuration/None>;
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#filePermissionsControl> <http://plugins.linkedpipes.com/resource/configuration/None>;
-    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/lp-etl/nkod-cache/ovm/rdf";
+    <http://plugins.linkedpipes.com/ontology/l-filesToLocal#path> "/data/cache/ovm/rdf";
     <http://plugins.linkedpipes.com/ontology/l-filesToLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
 }
 
