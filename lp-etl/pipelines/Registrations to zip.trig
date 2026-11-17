@@ -1,0 +1,75 @@
+
+<http://localhost:8080/resources/pipelines/1774854575968-0001> {
+  <http://localhost:8080/resources/pipelines/1774854575968-0001> a <http://linkedpipes.com/ontology/Pipeline>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Registrations to zip";
+    <http://etl.linkedpipes.com/ontology/version> "5"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/events/created> "2026-03-30T07:09:35.970121909"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/lastUpdate> "2026-11-17T11:48:15.653630502"^^<http://www.w3.org/2001/XMLSchema#dateTime>;
+    <http://linkedpipes.com/ontology/profile> <http://localhost:8080/resources/pipelines/1774854575968-0001/profile/default> .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/profile/default> a <http://linkedpipes.com/ontology/ExecutionProfile>;
+    <http://linkedpipes.com/ontology/rdfRepositoryPolicy> <http://linkedpipes.com/ontology/repository/SingleRepository>;
+    <http://linkedpipes.com/ontology/rdfRepositoryType> <http://linkedpipes.com/ontologyrepository/NativeStore>;
+    <http://etl.linkedpipes.com/ontology/logRetentionPolicy> <http://linkedpipes.com/resources/Keep> .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Create zip archive";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10/configuration>;
+    <http://linkedpipes.com/ontology/x> "1081"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "178"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/t-packZip/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0c70-aa6f>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files from local";
+    <http://purl.org/dc/terms/description> "/data/adapter/registration-manager";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0c70-aa6f/configuration>;
+    <http://linkedpipes.com/ontology/x> "730"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "286"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/bacd-97c4>
+    a <http://linkedpipes.com/ontology/Component>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "Files from local";
+    <http://purl.org/dc/terms/description> "/data/adapter/registrations";
+    <http://linkedpipes.com/ontology/configurationGraph> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/bacd-97c4/configuration>;
+    <http://linkedpipes.com/ontology/x> "739"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/y> "156"^^<http://www.w3.org/2001/XMLSchema#int>;
+    <http://linkedpipes.com/ontology/template> <http://etl.linkedpipes.com/resources/components/e-filesFromLocal/0.0.0> .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/connection/c35b-b50e>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/bacd-97c4>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+  
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/connection/faef-bc86>
+    a <http://linkedpipes.com/ontology/Connection>;
+    <http://linkedpipes.com/ontology/sourceComponent> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0c70-aa6f>;
+    <http://linkedpipes.com/ontology/sourceBinding> "FilesOutput";
+    <http://linkedpipes.com/ontology/targetComponent> <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10>;
+    <http://linkedpipes.com/ontology/targetBinding> "FilesInput" .
+}
+
+<http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10/configuration> {
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0237-9c10/configuration>
+    a <http://plugins.linkedpipes.com/ontology/t-packZip#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/t-packZip#fileName> "registrations.zip";
+    <http://plugins.linkedpipes.com/ontology/t-packZip#fileNameControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1774854575968-0001/component/0c70-aa6f/configuration> {
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/0c70-aa6f/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/adapter/registration-manager";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
+
+<http://localhost:8080/resources/pipelines/1774854575968-0001/component/bacd-97c4/configuration> {
+  <http://localhost:8080/resources/pipelines/1774854575968-0001/component/bacd-97c4/configuration>
+    a <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#Configuration>;
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#path> "/data/adapter/registrations/";
+    <http://plugins.linkedpipes.com/ontology/e-filesFromLocal#pathControl> <http://plugins.linkedpipes.com/resource/configuration/None> .
+}
